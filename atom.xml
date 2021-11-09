@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rongkang&#39;s Blog</title>
+  
+  
+  <link href="http://rongkangxiong.top/atom.xml" rel="self"/>
+  
+  <link href="http://rongkangxiong.top/"/>
+  <updated>2021-11-09T15:04:06.611Z</updated>
+  <id>http://rongkangxiong.top/</id>
+  
+  <author>
+    <name>Rongkang Xiong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>firstblog</title>
+    <link href="http://rongkangxiong.top/2021/11/09/firstblog/"/>
+    <id>http://rongkangxiong.top/2021/11/09/firstblog/</id>
+    <published>2021-11-09T15:02:32.000Z</published>
+    <updated>2021-11-09T15:04:06.611Z</updated>
+    
+    <content type="html"><![CDATA[<p>自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。<br>直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。</p><h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便生成静态网页托管在GitHub或者Coding上。</p><h1 id="HEXO搭建步骤"><a href="#HEXO搭建步骤" class="headerlink" title="HEXO搭建步骤"></a>HEXO搭建步骤</h1><ol><li>安装<a href="https://git-scm.com/download/win">git</a></li><li>安装<a href="https://nodejs.org/en/download/">Node.js</a>，选择LTS版本就行</li><li>安装Hexo</li><li>Github建立个人仓库</li><li>生成SSH添加到GitHub</li><li>将Hexo部署到GitHub</li><li>设置个人域名</li><li>发布文章</li></ol><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><h3 id="Windows检查安装是否成功"><a href="#Windows检查安装是否成功" class="headerlink" title="Windows检查安装是否成功"></a>Windows检查安装是否成功</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下(或者在这个文件夹下直接右键git bash打开)</p><h3 id="开始安装Hexo"><a href="#开始安装Hexo" class="headerlink" title="开始安装Hexo"></a>开始安装Hexo</h3><p>输入命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>你会发现出现</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">changed 57 packages in 6s</span><br><span class="line"></span><br><span class="line">1 package is looking for funding</span><br><span class="line">  run `npm fund` for details</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>这不是报错，只是开发者寻求捐赠支持<br>翻译：1个包正在寻找资金，运行<font color='red'> npm fund</font>了解详细信息</p><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure><h4 id="当下载很慢的时候可以更换源"><a href="#当下载很慢的时候可以更换源" class="headerlink" title="当下载很慢的时候可以更换源"></a>当下载很慢的时候可以更换源</h4><ul><li><p>淘宝npm镜像</p>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npmmirror.com</span><br></pre></td></tr></table></figure></li><li><p>阿里源</p>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.orgnpm config set registry https://registry.npm.taobao.org</span><br><span class="line">npm config list</span><br></pre></td></tr></table></figure></li><li><p>输入代码检查换源是否成功过</p>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure></li></ul><p>然后</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd myblog //进入这个myblog文件夹</span><br><span class="line">npm install</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public: 存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li><strong>_config.yml: 博客的配置文件</strong></li></ul><p>继续输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>打开hexo的服务，在浏览器输入<a href="localhost:4000">localhost:4000</a>就可以在本地看到你生成的博客</p><h3 id="修改配置文件-config-yml"><a href="#修改配置文件-config-yml" class="headerlink" title="修改配置文件 _config.yml"></a>修改配置文件 <strong>_config.yml</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/RongkangXiong/RongkangXiong.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure><p>注意空格还有对齐</p><h3 id="安装deploy-git"><a href="#安装deploy-git" class="headerlink" title="安装deploy-git"></a>安装deploy-git</h3><p>也就是部署的命令,这样你才能用命令部署到GitHub</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>然后确认是否连接成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>会出现让你确认密码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>其中<strong>hexo clean</strong>清除了你之前生成的东西，也可以不加。<br><strong>hexo generate</strong> 顾名思义，生成静态文章，可以用<strong>hexo g</strong>缩写<br><strong>hexo deploy</strong> 部署文章，可以用<strong>hexo d</strong>缩写</p><p>出现一下信息表示部署成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Branch &#x27;master&#x27; set up to track remote branch &#x27;main&#x27; from &#x27;https://github.com/RongkangXiong/RongkangXiong.github.io&#x27;.</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure><p>过一会儿就可以在 <a href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="出现 OpenSSL SSL_read: Connection was reset, errno 10054"></a>出现 <em><strong>OpenSSL SSL_read: Connection was reset, errno 10054</strong></em></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。&lt;br&gt;直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。&lt;/p&gt;
+&lt;h1 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://rongkangxiong.top/2021/11/09/hello-world/"/>
+    <id>http://rongkangxiong.top/2021/11/09/hello-world/</id>
+    <published>2021-11-09T14:23:16.591Z</published>
+    <updated>2021-11-09T14:17:19.093Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
