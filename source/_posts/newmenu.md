@@ -1,0 +1,22 @@
+---
+title: newmenu
+date: 2021-11-11 01:58:21
+tags:
+---
+
+# 为Hexo的Next主题增加自定义menu菜单
+现在Hexo使用的主题当中，Next主题是比较流行的，查看Next主题的_config.yml，其中有8个默认定义的menu菜单，分别是home、about、tags、categories、archives、schedule、sitemap、commonweal 。通过参考tags、categories两个菜单，可以实现菜单的定制化。
+```yml
+menu:
+  home: / || fa fa-home                      #首页
+  about: /about/ || fa fa-user               #关于
+  tags: /tags/ || fa fa-tags                 #标签
+  categories: /categories/ || fa fa-th       #分类
+  read: /categories/read || fa fa-book       #读书
+  archives: /archives/ || fa fa-archive      #归档
+  mynotes: /mynotes/ || fa fa-sticky-note    #我的笔记
+  #schedule: /schedule/ || fa fa-calendar    #日历
+  sitemap: /sitemap.xml || fa fa-sitemap     #站点地图，供搜索引擎爬取
+  #commonweal: /404/ || fa fa-heartbeat      #腾讯公益404
+  # "||" 前面是目标链接，后面是图标名称，图标库http://www.fontawesome.com.cn/faicons/#web-application
+```
