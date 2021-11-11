@@ -31,12 +31,18 @@ symbols_count_time:
   wpm: 275                 # Words Per Minute（每分钟阅读词数）
   suffix: &quot;mins.&quot;</code></pre>
 
-<h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>在 <code>/theme/next/layout/_partial/footer.njk</code> 文档开头添加下面的代码：</p>
-<pre class="line-numbers language-njk" data-language="njk"><code class="language-njk">&lt;script async src&#x3D;&quot;&#x2F;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre>
-<ul>
-<li>显示统计标签<br>编辑 /themes/next/_config.yml（主题配置文档）文档：<br>在 footer（通过查找定位）下面添加如下内容，注意缩进：<span id="more"></span></li>
-</ul>
-]]></content>
+<h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>NexT已经集成了busuanzi统计功能，只需要在主题配置文件<code>_config.yml</code>文件中将如下代码中的<br><code>enable: flase</code>改为<code>enable: true</code>即可</p>
+<pre class="line-numbers language-njk" data-language="njk"><code class="language-njk"># Show Views &#x2F; Visitors of the website &#x2F; page with busuanzi.
+# For more information: http:&#x2F;&#x2F;ibruce.info&#x2F;2015&#x2F;04&#x2F;04&#x2F;busuanzi&#x2F;
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye</code></pre>
+<span id="more"></span>]]></content>
       <categories>
         <category>个人博客</category>
       </categories>

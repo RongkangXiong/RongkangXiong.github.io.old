@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-11T12:18:03.683Z</updated>
+  <updated>2021-11-11T12:36:08.607Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://rongkangxiong.top/post/addcount-number.html"/>
     <id>https://rongkangxiong.top/post/addcount-number.html</id>
     <published>2021-11-11T12:02:48.000Z</published>
-    <updated>2021-11-11T12:18:03.683Z</updated>
+    <updated>2021-11-11T12:36:08.607Z</updated>
     
-    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Next 主题已经合并<br>在NexT主题配置文件中找到</p><pre class="line-numbers language-md" data-language="md"><code class="language-md"># Post wordcount display settings# Dependencies: https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-word-countersymbols_count_time:  symbols: true  time: true  total_symbols: true  total_time: true  exclude_codeblock: false  #允许排出代码块内所有内容，以便进行准确的单词计数  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）  awl: 2                   # Average Word Length  wpm: 275                 # Words Per Minute（每分钟阅读词数）  suffix: &quot;mins.&quot;</code></pre><h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>在 <code>/theme/next/layout/_partial/footer.njk</code> 文档开头添加下面的代码：</p><pre class="line-numbers language-njk" data-language="njk"><code class="language-njk">&lt;script async src&#x3D;&quot;&#x2F;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre><ul><li>显示统计标签<br>编辑 /themes/next/_config.yml（主题配置文档）文档：<br>在 footer（通过查找定位）下面添加如下内容，注意缩进：<span id="more"></span></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Next 主题已经合并<br>在NexT主题配置文件中找到</p><pre class="line-numbers language-md" data-language="md"><code class="language-md"># Post wordcount display settings# Dependencies: https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-word-countersymbols_count_time:  symbols: true  time: true  total_symbols: true  total_time: true  exclude_codeblock: false  #允许排出代码块内所有内容，以便进行准确的单词计数  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）  awl: 2                   # Average Word Length  wpm: 275                 # Words Per Minute（每分钟阅读词数）  suffix: &quot;mins.&quot;</code></pre><h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>NexT已经集成了busuanzi统计功能，只需要在主题配置文件<code>_config.yml</code>文件中将如下代码中的<br><code>enable: flase</code>改为<code>enable: true</code>即可</p><pre class="line-numbers language-njk" data-language="njk"><code class="language-njk"># Show Views &#x2F; Visitors of the website &#x2F; page with busuanzi.# For more information: http:&#x2F;&#x2F;ibruce.info&#x2F;2015&#x2F;04&#x2F;04&#x2F;busuanzi&#x2F;busuanzi_count:  enable: true  total_visitors: true  total_visitors_icon: fa fa-user  total_views: true  total_views_icon: fa fa-eye  post_views: true  post_views_icon: far fa-eye</code></pre><span id="more"></span>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Next 主题已经合并&lt;br&gt;在NexT主题配置文件中找到&lt;/p&gt;
@@ -42,10 +42,17 @@ symbols_count_time:
   wpm: 275                 # Words Per Minute（每分钟阅读词数）
   suffix: &amp;quot;mins.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&quot;busuanzi统计&quot;&gt;&lt;a href=&quot;#busuanzi统计&quot; class=&quot;headerlink&quot; title=&quot;busuanzi统计&quot;&gt;&lt;/a&gt;busuanzi统计&lt;/h1&gt;&lt;p&gt;在 &lt;code&gt;/theme/next/layout/_partial/footer.njk&lt;/code&gt; 文档开头添加下面的代码：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-njk&quot; data-language=&quot;njk&quot;&gt;&lt;code class=&quot;language-njk&quot;&gt;&amp;lt;script async src&amp;#x3D;&amp;quot;&amp;#x2F;&amp;#x2F;busuanzi.ibruce.info&amp;#x2F;busuanzi&amp;#x2F;2.3&amp;#x2F;busuanzi.pure.mini.js&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;显示统计标签&lt;br&gt;编辑 /themes/next/_config.yml（主题配置文档）文档：&lt;br&gt;在 footer（通过查找定位）下面添加如下内容，注意缩进：</summary>
+&lt;h1 id=&quot;busuanzi统计&quot;&gt;&lt;a href=&quot;#busuanzi统计&quot; class=&quot;headerlink&quot; title=&quot;busuanzi统计&quot;&gt;&lt;/a&gt;busuanzi统计&lt;/h1&gt;&lt;p&gt;NexT已经集成了busuanzi统计功能，只需要在主题配置文件&lt;code&gt;_config.yml&lt;/code&gt;文件中将如下代码中的&lt;br&gt;&lt;code&gt;enable: flase&lt;/code&gt;改为&lt;code&gt;enable: true&lt;/code&gt;即可&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-njk&quot; data-language=&quot;njk&quot;&gt;&lt;code class=&quot;language-njk&quot;&gt;# Show Views &amp;#x2F; Visitors of the website &amp;#x2F; page with busuanzi.
+# For more information: http:&amp;#x2F;&amp;#x2F;ibruce.info&amp;#x2F;2015&amp;#x2F;04&amp;#x2F;04&amp;#x2F;busuanzi&amp;#x2F;
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
     
