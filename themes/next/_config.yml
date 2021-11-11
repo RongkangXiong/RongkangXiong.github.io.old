@@ -550,10 +550,18 @@ lazyload: false
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
-  enable: false
-  three_waves: false
-  canvas_lines: true
-  canvas_sphere: false
+  enable: true
+  defer: true
+  cdn:
+  waves:
+    enable: false
+    cdn:
+  lines:
+    enable: true
+    cdn:
+  sphere:
+    enable: false
+    cdn:
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -590,7 +598,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  active: utterances
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -653,8 +661,8 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: false
-  repo: # Github repository name
+  enable: true
+  repo: RongkangXiong/utterances # Github repository name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light

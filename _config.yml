@@ -5,8 +5,8 @@
 # Site
 title: Rongkang's Blog
 subtitle: ''
-description: ''
-keywords:
+description: 个人博客 | 爱养虫的小熊
+keywords: Neuroscience, Python, MATLAB
 author: Rongkang Xiong
 language: zh-CN
 timezone: ''
@@ -44,7 +44,7 @@ post_asset_folder: false   #创建新文件时是否创建文件夹
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -130,4 +130,4 @@ symbols_count_time:
   time: true                   # 文章阅读时长
   total_symbols: true          # 站点总字数统计
   total_time: true             # 站点总阅读时长
-  exclude_codeblock: false     # 排除代码字数统计
+  exclude_codeblock: true     # 排除代码字数统计

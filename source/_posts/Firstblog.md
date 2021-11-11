@@ -1,9 +1,9 @@
 ---
 title: First Blog-制作个人博客
 date: 2021-11-09 23:02:32
-tags: [Hexo, 个人博客, 网站, Github]
+tags: [Hexo,个人博客, 网站, Github]
 feature: true
-categories: [个人博客制作]
+categories: [个人博客]
 ---
 自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。
 直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。

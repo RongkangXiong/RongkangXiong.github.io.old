@@ -338,6 +338,16 @@ hexo.on('new', function(data){
 
 [参考链接https://blog.csdn.net/weixin_39345384/article/details/80785373](https://blog.csdn.net/weixin_39345384/article/details/80785373)
 
+
+
+
+# 多台电脑Hexo写作Blog同步
+新建一个分支。通过在GitHub上新建一个分支，来保存本地的原始文件，另一个分支来保存hexo生成的静态网页。这里详细介绍以下步骤。
+
+## 在原始电脑上
+新建一个分支hexo，设置为默认分支，保存本地原始文件
+在
+
 # 点击侧栏头像回到首页
 
 <span id="end">文末</span>
