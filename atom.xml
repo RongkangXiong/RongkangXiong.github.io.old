@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-11T09:27:10.410Z</updated>
+  <updated>2021-11-11T09:33:32.571Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>writeblog</title>
+    <title>如何书写博客</title>
     <link href="https://rongkangxiong.top/post/writeblog.html"/>
     <id>https://rongkangxiong.top/post/writeblog.html</id>
     <published>2021-11-11T09:08:25.000Z</published>
-    <updated>2021-11-11T09:27:10.410Z</updated>
+    <updated>2021-11-11T09:33:32.571Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---&lt;!--more--&gt;</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---&lt;!--more--&gt;</code></pre><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
     
     
       
