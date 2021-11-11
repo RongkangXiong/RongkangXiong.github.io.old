@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"rongkangxiong.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":100,"offset":30},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="写在开头点击跳转到文末 Hexo搭建的GitHub博客之优化大全https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;33616481背景动画 新建文章时，在相同目录下创建同名文件夹（便于图片管理） 打开站点配置文件_config.yml，搜索post_asset_folder字段，设置其值为true 安装hexo-asset-image：npm install hexo-asset-imag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Next配置">
+<meta property="og:url" content="https://rongkangxiong.top/post/config-next.html">
+<meta property="og:site_name" content="Rongkang&#39;s Blog">
+<meta property="og:description" content="写在开头点击跳转到文末 Hexo搭建的GitHub博客之优化大全https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;33616481背景动画 新建文章时，在相同目录下创建同名文件夹（便于图片管理） 打开站点配置文件_config.yml，搜索post_asset_folder字段，设置其值为true 安装hexo-asset-image：npm install hexo-asset-imag">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-11T03:14:00.000Z">
+<meta property="article:modified_time" content="2021-11-11T08:23:04.582Z">
+<meta property="article:author" content="Rongkang Xiong">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="next">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://rongkangxiong.top/post/config-next.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://rongkangxiong.top/post/config-next.html","path":"/post/config-next.html","title":"Next配置"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Next配置 | Rongkang's Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Rongkang's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+    
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Rongkang's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">11</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li>
+        <li class="menu-item menu-item-read"><a href="/categories/read" rel="section"><i class="fa fa-book fa-fw"></i>读书</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a></li>
+        <li class="menu-item menu-item-mynotes"><a href="/mynotes/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E6%97%B6%EF%BC%8C%E5%9C%A8%E7%9B%B8%E5%90%8C%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%88%9B%E5%BB%BA%E5%90%8C%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%88%E4%BE%BF%E4%BA%8E%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">新建文章时，在相同目录下创建同名文件夹（便于图片管理）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">启用预览功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%86%85%E9%83%A8%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC"><span class="nav-number">3.</span> <span class="nav-text">文章内部锚点跳转</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%B7%B3%E8%BD%AC"><span class="nav-number">4.</span> <span class="nav-text">自己写的文章的跳转</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AB%99%E7%82%B9%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="nav-number">5.</span> <span class="nav-text">站点文章置顶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B8%8B%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF"><span class="nav-number">6.</span> <span class="nav-text">Hexo博客NexT主题下添加字数统计和阅读时长</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B8%8B%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD"><span class="nav-number">7.</span> <span class="nav-text">Hexo博客NexT主题下代码块复制功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">8.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">9.</span> <span class="nav-text">Hexo添加文章时自动打开编辑器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91Hexo%E5%86%99%E4%BD%9CBlog%E5%90%8C%E6%AD%A5"><span class="nav-number">10.</span> <span class="nav-text">多台电脑Hexo写作Blog同步</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%8E%9F%E5%A7%8B%E7%94%B5%E8%84%91%E4%B8%8A"><span class="nav-number">10.1.</span> <span class="nav-text">在原始电脑上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E4%BE%A7%E6%A0%8F%E5%A4%B4%E5%83%8F%E5%9B%9E%E5%88%B0%E9%A6%96%E9%A1%B5"><span class="nav-number">11.</span> <span class="nav-text">点击侧栏头像回到首页</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Rongkang Xiong"
+      src="/images/network.gif">
+  <p class="site-author-name" itemprop="name">Rongkang Xiong</p>
+  <div class="site-description" itemprop="description">个人博客 | 爱养虫的小熊</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/RongkangXiong" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:earth@mail.ustc.edu.cn" title="E-Mail → mailto:earth@mail.ustc.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/duricankang" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;duricankang" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.wenlab.org/" title="http:&#x2F;&#x2F;www.wenlab.org&#x2F;" rel="noopener" target="_blank">WenLab.HomePage</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/next-theme/awesome-next" title="https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;awesome-next" rel="noopener" target="_blank">Hexo-next-book</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/mynotes/math/common_dstribute.html" title="&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html">常用数学分布</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/config-next.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/network.gif">
+      <meta itemprop="name" content="Rongkang Xiong">
+      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rongkang's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Next配置
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-11 11:14:00 / 修改时间：16:23:04" itemprop="dateCreated datePublished" datetime="2021-11-11T11:14:00+08:00">2021-11-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">个人博客</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/NexT/" itemprop="url" rel="index"><span itemprop="name">NexT</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>6.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><span id="begin">写在开头</span><br><a href="#end">点击跳转到文末</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33616481">Hexo搭建的GitHub博客之优化大全https://zhuanlan.zhihu.com/p/33616481</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39345384/article/details/80785373">背景动画</a></p>
+<h1 id="新建文章时，在相同目录下创建同名文件夹（便于图片管理）"><a href="#新建文章时，在相同目录下创建同名文件夹（便于图片管理）" class="headerlink" title="新建文章时，在相同目录下创建同名文件夹（便于图片管理）"></a>新建文章时，在相同目录下创建同名文件夹（便于图片管理）</h1><ul>
+<li>打开站点配置文件_config.yml，搜索post_asset_folder字段，设置其值为true</li>
+<li>安装hexo-asset-image：npm install hexo-asset-image –save</li>
+<li>此时hexo new “fileName”会在/source/_posts目录下创建同名的文件夹</li>
+<li>只需在 md 文件里使用</li>
+</ul>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">![title](图片名.jpg)</code></pre>
+
+<p>  无需路径名就可以插入图片。<br>ps: 发现这样就不能启用创建文件自动打开编辑器功能<br>自己创建文件夹即可</p>
+<span id="more"></span>
+
+<h1 id="启用预览功能"><a href="#启用预览功能" class="headerlink" title="启用预览功能"></a>启用预览功能</h1><p>直接在文章中插入即可，此代码一下的需要点击 阅读更多 才能显示</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;!--more--&gt;</code></pre>
+
+<h1 id="文章内部锚点跳转"><a href="#文章内部锚点跳转" class="headerlink" title="文章内部锚点跳转"></a>文章内部锚点跳转</h1><p>这个方式是由John Tsai给出的，分成两步：</p>
+<ol>
+<li>定义一个锚(id)：</li>
+</ol>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;span id&#x3D;&quot;jump&quot;&gt;跳转到的地方&lt;&#x2F;span&gt;</code></pre>
+
+<ol start="2">
+<li>使用markdown语法：</li>
+</ol>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">[点击跳转](#jump)</code></pre>
+
+<h1 id="自己写的文章的跳转"><a href="#自己写的文章的跳转" class="headerlink" title="自己写的文章的跳转"></a>自己写的文章的跳转</h1><pre class="line-numbers language-md" data-language="md"><code class="language-md">[名称](&#x2F;forder-to-you-file)</code></pre>
+
+<p>在 /mynotes/math 下的 common_dstribute.md文件可以通过一下代码实现跳转<br><a href="/mynotes/math/common_dstribute.html">常用概率分布</a></p>
+<p><a href="/mynotes/index.html">mynotes</a></p>
+<p>在 /mynotes/ 下的 index.md文件可以通过跳转</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">[mynotes](&#x2F;mynotes&#x2F;index.html)</code></pre>
+
+<p><a href="introduction.html">Introduction</a><br>在/source/_post/ 文件夹下面(和本文件同文件夹)的introduction.md的文件可以通过来跳转</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">[Introduction](introduction.html) </code></pre>
+
+<h1 id="站点文章置顶"><a href="#站点文章置顶" class="headerlink" title="站点文章置顶"></a>站点文章置顶</h1><p>打开Myblog站点下node_modules/hexo-generator-index/lib/generator.js文件。代码全部替换为</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">&#39;use strict&#39;;
+var pagination &#x3D; require(&#39;hexo-pagination&#39;);
+module.exports &#x3D; function(locals)&#123;
+  var config &#x3D; this.config;
+  var posts &#x3D; locals.posts;
+    posts.data &#x3D; posts.data.sort(function(a, b) &#123;
+        if(a.top &amp;&amp; b.top) &#123; &#x2F;&#x2F; 两篇文章top都有定义
+            if(a.top &#x3D;&#x3D; b.top) return b.date - a.date; &#x2F;&#x2F; 若top值一样则按照文章日期降序排
+            else return b.top - a.top; &#x2F;&#x2F; 否则按照top值降序排
+        &#125;
+        else if(a.top &amp;&amp; !b.top) &#123; &#x2F;&#x2F; 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）
+            return -1;
+        &#125;
+        else if(!a.top &amp;&amp; b.top) &#123;
+            return 1;
+        &#125;
+        else return b.date - a.date; &#x2F;&#x2F; 都没定义按照文章日期降序排
+    &#125;);
+  var paginationDir &#x3D; config.pagination_dir || &#39;page&#39;;
+  return pagination(&#39;&#39;, posts, &#123;
+    perPage: config.index_generator.per_page,
+    layout: [&#39;index&#39;, &#39;archive&#39;],
+    format: paginationDir + &#39;&#x2F;%d&#x2F;&#39;,
+    data: &#123;
+      __index: true
+    &#125;
+  &#125;);
+&#125;;</code></pre>
+
+<ul>
+<li>打开文章添加top字段,设置数值，数值越大文章越靠前</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">---
+layout: layout
+title: 标签1
+date: 2017-08-18 15:41:18
+tags: 标签1
+top: 100
+---</code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d23d67d318c7">参考链接https://www.jianshu.com/p/d23d67d318c7</a></p>
+<h1 id="Hexo博客NexT主题下添加字数统计和阅读时长"><a href="#Hexo博客NexT主题下添加字数统计和阅读时长" class="headerlink" title="Hexo博客NexT主题下添加字数统计和阅读时长"></a>Hexo博客NexT主题下添加字数统计和阅读时长</h1><ul>
+<li><p>安装hexo-symbols-count-time</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">npm install hexo-symbols-count-time --save</code></pre></li>
+<li><p>如果安装完报如下提醒，还需安装eslint</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">npm install eslint --save</code></pre></li>
+<li><p>站点/_config.yml配置</p>
+</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">symbols_count_time:
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false     # 排除代码字数统计</code></pre>
+
+<ul>
+<li>Next主题文件 <strong>themes/next/_config.yml</strong></li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># Post wordcount display settings
+# Dependencies: https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-symbols-count-time
+symbols_count_time:
+  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）
+  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）
+  item_text_total: false   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）
+  awl: 4                   # Average Word Length
+  wpm: 275                 # Words Per Minute（每分钟阅读词数）
+  suffix: mins.</code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/RongkangXiong/hexo-symbols-count-time">参考链接https://github.com/RongkangXiong/hexo-symbols-count-time</a></p>
+<h1 id="Hexo博客NexT主题下代码块复制功能"><a href="#Hexo博客NexT主题下代码块复制功能" class="headerlink" title="Hexo博客NexT主题下代码块复制功能"></a>Hexo博客NexT主题下代码块复制功能</h1><p>为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。</p>
+<ul>
+<li>在themes/next/layout/_third-party/下新建文件copy-code.swig，写入下面的内容：</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">&#123;% if theme.codeblock.copy_button.enable %&#125;
+  &lt;style&gt;
+    .copy-btn &#123;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    &#125;
+
+    .highlight-wrap .copy-btn &#123;
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    &#125;
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus &#123;
+      opacity: 1
+    &#125;
+
+    .highlight-wrap &#123;
+      position: relative;
+    &#125;
+  &lt;&#x2F;style&gt;
+  
+  &lt;script&gt;
+    $(&#39;.highlight&#39;).each(function (i, e) &#123;
+      var $wrap &#x3D; $(&#39;&lt;div&gt;&#39;).addClass(&#39;highlight-wrap&#39;)
+      $(e).after($wrap)
+      $wrap.append($(&#39;&lt;button&gt;&#39;).addClass(&#39;copy-btn&#39;).append(&#39;&#123;&#123;__(&quot;post.copy_button&quot;)&#125;&#125;&#39;).on(&#39;click&#39;, function (e) &#123;
+        var code &#x3D; $(this).parent().find(&#39;.code&#39;).find(&#39;.line&#39;).map(function (i, e) &#123;
+          return $(e).text()
+        &#125;).toArray().join(&#39;\n&#39;)
+        var ta &#x3D; document.createElement(&#39;textarea&#39;)
+        document.body.appendChild(ta)
+        ta.style.position &#x3D; &#39;absolute&#39;
+        ta.style.top &#x3D; &#39;0px&#39;
+        ta.style.left &#x3D; &#39;0px&#39;
+        ta.value &#x3D; code
+        ta.select()
+        ta.focus()
+        var result &#x3D; document.execCommand(&#39;copy&#39;)
+        document.body.removeChild(ta)
+        &#123;% if theme.codeblock.copy_button.show_result %&#125;
+          if(result)$(this).text(&#39;&#123;&#123;__(&quot;post.copy_success&quot;)&#125;&#125;&#39;)
+          else $(this).text(&#39;&#123;&#123;__(&quot;post.copy_failure&quot;)&#125;&#125;&#39;)
+        &#123;% endif %&#125;
+        $(this).blur()
+      &#125;)).on(&#39;mouseleave&#39;, function (e) &#123;
+        var $b &#x3D; $(this).find(&#39;.copy-btn&#39;)
+        setTimeout(function () &#123;
+          $b.text(&#39;&#123;&#123;__(&quot;post.copy_button&quot;)&#125;&#125;&#39;)
+        &#125;, 300)
+      &#125;).append(e)
+    &#125;)
+  &lt;&#x2F;script&gt;
+&#123;% endif %&#125;</code></pre>
+
+<ul>
+<li><p>编辑themes/next/layout/_layout.njk文件，在文件末尾</p>
+<pre class="line-numbers language-none"><code class="language-none">&#123;&#123;- next_inject(&#39;bodyEnd&#39;) &#125;&#125;</code></pre></li>
+</ul>
+<p>前面对齐添加一行代码：</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">&#123;% include &#39;_third-party&#x2F;copy-code.swig&#39; -%&#125;</code></pre>
+
+<ul>
+<li>添加按钮上显示的语言 在themes/next/languages/zh-CN.yml文件的post板块中添加下列代码：</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">copy_button: 复制
+copy_success: 复制成功
+copy_failure: 复制失败</code></pre>
+
+<ul>
+<li>在主题配置文件themes/next/_config.yml中添加开关<br>搜索codeblock</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">codeblock:
+  border_radius:
+  copy_button:
+    enable: true
+    # Show text copy result
+    show_result: true</code></pre>
+
+<p>重新生成</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">hexo clean &amp; hexo g</code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Awt_FuDongLai/article/details/107466848">参考链接https://blog.csdn.net/Awt_FuDongLai/article/details/107466848</a></p>
+<h1 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h1><ul>
+<li>安装插件</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">npm install hexo-generator-search</code></pre>
+
+<ul>
+<li>查找主题配置文件themes/next/_config.yml中的local_search ：</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: manual  #手动，按回车键或搜索按钮触发搜索
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false</code></pre>
+
+<h1 id="Hexo添加文章时自动打开编辑器"><a href="#Hexo添加文章时自动打开编辑器" class="headerlink" title="Hexo添加文章时自动打开编辑器"></a>Hexo添加文章时自动打开编辑器</h1><ul>
+<li>首先在Hexo目录下的scripts目录中创建一个JavaScript脚本文件(name.js)</li>
+<li>如果没有这个scripts目录，则新建一个scripts目录</li>
+<li>新建的JavaScript脚本文件可以任意取名<br>通过这个脚本，我们用其来监听hexo new这个动作，并在检测到hexo new之后，执行编辑器打开的命令</li>
+<li>如果你是windows平台的Hexo用户，则将下列内容写入你的脚本：</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">var spawn &#x3D; require(&#39;child_process&#39;).exec;
+hexo.on(&#39;new&#39;, function(data)&#123;
+  spawn(&#39;start  &quot;markdown编辑器绝对路径.exe&quot; &#39; + data.path);
+&#125;);</code></pre>
+
+<ul>
+<li>如果你是Mac平台Hexo用户，则将下列内容写入你的脚本：</li>
+</ul>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">var exec &#x3D; require(&#39;child_process&#39;).exec;
+hexo.on(&#39;new&#39;, function(data)&#123;
+    exec(&#39;open -a &quot;markdown编辑器绝对路径.app&quot; &#39; + data.path);
+&#125;);</code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39345384/article/details/80785373">参考链接https://blog.csdn.net/weixin_39345384/article/details/80785373</a></p>
+<h1 id="多台电脑Hexo写作Blog同步"><a href="#多台电脑Hexo写作Blog同步" class="headerlink" title="多台电脑Hexo写作Blog同步"></a>多台电脑Hexo写作Blog同步</h1><p>新建一个分支。通过在GitHub上新建一个分支，来保存本地的原始文件，另一个分支来保存hexo生成的静态网页。这里详细介绍以下步骤。</p>
+<h2 id="在原始电脑上"><a href="#在原始电脑上" class="headerlink" title="在原始电脑上"></a>在原始电脑上</h2><p>新建一个分支hexo，设置为默认分支，保存本地原始文件<br>在</p>
+<h1 id="点击侧栏头像回到首页"><a href="#点击侧栏头像回到首页" class="headerlink" title="点击侧栏头像回到首页"></a>点击侧栏头像回到首页</h1><p><span id="end">文末</span></p>
+<p><a href="#begin">点击跳转到开头</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>技术分享，欢迎支持鼓励我创作和搬运</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Rongkang Xiong 微信">
+        <span>微信</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Rongkang Xiong
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://rongkangxiong.top/post/config-next.html" title="Next配置">https://rongkangxiong.top/post/config-next.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/next/" rel="tag"># next</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/newmenu.html" rel="prev" title="newmenu">
+                  <i class="fa fa-chevron-left"></i> newmenu
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021-11 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rongkang Xiong</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">12k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">11 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-core.min.js" integrity="sha256-vlRYHThwdq55dA+n1BKQRzzLwFtH9VINdSI68+5JhpU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-cl5LNmPvcRcGFaQFjwEKIfs51AX7wBkvoByH6LTxQCs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-K837BwIyiXo5k/9fCYgqUyA14bN4/Ve9P2SIT0KmZD0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"RongkangXiong/utterances","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+</body>
+</html>
