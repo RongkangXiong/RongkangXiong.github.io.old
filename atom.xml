@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-11T12:36:08.607Z</updated>
+  <updated>2021-11-11T13:59:59.292Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>question_blog</title>
+    <link href="https://rongkangxiong.top/post/question-blog.html"/>
+    <id>https://rongkangxiong.top/post/question-blog.html</id>
+    <published>2021-11-11T13:53:09.000Z</published>
+    <updated>2021-11-11T13:59:59.292Z</updated>
+    
+    <content type="html"><![CDATA[<p>配置blog过程中遇到的一些问题</p><span id="more"></span><h1 id="点击标签和分类进去发现是空白"><a href="#点击标签和分类进去发现是空白" class="headerlink" title="点击标签和分类进去发现是空白"></a>点击<code>标签</code>和<code>分类</code>进去发现是空白</h1><p>这时候需要打开主题配置文件<code>_config.yml</code></p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">menu:  home: &#x2F; || fa fa-home                      #首页  about: &#x2F;about&#x2F; || fa fa-user               #关于  #tags: &#x2F;tags&#x2F; || fa fa-tags                 #标签  #categories: &#x2F;categories&#x2F; || fa fa-th       #分类</code></pre><p>将<code>tags</code>和<code>categories</code>给注释取消，然后用</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new page tags</code></pre><p>打开生成的tags文件夹下的<code>index.md</code>修改里面的内容添加一行`type:</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: categoriesdate: 2021-11-10 23:11:21type: &quot;tags&quot;  #新加的---</code></pre><p>分类<code>categories</code>同理</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: categoriesdate: 2021-11-10 23:11:21type: &quot;categories&quot;---</code></pre>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;配置blog过程中遇到的一些问题&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="问题" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="问题" scheme="https://rongkangxiong.top/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>addcount_number</title>
     <link href="https://rongkangxiong.top/post/addcount-number.html"/>
     <id>https://rongkangxiong.top/post/addcount-number.html</id>
     <published>2021-11-11T12:02:48.000Z</published>
-    <updated>2021-11-11T12:36:08.607Z</updated>
+    <updated>2021-11-11T13:45:37.998Z</updated>
     
-    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Next 主题已经合并<br>在NexT主题配置文件中找到</p><pre class="line-numbers language-md" data-language="md"><code class="language-md"># Post wordcount display settings# Dependencies: https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-word-countersymbols_count_time:  symbols: true  time: true  total_symbols: true  total_time: true  exclude_codeblock: false  #允许排出代码块内所有内容，以便进行准确的单词计数  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）  awl: 2                   # Average Word Length  wpm: 275                 # Words Per Minute（每分钟阅读词数）  suffix: &quot;mins.&quot;</code></pre><h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>NexT已经集成了busuanzi统计功能，只需要在主题配置文件<code>_config.yml</code>文件中将如下代码中的<br><code>enable: flase</code>改为<code>enable: true</code>即可</p><pre class="line-numbers language-njk" data-language="njk"><code class="language-njk"># Show Views &#x2F; Visitors of the website &#x2F; page with busuanzi.# For more information: http:&#x2F;&#x2F;ibruce.info&#x2F;2015&#x2F;04&#x2F;04&#x2F;busuanzi&#x2F;busuanzi_count:  enable: true  total_visitors: true  total_visitors_icon: fa fa-user  total_views: true  total_views_icon: fa fa-eye  post_views: true  post_views_icon: far fa-eye</code></pre><span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Next 主题已经合并<br>在NexT主题配置文件中找到</p><pre class="line-numbers language-md" data-language="md"><code class="language-md"># Post wordcount display settings# Dependencies: https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-word-countersymbols_count_time:  symbols: true  time: true  total_symbols: true  total_time: true  exclude_codeblock: false  #允许排出代码块内所有内容，以便进行准确的单词计数  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）  awl: 2                   # Average Word Length  wpm: 275                 # Words Per Minute（每分钟阅读词数）  suffix: &quot;mins.&quot;</code></pre><h1 id="busuanzi统计"><a href="#busuanzi统计" class="headerlink" title="busuanzi统计"></a>busuanzi统计</h1><p>NexT已经集成了busuanzi统计功能，只需要在主题配置文件<code>_config.yml</code>文件中将如下代码中的<br><code>enable: flase</code>改为<code>enable: true</code>即可</p><pre class="line-numbers language-njk" data-language="njk"><code class="language-njk"># Show Views &#x2F; Visitors of the website &#x2F; page with busuanzi.# For more information: http:&#x2F;&#x2F;ibruce.info&#x2F;2015&#x2F;04&#x2F;04&#x2F;busuanzi&#x2F;busuanzi_count:  enable: true  total_visitors: true  total_visitors_icon: fa fa-user  total_views: true  total_views_icon: fa fa-eye  post_views: true  post_views_icon: far fa-eye</code></pre><p>然后</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo cleanhexo ghexo d</code></pre><p>输入密码部署上去可能要等待十分钟左右就可以显示了</p><span id="more"></span>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Next 主题已经合并&lt;br&gt;在NexT主题配置文件中找到&lt;/p&gt;
@@ -52,12 +77,25 @@ busuanzi_count:
   total_views: true
   total_views_icon: fa fa-eye
   post_views: true
-  post_views_icon: far fa-eye&lt;/code&gt;&lt;/pre&gt;</summary>
+  post_views_icon: far fa-eye&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;hexo clean
+hexo g
+hexo d&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;输入密码部署上去可能要等待十分钟左右就可以显示了&lt;/p&gt;</summary>
     
     
     
     <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
+    
+    <category term="hexo" scheme="https://rongkangxiong.top/tags/hexo/"/>
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="访客统计" scheme="https://rongkangxiong.top/tags/%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/"/>
+    
+    <category term="阅读统计" scheme="https://rongkangxiong.top/tags/%E9%98%85%E8%AF%BB%E7%BB%9F%E8%AE%A1/"/>
     
   </entry>
   
@@ -66,7 +104,7 @@ busuanzi_count:
     <link href="https://rongkangxiong.top/post/writeblog.html"/>
     <id>https://rongkangxiong.top/post/writeblog.html</id>
     <published>2021-11-11T09:08:25.000Z</published>
-    <updated>2021-11-11T11:46:49.047Z</updated>
+    <updated>2021-11-11T13:46:42.081Z</updated>
     
     <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---&lt;!--more--&gt;</code></pre><h1 id="hexo-admin插件管理博客写作"><a href="#hexo-admin插件管理博客写作" class="headerlink" title="hexo-admin插件管理博客写作"></a>hexo-admin插件管理博客写作</h1><p>每次新建文章和写作文章都在<code>git</code>命令行中，很不方便，于是可以安装这款插件<br><a href="https://github.com/jaredly/hexo-admin">参考hexo-admin官方页面</a></p><pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-adminhexo ghexo sopen http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;</code></pre><p>然后浏览器输入<code>http://localhost:4000/admin/</code>进入管理界面<br>setting<br><img src="writeblog_pass.png" alt="1"><br><img src="./writeblog/writeblog_pass.png" alt="1"></p><p><a href="/mynotes/math/common_dstribute.html">我的笔记</a></p><p>复制下面生成的 <code>Admin Config Section</code>内容到 <code>/blog/_config.yml</code>粘贴在最后即可<br>之后登陆需要输入账户密码</p><p>在Deploy之前，还要编辑网站配置文件<code>_config.yml</code> （否则会出现<code>Error: Config value &quot;admin.deployCommand&quot; not found</code>)报错<br>如果实在<code>Windows系统</code>，这在末尾加上</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">deployCommand:&#39;hexo-generate.bat&#39;</code></pre>]]></content>
     
@@ -78,6 +116,8 @@ busuanzi_count:
     
     
     
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -123,7 +163,7 @@ busuanzi_count:
     <link href="https://rongkangxiong.top/post/newmenu.html"/>
     <id>https://rongkangxiong.top/post/newmenu.html</id>
     <published>2021-11-10T17:58:21.000Z</published>
-    <updated>2021-11-10T18:09:22.138Z</updated>
+    <updated>2021-11-11T13:46:06.663Z</updated>
     
     <content type="html"><![CDATA[<h1 id="为Hexo的Next主题增加自定义menu菜单"><a href="#为Hexo的Next主题增加自定义menu菜单" class="headerlink" title="为Hexo的Next主题增加自定义menu菜单"></a>为Hexo的Next主题增加自定义menu菜单</h1><p>现在Hexo使用的主题当中，Next主题是比较流行的，查看Next主题的_config.yml，其中有8个默认定义的menu菜单，分别是home、about、tags、categories、archives、schedule、sitemap、commonweal 。通过参考tags、categories两个菜单，可以实现菜单的定制化。</p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">menu:  home: &#x2F; || fa fa-home                      #首页  about: &#x2F;about&#x2F; || fa fa-user               #关于  tags: &#x2F;tags&#x2F; || fa fa-tags                 #标签  categories: &#x2F;categories&#x2F; || fa fa-th       #分类  read: &#x2F;categories&#x2F;read || fa fa-book       #读书  archives: &#x2F;archives&#x2F; || fa fa-archive      #归档  mynotes: &#x2F;mynotes&#x2F; || fa fa-sticky-note    #我的笔记  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar    #日历  sitemap: &#x2F;sitemap.xml || fa fa-sitemap     #站点地图，供搜索引擎爬取  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat      #腾讯公益404  # &quot;||&quot; 前面是目标链接，后面是图标名称，图标库http:&#x2F;&#x2F;www.fontawesome.com.cn&#x2F;faicons&#x2F;#web-application</code></pre>]]></content>
     
@@ -135,6 +175,10 @@ busuanzi_count:
     
     
     
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="菜单" scheme="https://rongkangxiong.top/tags/%E8%8F%9C%E5%8D%95/"/>
     
   </entry>
   
@@ -189,6 +233,34 @@ busuanzi_count:
   </entry>
   
   <entry>
+    <title>如何制作输出电子笔记</title>
+    <link href="https://rongkangxiong.top/post/HowtoWriteNotes.html"/>
+    <id>https://rongkangxiong.top/post/HowtoWriteNotes.html</id>
+    <published>2021-11-09T15:02:32.000Z</published>
+    <updated>2021-11-10T03:56:28.380Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="How-to-Write-MyNotes"><a href="#How-to-Write-MyNotes" class="headerlink" title="How to Write MyNotes"></a>How to Write MyNotes</h1><p>通过 plantuml绘制流程图</p><h3 id="支持类型"><a href="#支持类型" class="headerlink" title="支持类型"></a>支持类型</h3><p><a href="">MindMap diagram</a><br><a href="">Sequence diagram</a><br><a href="">Usecase diagram</a><br><a href="">Class diagram</a>  </p><h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><h4 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">删去&#96; &#96; &#96;之间的空格&#96; &#96; &#96;pythondef helloworld():    print(&quot;helloworld&quot;)&#96; &#96; &#96;</code></pre><p>得到效果</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">def helloworld():    print(&quot;hello world&quot;)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;How-to-Write-MyNotes&quot;&gt;&lt;a href=&quot;#How-to-Write-MyNotes&quot; class=&quot;headerlink&quot; title=&quot;How to Write MyNotes&quot;&gt;&lt;/a&gt;How to Write MyNotes&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="个人博客制作" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C/"/>
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="笔记" scheme="https://rongkangxiong.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Notes" scheme="https://rongkangxiong.top/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>First Blog-制作个人博客</title>
     <link href="https://rongkangxiong.top/post/Firstblog.html"/>
     <id>https://rongkangxiong.top/post/Firstblog.html</id>
@@ -223,34 +295,6 @@ busuanzi_count:
     <category term="网站" scheme="https://rongkangxiong.top/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="Github" scheme="https://rongkangxiong.top/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何制作输出电子笔记</title>
-    <link href="https://rongkangxiong.top/post/HowtoWriteNotes.html"/>
-    <id>https://rongkangxiong.top/post/HowtoWriteNotes.html</id>
-    <published>2021-11-09T15:02:32.000Z</published>
-    <updated>2021-11-10T03:56:28.380Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="How-to-Write-MyNotes"><a href="#How-to-Write-MyNotes" class="headerlink" title="How to Write MyNotes"></a>How to Write MyNotes</h1><p>通过 plantuml绘制流程图</p><h3 id="支持类型"><a href="#支持类型" class="headerlink" title="支持类型"></a>支持类型</h3><p><a href="">MindMap diagram</a><br><a href="">Sequence diagram</a><br><a href="">Usecase diagram</a><br><a href="">Class diagram</a>  </p><h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><h4 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">删去&#96; &#96; &#96;之间的空格&#96; &#96; &#96;pythondef helloworld():    print(&quot;helloworld&quot;)&#96; &#96; &#96;</code></pre><p>得到效果</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">def helloworld():    print(&quot;hello world&quot;)</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;How-to-Write-MyNotes&quot;&gt;&lt;a href=&quot;#How-to-Write-MyNotes&quot; class=&quot;headerlink&quot; title=&quot;How to Write MyNotes&quot;&gt;&lt;/a&gt;How to Write MyNotes&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="个人博客制作" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C/"/>
-    
-    
-    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="笔记" scheme="https://rongkangxiong.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Notes" scheme="https://rongkangxiong.top/tags/Notes/"/>
     
   </entry>
   
