@@ -216,7 +216,7 @@ footer:
 
   # Powered by Hexo & NexT
   powered: true
-
+  
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
@@ -227,7 +227,6 @@ footer:
     gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -253,12 +252,17 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false  #允许排出代码块内所有内容，以便进行准确的单词计数
   separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）
   item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）
-  item_text_total: false   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）
-  awl: 4                   # Average Word Length
+  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）
+  awl: 2                   # Average Word Length
   wpm: 275                 # Words Per Minute（每分钟阅读词数）
-  suffix: mins.
+  suffix: "mins."
 
 
 
@@ -740,7 +744,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
