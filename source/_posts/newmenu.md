@@ -1,7 +1,7 @@
 ---
 title: newmenu
 date: 2021-11-11 01:58:21
-tags:
+tags: [个人博客,菜单]
 ---
 
 # 为Hexo的Next主题增加自定义menu菜单

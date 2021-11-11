@@ -1,6 +1,6 @@
 title: 如何书写博客
 date: 2021-11-11 17:08:25
-tags:
+tags: [个人博客]
 ---
 # 创建新文章
 `git` 中进入根目录输入 `hexo new <模板> <文章名>` 新建文章
@@ -28,7 +28,9 @@ mathjx: true  #是否开启数学公式支持
 common: true
 ---
 
-
+# 如何插入图片
+# 如何插入链接
+# 如何
 
 <!--more-->
 ```
@@ -45,10 +47,10 @@ hexo s
 open http://localhost:4000/admin/
 ```
 
-然后浏览器输入`http://localhost:4000/admin/`进入管理界面
-setting
-![1](writeblog_pass.png)
-![1](./writeblog/writeblog_pass.png)
+然后浏览器输入`http://localhost:4000/admin/`进入管理界面`setting`
+![设置](./writeblog/writeblog_setup.png)
+
+![登陆](./writeblog/writeblog_pass.png)
 
 [我的笔记](/mynotes/math/common_dstribute.html)
 

@@ -1,7 +1,7 @@
 ---
 title: addcount_number
 author: 爱养虫的小熊
-tags: []
+tags: [个人博客,hexo,访客统计,阅读统计]
 categories:
   - 个人博客
 top: 1
@@ -31,11 +31,26 @@ symbols_count_time:
 ```
 
 # busuanzi统计
-在 `/theme/next/layout/_partial/footer.njk` 文档开头添加下面的代码：
+NexT已经集成了busuanzi统计功能，只需要在主题配置文件`_config.yml`文件中将如下代码中的
+`enable: flase`改为`enable: true`即可
+
 ```njk
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+# Show Views / Visitors of the website / page with busuanzi.
+# For more information: http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye
 ```
-- 显示统计标签
-  编辑 /themes/next/_config.yml（主题配置文档）文档：
-  在 footer（通过查找定位）下面添加如下内容，注意缩进：
+然后
+```md
+hexo clean
+hexo g
+hexo d
+```
+输入密码部署上去可能要等待十分钟左右就可以显示了
 <!--more-->
