@@ -386,29 +386,6 @@ hexo.on(&#39;new&#39;, function(data)&#123;
       </tags>
   </entry>
   <entry>
-    <title>如何制作输出电子笔记</title>
-    <url>//post/HowtoWriteNotes.html</url>
-    <content><![CDATA[<h1 id="How-to-Write-MyNotes"><a href="#How-to-Write-MyNotes" class="headerlink" title="How to Write MyNotes"></a>How to Write MyNotes</h1><p>通过 plantuml绘制流程图</p>
-<h3 id="支持类型"><a href="#支持类型" class="headerlink" title="支持类型"></a>支持类型</h3><p><a href="">MindMap diagram</a><br><a href="">Sequence diagram</a><br><a href="">Usecase diagram</a><br><a href="">Class diagram</a>  </p>
-<h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><h4 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">删去&#96; &#96; &#96;之间的空格
-&#96; &#96; &#96;python
-def helloworld():
-    print(&quot;helloworld&quot;)
-&#96; &#96; &#96;</code></pre>
-
-<p>得到效果</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">def helloworld():
-    print(&quot;hello world&quot;)</code></pre>]]></content>
-      <categories>
-        <category>个人博客制作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>Notes</tag>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>First Blog-制作个人博客</title>
     <url>//post/Firstblog.html</url>
     <content><![CDATA[<p>自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。<br>直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。</p>
@@ -626,6 +603,29 @@ INFO  Deploy done: git</code></pre>
         <tag>Hexo</tag>
         <tag>网站</tag>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何制作输出电子笔记</title>
+    <url>//post/HowtoWriteNotes.html</url>
+    <content><![CDATA[<h1 id="How-to-Write-MyNotes"><a href="#How-to-Write-MyNotes" class="headerlink" title="How to Write MyNotes"></a>How to Write MyNotes</h1><p>通过 plantuml绘制流程图</p>
+<h3 id="支持类型"><a href="#支持类型" class="headerlink" title="支持类型"></a>支持类型</h3><p><a href="">MindMap diagram</a><br><a href="">Sequence diagram</a><br><a href="">Usecase diagram</a><br><a href="">Class diagram</a>  </p>
+<h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><h4 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">删去&#96; &#96; &#96;之间的空格
+&#96; &#96; &#96;python
+def helloworld():
+    print(&quot;helloworld&quot;)
+&#96; &#96; &#96;</code></pre>
+
+<p>得到效果</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">def helloworld():
+    print(&quot;hello world&quot;)</code></pre>]]></content>
+      <categories>
+        <category>个人博客制作</category>
+      </categories>
+      <tags>
+        <tag>个人博客</tag>
+        <tag>笔记</tag>
+        <tag>Notes</tag>
       </tags>
   </entry>
 </search>
