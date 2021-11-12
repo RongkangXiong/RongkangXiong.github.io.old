@@ -1,7 +1,7 @@
 ---
-title: add_photo_album
+title: Hexo-NexT主题添加相册
 author: 爱养虫的小熊
-tags: []
+tags: [Hexo,NexT]
 categories:
   - 个人博客
 top: 1

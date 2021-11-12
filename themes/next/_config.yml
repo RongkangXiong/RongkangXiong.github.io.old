@@ -148,6 +148,7 @@ social:
   E-Mail: mailto:earth@mail.ustc.edu.cn || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   Google: https://plus.google.com/duricankang || fab fa-google
+  RSS: /atom.xml || fa fa-rss-square
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
@@ -174,6 +175,9 @@ links:
   WenLab.HomePage: http://www.wenlab.org/
   Hexo-next-book: https://github.com/next-theme/awesome-next
   常用数学分布: /mynotes/math/common_dstribute.html
+  Markdown常用语法: /post/Markdown常用语法.html
+  Linux常用命令: /post/Linux常用命令.html
+  常用网址查询: /post/常用网址查询.html
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -279,7 +283,7 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
   animation: false
-  comment: 技术分享，欢迎支持鼓励我创作和搬运
+  comment: 技术分享，欢迎评论，支持鼓励我创作和搬运
 
 reward:
   wechatpay: /images/wechatpay.png
@@ -311,7 +315,7 @@ related_posts:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   url: https://github.com/RongkangXiong/rongkangxiong.github.io/tree/main/subdirectory-name/ # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 
@@ -392,29 +396,29 @@ codeblock:
     border_radius:
     show_result: true
     # Available values: default | flat | mac
-    style:
+    style: default
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: left | right
-  start_at: left
+  start_at: right
   # Available values: top | bottom
   position: top
-  reversed: false
-  color: "#37c6c0"
-  height: 3px
+  reversed: true
+  color: "#212121"   #颜色代码查询网站 http://cha.buyiju.com/tool/color.html
+  height: 4px
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -423,8 +427,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/RongkangXiong
   title: Follow me on GitHub
 
 
@@ -779,11 +783,11 @@ local_search:
   # If manual, trigger search by pressing enter key or search button.
   trigger: manual
   # Show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
+  top_n_per_article: -1
   # Unescape html strings to the readable one.
   unescape: false
   # Preload the search data when the page loads.
-  preload: false
+  preload: true
 
 
 # ---------------------------------------------------------------
@@ -873,7 +877,7 @@ mermaid:
 # For more information: https://animate.style
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
     post_block: fadeIn
