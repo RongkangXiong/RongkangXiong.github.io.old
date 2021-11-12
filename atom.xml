@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-11T14:16:13.422Z</updated>
+  <updated>2021-11-12T07:45:10.788Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -15,6 +15,124 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用Pycharm跑Jupyter在远程服务器上运行</title>
+    <link href="https://rongkangxiong.top/post/%E7%94%A8Pycharm%E8%B7%91Jupyter%E5%9C%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8C.html"/>
+    <id>https://rongkangxiong.top/post/%E7%94%A8Pycharm%E8%B7%91Jupyter%E5%9C%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8C.html</id>
+    <published>2021-11-12T07:44:28.000Z</published>
+    <updated>2021-11-12T07:45:10.788Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="https://rongkangxiong.top/categories/Python/"/>
+    
+    <category term="Jupyter notebook" scheme="https://rongkangxiong.top/categories/Python/Jupyter-notebook/"/>
+    
+    
+    <category term="Pycharm" scheme="https://rongkangxiong.top/tags/Pycharm/"/>
+    
+    <category term="Jupyter notebook" scheme="https://rongkangxiong.top/tags/Jupyter-notebook/"/>
+    
+    <category term="服务器" scheme="https://rongkangxiong.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用命令</title>
+    <link href="https://rongkangxiong.top/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>https://rongkangxiong.top/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
+    <published>2021-11-12T05:34:35.000Z</published>
+    <updated>2021-11-12T12:39:50.049Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux进程管理"><a href="#Linux进程管理" class="headerlink" title="Linux进程管理"></a>Linux进程管理</h1><h2 id="清除Terminal界面"><a href="#清除Terminal界面" class="headerlink" title="清除Terminal界面"></a>清除Terminal界面</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">clear</code></pre><h2 id="显示正在运行的CPU进程"><a href="#显示正在运行的CPU进程" class="headerlink" title="显示正在运行的CPU进程"></a>显示正在运行的CPU进程</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">htop</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="CPU进程"></p><h2 id="显示正在运行的GPU进程"><a href="#显示正在运行的GPU进程" class="headerlink" title="显示正在运行的GPU进程"></a>显示正在运行的GPU进程</h2><p>显示正在运行的GPU进程</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">nvidia-smi</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="GPU进程"></p><h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="统计文件夹下面文件个数"><a href="#统计文件夹下面文件个数" class="headerlink" title="统计文件夹下面文件个数"></a>统计文件夹下面文件个数</h2><p>长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l</code></pre><p>统计当前目录下文件的个数包括子目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -lR</code></pre><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Linux进程管理&quot;&gt;&lt;a href=&quot;#Linux进程管理&quot; class=&quot;headerlink&quot; title=&quot;Linux进程管理&quot;&gt;&lt;/a&gt;Linux进程管理&lt;/h1&gt;&lt;h2 id=&quot;清除Terminal界面&quot;&gt;&lt;a href=&quot;#清除Terminal界面&quot; class=&quot;headerlink&quot; title=&quot;清除Terminal界面&quot;&gt;&lt;/a&gt;清除Terminal界面&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;clear&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;显示正在运行的CPU进程&quot;&gt;&lt;a href=&quot;#显示正在运行的CPU进程&quot; class=&quot;headerlink&quot; title=&quot;显示正在运行的CPU进程&quot;&gt;&lt;/a&gt;显示正在运行的CPU进程&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;htop&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;CPU进程&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;显示正在运行的GPU进程&quot;&gt;&lt;a href=&quot;#显示正在运行的GPU进程&quot; class=&quot;headerlink&quot; title=&quot;显示正在运行的GPU进程&quot;&gt;&lt;/a&gt;显示正在运行的GPU进程&lt;/h2&gt;&lt;p&gt;显示正在运行的GPU进程&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;GPU进程&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;文件操作&quot;&gt;&lt;a href=&quot;#文件操作&quot; class=&quot;headerlink&quot; title=&quot;文件操作&quot;&gt;&lt;/a&gt;文件操作&lt;/h1&gt;&lt;h2 id=&quot;统计文件夹下面文件个数&quot;&gt;&lt;a href=&quot;#统计文件夹下面文件个数&quot; class=&quot;headerlink&quot; title=&quot;统计文件夹下面文件个数&quot;&gt;&lt;/a&gt;统计文件夹下面文件个数&lt;/h2&gt;&lt;p&gt;长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-linux&quot; data-language=&quot;linux&quot;&gt;&lt;code class=&quot;language-linux&quot;&gt;ls -l&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;统计当前目录下文件的个数包括子目录&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-linux&quot; data-language=&quot;linux&quot;&gt;&lt;code class=&quot;language-linux&quot;&gt;ls -lR&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    <category term="常用" scheme="https://rongkangxiong.top/categories/%E5%B8%B8%E7%94%A8/"/>
+    
+    <category term="Linux" scheme="https://rongkangxiong.top/categories/%E5%B8%B8%E7%94%A8/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://rongkangxiong.top/tags/Linux/"/>
+    
+    <category term="命令" scheme="https://rongkangxiong.top/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="常用" scheme="https://rongkangxiong.top/tags/%E5%B8%B8%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown常用语法</title>
+    <link href="https://rongkangxiong.top/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html"/>
+    <id>https://rongkangxiong.top/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html</id>
+    <published>2021-11-12T05:02:59.000Z</published>
+    <updated>2021-11-12T12:17:35.134Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.typora.io/#windows">Typora下载</a></p><h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><h2 id="启用预览功能"><a href="#启用预览功能" class="headerlink" title="启用预览功能"></a>启用预览功能</h2><p>直接在文章中插入即可，此代码一下的需要点击 阅读更多 才能此代码下面的内容</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;!--more--&gt;</code></pre><h2 id="文章内部锚点跳转"><a href="#文章内部锚点跳转" class="headerlink" title="文章内部锚点跳转"></a>文章内部锚点跳转</h2><p>这个方式是由John Tsai给出的，分成两步：</p><ul><li>定义一个锚(id)：</li></ul><pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;span id&#x3D;&quot;jump&quot;&gt;跳转到的地方&lt;&#x2F;span&gt;</code></pre><ul><li>使用markdown语法：</li></ul><pre class="line-numbers language-md" data-language="md"><code class="language-md">[点击跳转](#jump)</code></pre><h2 id="自己写的文章的跳转"><a href="#自己写的文章的跳转" class="headerlink" title="自己写的文章的跳转"></a>自己写的文章的跳转</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">[名称](&#x2F;forder-to-you-file)</code></pre><p>例子:</p><ul><li><p>跳转到<a href="/post/Firstblog.html">我的第一篇博客</a></p><pre class="line-numbers language-md" data-language="md"><code class="language-md">[我的第一篇博客](&#x2F;post&#x2F;Firstblog.html)</code></pre></li><li><p>跳转到<a href="/mynotes/math/common_dstribute.html">我的笔记</a><br>  在内部的位置是<code>myblog/source/mynotes/math/common_dstribute.html</code></p>  <pre class="line-numbers language-md" data-language="md"><code class="language-md">[我的笔记](&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html)</code></pre></li></ul><h2 id="链接跳转"><a href="#链接跳转" class="headerlink" title="链接跳转"></a>链接跳转</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">[名称](链接)</code></pre><h1 id="显示图片"><a href="#显示图片" class="headerlink" title="显示图片"></a>显示图片</h1><span id="more"></span><h1 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h1><h2 id="快速修复"><a href="#快速修复" class="headerlink" title="快速修复"></a>快速修复</h2><p><code>Windows</code> 上是 <code>Ctrl + .</code></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.typora.io/#windows&quot;&gt;Typora下载&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;小功能&quot;&gt;&lt;a href=&quot;#小功能&quot; class=&quot;headerlink&quot; title=&quot;小功能&quot;&gt;&lt;/a&gt;小功能&lt;/h2&gt;&lt;h2 id=&quot;启用预览功能&quot;&gt;&lt;a href=&quot;#启用预览功能&quot; class=&quot;headerlink&quot; title=&quot;启用预览功能&quot;&gt;&lt;/a&gt;启用预览功能&lt;/h2&gt;&lt;p&gt;直接在文章中插入即可，此代码一下的需要点击 阅读更多 才能此代码下面的内容&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;文章内部锚点跳转&quot;&gt;&lt;a href=&quot;#文章内部锚点跳转&quot; class=&quot;headerlink&quot; title=&quot;文章内部锚点跳转&quot;&gt;&lt;/a&gt;文章内部锚点跳转&lt;/h2&gt;&lt;p&gt;这个方式是由John Tsai给出的，分成两步：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义一个锚(id)：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&amp;lt;span id&amp;#x3D;&amp;quot;jump&amp;quot;&amp;gt;跳转到的地方&amp;lt;&amp;#x2F;span&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;使用markdown语法：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[点击跳转](#jump)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;自己写的文章的跳转&quot;&gt;&lt;a href=&quot;#自己写的文章的跳转&quot; class=&quot;headerlink&quot; title=&quot;自己写的文章的跳转&quot;&gt;&lt;/a&gt;自己写的文章的跳转&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[名称](&amp;#x2F;forder-to-you-file)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例子:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;跳转到&lt;a href=&quot;/post/Firstblog.html&quot;&gt;我的第一篇博客&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[我的第一篇博客](&amp;#x2F;post&amp;#x2F;Firstblog.html)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;跳转到&lt;a href=&quot;/mynotes/math/common_dstribute.html&quot;&gt;我的笔记&lt;/a&gt;&lt;br&gt;  在内部的位置是&lt;code&gt;myblog/source/mynotes/math/common_dstribute.html&lt;/code&gt;&lt;/p&gt;
+  &lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[我的笔记](&amp;#x2F;mynotes&amp;#x2F;math&amp;#x2F;common_dstribute.html)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;链接跳转&quot;&gt;&lt;a href=&quot;#链接跳转&quot; class=&quot;headerlink&quot; title=&quot;链接跳转&quot;&gt;&lt;/a&gt;链接跳转&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[名称](链接)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h1 id=&quot;显示图片&quot;&gt;&lt;a href=&quot;#显示图片&quot; class=&quot;headerlink&quot; title=&quot;显示图片&quot;&gt;&lt;/a&gt;显示图片&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="常用" scheme="https://rongkangxiong.top/categories/%E5%B8%B8%E7%94%A8/"/>
+    
+    <category term="Markdown" scheme="https://rongkangxiong.top/categories/%E5%B8%B8%E7%94%A8/Markdown/"/>
+    
+    
+    <category term="Markdown" scheme="https://rongkangxiong.top/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>test</title>
@@ -39,11 +157,11 @@
   </entry>
   
   <entry>
-    <title>add_photo_album</title>
+    <title>Hexo-NexT主题添加相册</title>
     <link href="https://rongkangxiong.top/post/add-photo-album.html"/>
     <id>https://rongkangxiong.top/post/add-photo-album.html</id>
     <published>2021-11-11T14:09:55.000Z</published>
-    <updated>2021-11-11T15:42:31.334Z</updated>
+    <updated>2021-11-12T04:58:19.995Z</updated>
     
     <content type="html"><![CDATA[<p>相册期待实现效果<br>对于相册，在自己 基于Hexo NexT搭建 的博客上期待实现与豆瓣相册类似的效果，具体如下</p><ul><li>主界面<ul><li>分类相册</li><li>自定义相册名</li><li>自定义封面</li></ul></li><li>分类相册界面<ul><li>三等分列</li><li>点击看大图</li><li>本地图片源/图床外链均可</li><li>与文章插图格式保持统一</li></ul></li><li>其他<ul><li>每张图片都可以有对应的文字描述</li><li>游客可以为图片添加评论</li><li>相册里面也可以插入视频</li></ul></li></ul><span id="more"></span><h1 id="Hexo-NexT博客搭建相册功能"><a href="#Hexo-NexT博客搭建相册功能" class="headerlink" title="Hexo+NexT博客搭建相册功能"></a>Hexo+NexT博客搭建相册功能</h1><h2 id="创建相册目录"><a href="#创建相册目录" class="headerlink" title="创建相册目录"></a>创建相册目录</h2><ul><li>在 <code>git bash</code> 中输入命令 <pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new page gallery</code></pre></li><li>在 <code>hexo/sourse/gallery</code> 目录下建立你需要的分类相册文件夹；</li><li>进入 <code>hexo/sourse/gallery</code> 目录，新建 <code>img</code> 文件夹用来存放相册封面；<br>在每个相册文件夹中创建 <code>img</code> 文件夹用来存放大图，以及 img/s 文件夹用来存放缩略图。<br>注意：<code>img/s</code> 文件夹可以省略不建，用<code>文件名-s.jpg</code> 的格式重命名缩略图即可。</li></ul><h2 id="图片处理"><a href="#图片处理" class="headerlink" title="图片处理"></a>图片处理</h2><h3 id="原图处理"><a href="#原图处理" class="headerlink" title="原图处理"></a>原图处理</h3><p>将需要上传的图片放入 <code>gallery/相册名/img</code> 文件夹中，为了加载速度建议压缩至 <code>1mb</code> 以下，使用 <code>jpg</code> 格式保存；<br>除了文件大小以外没有其它要求，但是为了方便后续页面编辑，建议将文件以容易辨识的方式重命名，例如<code>日期-图片名.jpg</code>。</p><p>ps：可以写一个python的gui来搭配使用</p><p><a href="https://tding.top/archives/607c3b85.html">https://tding.top/archives/607c3b85.html</a></p>]]></content>
     
@@ -75,6 +193,10 @@
     
     <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
+    
+    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://rongkangxiong.top/tags/NexT/"/>
     
   </entry>
   
@@ -166,15 +288,49 @@ hexo d&lt;/code&gt;&lt;/pre&gt;
     <link href="https://rongkangxiong.top/post/writeblog.html"/>
     <id>https://rongkangxiong.top/post/writeblog.html</id>
     <published>2021-11-11T09:08:25.000Z</published>
-    <updated>2021-11-11T15:21:11.981Z</updated>
+    <updated>2021-11-12T12:37:45.412Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---# 如何插入图片# 如何插入链接# 如何&lt;!--more--&gt;</code></pre><h1 id="hexo-admin插件管理博客写作"><a href="#hexo-admin插件管理博客写作" class="headerlink" title="hexo-admin插件管理博客写作"></a>hexo-admin插件管理博客写作</h1><p>每次新建文章和写作文章都在<code>git</code>命令行中，很不方便，于是可以安装这款插件<br><a href="https://github.com/jaredly/hexo-admin">参考hexo-admin官方页面</a></p><pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-adminhexo ghexo sopen http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;</code></pre><p>然后浏览器输入<code>http://localhost:4000/admin/</code>进入管理界面<code>setting</code><br><img src="/post/writeblog/writeblog_setup.png" alt="设置"></p><p><img src="/post/writeblog/writeblog_pass.png" alt="登陆"></p><p><a href="/mynotes/math/common_dstribute.html">我的笔记</a></p><p>复制下面生成的 <code>Admin Config Section</code>内容到 <code>/blog/_config.yml</code>粘贴在最后即可<br>之后登陆需要输入账户密码</p><p>在Deploy之前，还要编辑网站配置文件<code>_config.yml</code> （否则会出现<code>Error: Config value &quot;admin.deployCommand&quot; not found</code>)报错<br>如果实在<code>Windows系统</code>，这在末尾加上</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">deployCommand:&#39;hexo-generate.bat&#39;</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---# 如何插入图片HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用所以使用该方式引用本地图片时必须以“&#x2F;”开头，表示地址都是基于主目录定位的，不会出现有的界面图片显示错误的情况。不是“&#x2F;”开头表相对当前文档位置进行定位。而顶部导航页只会在一处地方生成，所以不带“&#x2F;”开头不会出现失效，建议也统一使用“&#x2F;”，开头。## 语法 &#96;![]()&#96;&#96;&#96;&#96;md![图片加载失败的描述](图片链接)</code></pre><p>在<code>source</code>中新建一个<code>images</code>目录用于存放图片，将图片放在该目录下，使用<code>/images/图片名</code>引用，示例：</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![第一篇博客](&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><p><img src="/images/notecover/Firstblog.png" alt="第一篇博客"></p><p>插入图片有很多问题<br>比如图片在 <code>myblog/source/_post/test/tupian.jpg/</code><br>你在<code>tupian.md</code>中插入上面的图片<br>在VSCode中使用路径为</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](&#x2F;source&#x2F;_posts&#x2F;test&#x2F;tupian.png)</code></pre><p>或者</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](test&#x2F;tupian.png)</code></pre><p>或者<br><img src="/post/writeblog/tupian.png" alt="charutupian"></p><h1 id="如何插入链接"><a href="#如何插入链接" class="headerlink" title="如何插入链接"></a>如何插入链接</h1><h1 id="如何"><a href="#如何" class="headerlink" title="如何"></a>如何</h1><span id="more"></span><pre class="line-numbers language-none"><code class="language-none"># hexo-admin插件管理博客写作每次新建文章和写作文章都在&#96;git&#96;命令行中，很不方便，于是可以安装这款插件[参考hexo-admin官方页面](https:&#x2F;&#x2F;github.com&#x2F;jaredly&#x2F;hexo-admin)</code></pre><p>npm install –save hexo-admin<br>hexo g<br>hexo s<br>open <a href="http://localhost:4000/admin/">http://localhost:4000/admin/</a></p><pre class="line-numbers language-none"><code class="language-none">然后浏览器输入&#96;http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;&#96;进入管理界面&#96;setting&#96;![设置](.&#x2F;writeblog&#x2F;writeblog_setup.png)![登陆](.&#x2F;writeblog&#x2F;writeblog_pass.png)[我的笔记](&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html)复制下面生成的 &#96;Admin Config Section&#96;内容到 &#96;&#x2F;blog&#x2F;_config.yml&#96;粘贴在最后即可之后登陆需要输入账户密码在Deploy之前，还要编辑网站配置文件&#96;_config.yml&#96; （否则会出现&#96;Error: Config value &quot;admin.deployCommand&quot; not found&#96;)报错如果实在&#96;Windows系统&#96;，这在末尾加上&#96;&#96;&#96;mddeployCommand:&#39;hexo-generate.bat&#39;</code></pre>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;创建新文章&quot;&gt;&lt;a href=&quot;#创建新文章&quot; class=&quot;headerlink&quot; title=&quot;创建新文章&quot;&gt;&lt;/a&gt;创建新文章&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git&lt;/code&gt; 中进入根目录输入 &lt;code&gt;hexo new &amp;lt;模板&amp;gt; &amp;lt;文章</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;创建新文章&quot;&gt;&lt;a href=&quot;#创建新文章&quot; class=&quot;headerlink&quot; title=&quot;创建新文章&quot;&gt;&lt;/a&gt;创建新文章&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git&lt;/code&gt; 中进入根目录输入 &lt;code&gt;hexo new &amp;lt;模板&amp;gt; &amp;lt;文章名&amp;gt;&lt;/code&gt; 新建文章&lt;br&gt;其中&lt;code&gt;&amp;lt;模板&amp;gt;&lt;/code&gt;在&lt;code&gt;source&lt;/code&gt;文件夹下面，默认有三个模板 &lt;code&gt;post&lt;/code&gt;,&lt;code&gt;draft&lt;/code&gt;,&lt;code&gt;page&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;命令行输入&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;hexo new post aiticle_title&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时会在 &lt;code&gt;source/_posts/&lt;/code&gt; 文件夹中多了一个 &lt;code&gt;aiticle_title.md&lt;/code&gt; 文件&lt;br&gt;打开后可以看到 &lt;code&gt;---&lt;/code&gt;之间的内容为文章的配置内容&lt;/p&gt;
+&lt;p&gt;模板配置文件可以在&lt;code&gt;/scaffolds/post.md&lt;/code&gt;修改&lt;code&gt;post.md&lt;/code&gt;模板&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;---
+title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;
+author: 爱养虫的小熊
+date: &amp;#123;&amp;#123; date &amp;#125;&amp;#125;
+tags: []
+categories:
+    - [个人博客,Hexo]
+top: 1
+feature: true
+mathjx: true  #是否开启数学公式支持
+common: true
+---
+
+# 如何插入图片
+HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用
+所以使用该方式引用本地图片时必须以“&amp;#x2F;”开头，表示地址都是基于主目录定位的，不会出现有的界面图片显示错误的情况。
+不是“&amp;#x2F;”开头表相对当前文档位置进行定位。
+
+而顶部导航页只会在一处地方生成，所以不带“&amp;#x2F;”开头不会出现失效，建议也统一使用“&amp;#x2F;”，开头。
+
+## 语法 &amp;#96;![]()&amp;#96;
+&amp;#96;&amp;#96;&amp;#96;md
+![图片加载失败的描述](图片链接)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在&lt;code&gt;source&lt;/code&gt;中新建一个&lt;code&gt;images&lt;/code&gt;目录用于存放图片，将图片放在该目录下，使用&lt;code&gt;/images/图片名&lt;/code&gt;引用，示例：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![第一篇博客](&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/images/notecover/Firstblog.png&quot; alt=&quot;第一篇博客&quot;&gt;&lt;/p&gt;
+&lt;p&gt;插入图片有很多问题&lt;br&gt;比如图片在 &lt;code&gt;myblog/source/_post/test/tupian.jpg/&lt;/code&gt;&lt;br&gt;你在&lt;code&gt;tupian.md&lt;/code&gt;中插入上面的图片&lt;br&gt;在VSCode中使用路径为&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![charutupian](&amp;#x2F;source&amp;#x2F;_posts&amp;#x2F;test&amp;#x2F;tupian.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![charutupian](test&amp;#x2F;tupian.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者&lt;br&gt;&lt;img src=&quot;/post/writeblog/tupian.png&quot; alt=&quot;charutupian&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;如何插入链接&quot;&gt;&lt;a href=&quot;#如何插入链接&quot; class=&quot;headerlink&quot; title=&quot;如何插入链接&quot;&gt;&lt;/a&gt;如何插入链接&lt;/h1&gt;&lt;h1 id=&quot;如何&quot;&gt;&lt;a href=&quot;#如何&quot; class=&quot;headerlink&quot; title=&quot;如何&quot;&gt;&lt;/a&gt;如何&lt;/h1&gt;</summary>
     
     
     

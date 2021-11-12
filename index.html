@@ -89,10 +89,10 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="index.html" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">15</span></a></li>
-        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">23</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-read"><a href="/categories/read" rel="section"><i class="fa fa-book fa-fw"></i>读书</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">14</span></a></li>
         <li class="menu-item menu-item-mynotes"><a href="/mynotes/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
         <li class="menu-item menu-item-experience"><a href="/experience/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>经验分享</a></li>
         <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
@@ -166,18 +166,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -214,6 +214,12 @@
         </li>
         <li class="links-of-blogroll-item">
           <a href="/mynotes/math/common_dstribute.html" title="&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html">常用数学分布</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html" title="&#x2F;post&#x2F;Markdown常用语法.html">Markdown常用语法</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" title="&#x2F;post&#x2F;Linux常用命令.html">Linux常用命令</a>
         </li>
     </ul>
   </div>
@@ -342,6 +348,333 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/%E7%94%A8Pycharm%E8%B7%91Jupyter%E5%9C%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8C.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/network.gif">
+      <meta itemprop="name" content="Rongkang Xiong">
+      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rongkang's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/%E7%94%A8Pycharm%E8%B7%91Jupyter%E5%9C%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8C.html" class="post-title-link" itemprop="url">用Pycharm跑Jupyter在远程服务器上运行</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-12 15:44:28 / 修改时间：15:45:10" itemprop="dateCreated datePublished" datetime="2021-11-12T15:44:28+08:00">2021-11-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/Python/Jupyter-notebook/" itemprop="url" rel="index"><span itemprop="name">Jupyter notebook</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>0</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/network.gif">
+      <meta itemprop="name" content="Rongkang Xiong">
+      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rongkang's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" class="post-title-link" itemprop="url">Linux常用命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-12 13:34:35 / 修改时间：20:39:50" itemprop="dateCreated datePublished" datetime="2021-11-12T13:34:35+08:00">2021-11-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/%E5%B8%B8%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">常用</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/%E5%B8%B8%E7%94%A8/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>165</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Linux进程管理"><a href="#Linux进程管理" class="headerlink" title="Linux进程管理"></a>Linux进程管理</h1><h2 id="清除Terminal界面"><a href="#清除Terminal界面" class="headerlink" title="清除Terminal界面"></a>清除Terminal界面</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">clear</code></pre>
+<h2 id="显示正在运行的CPU进程"><a href="#显示正在运行的CPU进程" class="headerlink" title="显示正在运行的CPU进程"></a>显示正在运行的CPU进程</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">htop</code></pre>
+
+<p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="CPU进程"></p>
+<h2 id="显示正在运行的GPU进程"><a href="#显示正在运行的GPU进程" class="headerlink" title="显示正在运行的GPU进程"></a>显示正在运行的GPU进程</h2><p>显示正在运行的GPU进程</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">nvidia-smi</code></pre>
+
+<p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="GPU进程"></p>
+<h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="统计文件夹下面文件个数"><a href="#统计文件夹下面文件个数" class="headerlink" title="统计文件夹下面文件个数"></a>统计文件夹下面文件个数</h2><p>长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录</p>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l</code></pre>
+<p>统计当前目录下文件的个数包括子目录</p>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -lR</code></pre>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/network.gif">
+      <meta itemprop="name" content="Rongkang Xiong">
+      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rongkang's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html" class="post-title-link" itemprop="url">Markdown常用语法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-12 13:02:59 / 修改时间：20:17:35" itemprop="dateCreated datePublished" datetime="2021-11-12T13:02:59+08:00">2021-11-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/%E5%B8%B8%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">常用</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="categories/%E5%B8%B8%E7%94%A8/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>453</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a target="_blank" rel="noopener" href="https://www.typora.io/#windows">Typora下载</a></p>
+<h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><h2 id="启用预览功能"><a href="#启用预览功能" class="headerlink" title="启用预览功能"></a>启用预览功能</h2><p>直接在文章中插入即可，此代码一下的需要点击 阅读更多 才能此代码下面的内容</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;!--more--&gt;</code></pre>
+
+<h2 id="文章内部锚点跳转"><a href="#文章内部锚点跳转" class="headerlink" title="文章内部锚点跳转"></a>文章内部锚点跳转</h2><p>这个方式是由John Tsai给出的，分成两步：</p>
+<ul>
+<li>定义一个锚(id)：</li>
+</ul>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&lt;span id&#x3D;&quot;jump&quot;&gt;跳转到的地方&lt;&#x2F;span&gt;</code></pre>
+
+<ul>
+<li>使用markdown语法：</li>
+</ul>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">[点击跳转](#jump)</code></pre>
+
+<h2 id="自己写的文章的跳转"><a href="#自己写的文章的跳转" class="headerlink" title="自己写的文章的跳转"></a>自己写的文章的跳转</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">[名称](&#x2F;forder-to-you-file)</code></pre>
+
+<p>例子:</p>
+<ul>
+<li><p>跳转到<a href="/post/Firstblog.html">我的第一篇博客</a></p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">[我的第一篇博客](&#x2F;post&#x2F;Firstblog.html)</code></pre></li>
+<li><p>跳转到<a href="/mynotes/math/common_dstribute.html">我的笔记</a><br>  在内部的位置是<code>myblog/source/mynotes/math/common_dstribute.html</code></p>
+  <pre class="line-numbers language-md" data-language="md"><code class="language-md">[我的笔记](&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html)</code></pre></li>
+</ul>
+<h2 id="链接跳转"><a href="#链接跳转" class="headerlink" title="链接跳转"></a>链接跳转</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">[名称](链接)</code></pre>
+
+
+<h1 id="显示图片"><a href="#显示图片" class="headerlink" title="显示图片"></a>显示图片</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/test.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -441,7 +774,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/post/add-photo-album.html" class="post-title-link" itemprop="url">add_photo_album</a>
+          <a href="/post/add-photo-album.html" class="post-title-link" itemprop="url">Hexo-NexT主题添加相册</a>
         </h2>
 
         <div class="post-meta-container">
@@ -451,10 +784,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-11-11 22:09:55 / 修改时间：23:42:31" itemprop="dateCreated datePublished" datetime="2021-11-11T22:09:55+08:00">2021-11-11</time>
+      <time title="创建时间：2021-11-11 22:09:55" itemprop="dateCreated datePublished" datetime="2021-11-11T22:09:55+08:00">2021-11-11</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-12 12:58:19" itemprop="dateModified" datetime="2021-11-12T12:58:19+08:00">2021-11-12</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -792,10 +1131,16 @@ hexo d</code></pre>
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-11-11 17:08:25 / 修改时间：23:21:11" itemprop="dateCreated datePublished" datetime="2021-11-11T17:08:25+08:00">2021-11-11</time>
+      <time title="创建时间：2021-11-11 17:08:25" itemprop="dateCreated datePublished" datetime="2021-11-11T17:08:25+08:00">2021-11-11</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-12 20:37:45" itemprop="dateModified" datetime="2021-11-12T20:37:45+08:00">2021-11-12</time>
+      </span>
 
   
     <span class="post-meta-break"></span>
@@ -804,14 +1149,14 @@ hexo d</code></pre>
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>861</span>
+      <span>1.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -841,25 +1186,33 @@ common: true
 ---
 
 # 如何插入图片
-# 如何插入链接
-# 如何
+HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用
+所以使用该方式引用本地图片时必须以“&#x2F;”开头，表示地址都是基于主目录定位的，不会出现有的界面图片显示错误的情况。
+不是“&#x2F;”开头表相对当前文档位置进行定位。
 
-&lt;!--more--&gt;</code></pre>
+而顶部导航页只会在一处地方生成，所以不带“&#x2F;”开头不会出现失效，建议也统一使用“&#x2F;”，开头。
 
+## 语法 &#96;![]()&#96;
+&#96;&#96;&#96;md
+![图片加载失败的描述](图片链接)</code></pre>
 
-<h1 id="hexo-admin插件管理博客写作"><a href="#hexo-admin插件管理博客写作" class="headerlink" title="hexo-admin插件管理博客写作"></a>hexo-admin插件管理博客写作</h1><p>每次新建文章和写作文章都在<code>git</code>命令行中，很不方便，于是可以安装这款插件<br><a target="_blank" rel="noopener" href="https://github.com/jaredly/hexo-admin">参考hexo-admin官方页面</a></p>
-<pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-admin
-hexo g
-hexo s
-open http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;</code></pre>
-
-<p>然后浏览器输入<code>http://localhost:4000/admin/</code>进入管理界面<code>setting</code><br><img src="/post/writeblog/writeblog_setup.png" alt="设置"></p>
-<p><img src="/post/writeblog/writeblog_pass.png" alt="登陆"></p>
-<p><a href="/mynotes/math/common_dstribute.html">我的笔记</a></p>
-<p>复制下面生成的 <code>Admin Config Section</code>内容到 <code>/blog/_config.yml</code>粘贴在最后即可<br>之后登陆需要输入账户密码</p>
-<p>在Deploy之前，还要编辑网站配置文件<code>_config.yml</code> （否则会出现<code>Error: Config value &quot;admin.deployCommand&quot; not found</code>)报错<br>如果实在<code>Windows系统</code>，这在末尾加上</p>
-<pre class="line-numbers language-md" data-language="md"><code class="language-md">deployCommand:&#39;hexo-generate.bat&#39;</code></pre>
-
+<p>在<code>source</code>中新建一个<code>images</code>目录用于存放图片，将图片放在该目录下，使用<code>/images/图片名</code>引用，示例：</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">![第一篇博客](&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre>
+<p><img src="/images/notecover/Firstblog.png" alt="第一篇博客"></p>
+<p>插入图片有很多问题<br>比如图片在 <code>myblog/source/_post/test/tupian.jpg/</code><br>你在<code>tupian.md</code>中插入上面的图片<br>在VSCode中使用路径为</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](&#x2F;source&#x2F;_posts&#x2F;test&#x2F;tupian.png)</code></pre>
+<p>或者</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](test&#x2F;tupian.png)</code></pre>
+<p>或者<br><img src="/post/writeblog/tupian.png" alt="charutupian"></p>
+<h1 id="如何插入链接"><a href="#如何插入链接" class="headerlink" title="如何插入链接"></a>如何插入链接</h1><h1 id="如何"><a href="#如何" class="headerlink" title="如何"></a>如何</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/writeblog.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -989,295 +1342,6 @@ open http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;</code></pre>
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/newmenu.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/network.gif">
-      <meta itemprop="name" content="Rongkang Xiong">
-      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rongkang's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/post/newmenu.html" class="post-title-link" itemprop="url">newmenu</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-11-11 01:58:21 / 修改时间：21:46:06" itemprop="dateCreated datePublished" datetime="2021-11-11T01:58:21+08:00">2021-11-11</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>737</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="为Hexo的Next主题增加自定义menu菜单"><a href="#为Hexo的Next主题增加自定义menu菜单" class="headerlink" title="为Hexo的Next主题增加自定义menu菜单"></a>为Hexo的Next主题增加自定义menu菜单</h1><p>现在Hexo使用的主题当中，Next主题是比较流行的，查看Next主题的_config.yml，其中有8个默认定义的menu菜单，分别是home、about、tags、categories、archives、schedule、sitemap、commonweal 。通过参考tags、categories两个菜单，可以实现菜单的定制化。</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">menu:
-  home: &#x2F; || fa fa-home                      #首页
-  about: &#x2F;about&#x2F; || fa fa-user               #关于
-  tags: &#x2F;tags&#x2F; || fa fa-tags                 #标签
-  categories: &#x2F;categories&#x2F; || fa fa-th       #分类
-  read: &#x2F;categories&#x2F;read || fa fa-book       #读书
-  archives: &#x2F;archives&#x2F; || fa fa-archive      #归档
-  mynotes: &#x2F;mynotes&#x2F; || fa fa-sticky-note    #我的笔记
-  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar    #日历
-  sitemap: &#x2F;sitemap.xml || fa fa-sitemap     #站点地图，供搜索引擎爬取
-  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat      #腾讯公益404
-  # &quot;||&quot; 前面是目标链接，后面是图标名称，图标库http:&#x2F;&#x2F;www.fontawesome.com.cn&#x2F;faicons&#x2F;#web-application</code></pre>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/materialsite.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/network.gif">
-      <meta itemprop="name" content="Rongkang Xiong">
-      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rongkang's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/post/materialsite.html" class="post-title-link" itemprop="url">个人博客图床资源获取</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-11-10 12:31:49 / 修改时间：13:19:31" itemprop="dateCreated datePublished" datetime="2021-11-10T12:31:49+08:00">2021-11-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">个人博客</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://rongkangxiong.top/post/Firstblog.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/network.gif">
-      <meta itemprop="name" content="Rongkang Xiong">
-      <meta itemprop="description" content="个人博客 | 爱养虫的小熊">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rongkang's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/post/Firstblog.html" class="post-title-link" itemprop="url">First Blog-制作个人博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-11-09 23:02:32" itemprop="dateCreated datePublished" datetime="2021-11-09T23:02:32+08:00">2021-11-09</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-11 17:25:28" itemprop="dateModified" datetime="2021-11-11T17:25:28+08:00">2021-11-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">个人博客</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>4.6k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。<br>直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。</p>
-<h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便生成静态网页托管在GitHub或者Coding上。</p>
-<h1 id="HEXO搭建步骤"><a href="#HEXO搭建步骤" class="headerlink" title="HEXO搭建步骤"></a>HEXO搭建步骤</h1><ol>
-<li>安装<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">git</a></li>
-<li>安装<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>，选择LTS版本就行</li>
-<li>安装Hexo</li>
-<li>Github建立个人仓库</li>
-<li>生成SSH添加到GitHub</li>
-<li>将Hexo部署到GitHub</li>
-<li>设置个人域名</li>
-<li>发布文章</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/post/Firstblog.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
   <nav class="pagination">
     <span class="page-number current">1</span><a class="page-number" href="page/2/">2</a><a class="extend next" rel="next" href="page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1303,14 +1367,14 @@ open http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;</code></pre>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
