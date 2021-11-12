@@ -51,21 +51,23 @@
     <link href="https://rongkangxiong.top/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
     <id>https://rongkangxiong.top/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
     <published>2021-11-12T05:34:35.000Z</published>
-    <updated>2021-11-12T12:39:50.049Z</updated>
+    <updated>2021-11-12T14:05:11.907Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Linux进程管理"><a href="#Linux进程管理" class="headerlink" title="Linux进程管理"></a>Linux进程管理</h1><h2 id="清除Terminal界面"><a href="#清除Terminal界面" class="headerlink" title="清除Terminal界面"></a>清除Terminal界面</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">clear</code></pre><h2 id="显示正在运行的CPU进程"><a href="#显示正在运行的CPU进程" class="headerlink" title="显示正在运行的CPU进程"></a>显示正在运行的CPU进程</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">htop</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="CPU进程"></p><h2 id="显示正在运行的GPU进程"><a href="#显示正在运行的GPU进程" class="headerlink" title="显示正在运行的GPU进程"></a>显示正在运行的GPU进程</h2><p>显示正在运行的GPU进程</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">nvidia-smi</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png" alt="GPU进程"></p><h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="统计文件夹下面文件个数"><a href="#统计文件夹下面文件个数" class="headerlink" title="统计文件夹下面文件个数"></a>统计文件夹下面文件个数</h2><p>长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l</code></pre><p>统计当前目录下文件的个数包括子目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -lR</code></pre><span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<h1 id="Linux进程管理"><a href="#Linux进程管理" class="headerlink" title="Linux进程管理"></a>Linux进程管理</h1><h2 id="清除Terminal界面"><a href="#清除Terminal界面" class="headerlink" title="清除Terminal界面"></a>清除Terminal界面</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">clear</code></pre><h2 id="显示正在运行的CPU进程"><a href="#显示正在运行的CPU进程" class="headerlink" title="显示正在运行的CPU进程"></a>显示正在运行的CPU进程</h2><pre class="line-numbers language-md" data-language="md"><code class="language-md">htop</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/../Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GUP%E8%BF%9B%E7%A8%8B.png" alt="GPU进程"></p><h2 id="显示正在运行的GPU进程"><a href="#显示正在运行的GPU进程" class="headerlink" title="显示正在运行的GPU进程"></a>显示正在运行的GPU进程</h2><p>显示正在运行的GPU进程</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">nvidia-smi</code></pre><p><img src="/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/../Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GUP%E8%BF%9B%E7%A8%8B.png" alt="GPU进程"></p><h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="统计文件夹下面文件个数"><a href="#统计文件夹下面文件个数" class="headerlink" title="统计文件夹下面文件个数"></a>统计文件夹下面文件个数</h2><p>长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l</code></pre><p>统计当前目录下文件的个数包括子目录</p><pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -lR</code></pre><span id="more"></span>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;Linux进程管理&quot;&gt;&lt;a href=&quot;#Linux进程管理&quot; class=&quot;headerlink&quot; title=&quot;Linux进程管理&quot;&gt;&lt;/a&gt;Linux进程管理&lt;/h1&gt;&lt;h2 id=&quot;清除Terminal界面&quot;&gt;&lt;a href=&quot;#清除Terminal界面&quot; class=&quot;headerlink&quot; title=&quot;清除Terminal界面&quot;&gt;&lt;/a&gt;清除Terminal界面&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;clear&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&quot;显示正在运行的CPU进程&quot;&gt;&lt;a href=&quot;#显示正在运行的CPU进程&quot; class=&quot;headerlink&quot; title=&quot;显示正在运行的CPU进程&quot;&gt;&lt;/a&gt;显示正在运行的CPU进程&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;htop&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;CPU进程&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/../Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GUP%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;GPU进程&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;显示正在运行的GPU进程&quot;&gt;&lt;a href=&quot;#显示正在运行的GPU进程&quot; class=&quot;headerlink&quot; title=&quot;显示正在运行的GPU进程&quot;&gt;&lt;/a&gt;显示正在运行的GPU进程&lt;/h2&gt;&lt;p&gt;显示正在运行的GPU进程&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cpu%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;GPU进程&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/../Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GUP%E8%BF%9B%E7%A8%8B.png&quot; alt=&quot;GPU进程&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;文件操作&quot;&gt;&lt;a href=&quot;#文件操作&quot; class=&quot;headerlink&quot; title=&quot;文件操作&quot;&gt;&lt;/a&gt;文件操作&lt;/h1&gt;&lt;h2 id=&quot;统计文件夹下面文件个数&quot;&gt;&lt;a href=&quot;#统计文件夹下面文件个数&quot; class=&quot;headerlink&quot; title=&quot;统计文件夹下面文件个数&quot;&gt;&lt;/a&gt;统计文件夹下面文件个数&lt;/h2&gt;&lt;p&gt;长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-linux&quot; data-language=&quot;linux&quot;&gt;&lt;code class=&quot;language-linux&quot;&gt;ls -l&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;统计当前目录下文件的个数包括子目录&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-linux&quot; data-language=&quot;linux&quot;&gt;&lt;code class=&quot;language-linux&quot;&gt;ls -lR&lt;/code&gt;&lt;/pre&gt;</summary>
     
@@ -194,9 +196,9 @@
     <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
-    
     <category term="NexT" scheme="https://rongkangxiong.top/tags/NexT/"/>
+    
+    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
     
   </entry>
   
@@ -273,9 +275,9 @@ hexo d&lt;/code&gt;&lt;/pre&gt;
     <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="hexo" scheme="https://rongkangxiong.top/tags/hexo/"/>
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="访客统计" scheme="https://rongkangxiong.top/tags/%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/"/>
     
@@ -284,18 +286,19 @@ hexo d&lt;/code&gt;&lt;/pre&gt;
   </entry>
   
   <entry>
-    <title>如何书写博客</title>
+    <title>如何用Markdown书写博客</title>
     <link href="https://rongkangxiong.top/post/writeblog.html"/>
     <id>https://rongkangxiong.top/post/writeblog.html</id>
     <published>2021-11-11T09:08:25.000Z</published>
-    <updated>2021-11-12T12:37:45.412Z</updated>
+    <updated>2021-11-12T14:06:32.344Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持common: true---# 如何插入图片HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用所以使用该方式引用本地图片时必须以“&#x2F;”开头，表示地址都是基于主目录定位的，不会出现有的界面图片显示错误的情况。不是“&#x2F;”开头表相对当前文档位置进行定位。而顶部导航页只会在一处地方生成，所以不带“&#x2F;”开头不会出现失效，建议也统一使用“&#x2F;”，开头。## 语法 &#96;![]()&#96;&#96;&#96;&#96;md![图片加载失败的描述](图片链接)</code></pre><p>在<code>source</code>中新建一个<code>images</code>目录用于存放图片，将图片放在该目录下，使用<code>/images/图片名</code>引用，示例：</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![第一篇博客](&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><p><img src="/images/notecover/Firstblog.png" alt="第一篇博客"></p><p>插入图片有很多问题<br>比如图片在 <code>myblog/source/_post/test/tupian.jpg/</code><br>你在<code>tupian.md</code>中插入上面的图片<br>在VSCode中使用路径为</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](&#x2F;source&#x2F;_posts&#x2F;test&#x2F;tupian.png)</code></pre><p>或者</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![charutupian](test&#x2F;tupian.png)</code></pre><p>或者<br><img src="/post/writeblog/tupian.png" alt="charutupian"></p><h1 id="如何插入链接"><a href="#如何插入链接" class="headerlink" title="如何插入链接"></a>如何插入链接</h1><h1 id="如何"><a href="#如何" class="headerlink" title="如何"></a>如何</h1><span id="more"></span><pre class="line-numbers language-none"><code class="language-none"># hexo-admin插件管理博客写作每次新建文章和写作文章都在&#96;git&#96;命令行中，很不方便，于是可以安装这款插件[参考hexo-admin官方页面](https:&#x2F;&#x2F;github.com&#x2F;jaredly&#x2F;hexo-admin)</code></pre><p>npm install –save hexo-admin<br>hexo g<br>hexo s<br>open <a href="http://localhost:4000/admin/">http://localhost:4000/admin/</a></p><pre class="line-numbers language-none"><code class="language-none">然后浏览器输入&#96;http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;&#96;进入管理界面&#96;setting&#96;![设置](.&#x2F;writeblog&#x2F;writeblog_setup.png)![登陆](.&#x2F;writeblog&#x2F;writeblog_pass.png)[我的笔记](&#x2F;mynotes&#x2F;math&#x2F;common_dstribute.html)复制下面生成的 &#96;Admin Config Section&#96;内容到 &#96;&#x2F;blog&#x2F;_config.yml&#96;粘贴在最后即可之后登陆需要输入账户密码在Deploy之前，还要编辑网站配置文件&#96;_config.yml&#96; （否则会出现&#96;Error: Config value &quot;admin.deployCommand&quot; not found&#96;)报错如果实在&#96;Windows系统&#96;，这在末尾加上&#96;&#96;&#96;mddeployCommand:&#39;hexo-generate.bat&#39;</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><p><code>git</code> 中进入根目录输入 <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code> 新建文章<br>其中<code>&lt;模板&gt;</code>在<code>source</code>文件夹下面，默认有三个模板 <code>post</code>,<code>draft</code>,<code>page</code></p><p>命令行输入</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">hexo new post aiticle_title</code></pre><p>此时会在 <code>source/_posts/</code> 文件夹中多了一个 <code>aiticle_title.md</code> 文件<br>打开后可以看到 <code>---</code>之间的内容为文章的配置内容</p><p>模板配置文件可以在<code>/scaffolds/post.md</code>修改<code>post.md</code>模板</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">---title: &#123;&#123; title &#125;&#125;author: 爱养虫的小熊date: &#123;&#123; date &#125;&#125;tags: []categories:    - [个人博客,Hexo]top: 1feature: truemathjx: true  #是否开启数学公式支持comment: true---</code></pre><h1 id="如何插入图片"><a href="#如何插入图片" class="headerlink" title="如何插入图片"></a>如何插入图片</h1><p>HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用</p><p>Vscode和Hexo在网页渲染的图片位置是不一样的试用好久才发现如下的格式两者都会显示图片</p><p>在<code>source</code>中新建一个<code>images</code>目录用于存放图片，将图片放在该目录下，示例:</p><p>例1. 如在<code>myblog/source/images/notecover/Firstblog.png</code>的这张图片想引用的时候VScode和网页都能看到要用如下格式</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![](images&#x2F;notecover&#x2F;..&#x2F;..&#x2F;..&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)或者![](images&#x2F;..&#x2F;..&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><p>如果使用格式</p><h3 id="网页端看不到的格式-VScode能看到"><a href="#网页端看不到的格式-VScode能看到" class="headerlink" title="网页端看不到的格式|VScode能看到"></a>网页端看不到的格式|VScode能看到</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](images&#x2F;notecover&#x2F;Firstblog.png)![ceshi](&#x2F;source&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><h3 id="VsCode看不到的格式-网页端能看到"><a href="#VsCode看不到的格式-网页端能看到" class="headerlink" title="VsCode看不到的格式|网页端能看到"></a>VsCode看不到的格式|网页端能看到</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><h3 id="网页端和VsCode都看不到的格式"><a href="#网页端和VsCode都看不到的格式" class="headerlink" title="网页端和VsCode都看不到的格式"></a>网页端和VsCode都看不到的格式</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](source&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)![ceshi](&#x2F;images&#x2F;notecover&#x2F;Firstblog.png)</code></pre><p>例2.  如在<code>myblog/source/_post/Linux常用命令.md</code>文件中插入<code>myblog/source/_post/Linux常用命令/cup进程.png</code>的这张图片想引用的时候VScode和网页都能看到要用如下格式</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](_post&#x2F;..&#x2F;Linux常用命令&#x2F;GUP进程.png)![ceshi](_post&#x2F;Linux常用命令&#x2F;..&#x2F;..&#x2F;Linux常用命令&#x2F;GUP进程.png)</code></pre><p>下面的方法只能在文章<code>Linux常用命令.md</code>中插入同文件夹路径下的图片<code>Linux常用命令/tupian.png</code></p><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](Linux常用命令&#x2F;GUP进程.png)</code></pre><h3 id="VScode能看到的格式-网页端看不到"><a href="#VScode能看到的格式-网页端看不到" class="headerlink" title="VScode能看到的格式|网页端看不到"></a>VScode能看到的格式|网页端看不到</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](&#x2F;Linux常用命令&#x2F;GUP进程.png)</code></pre><h3 id="网页端能看到的格式-VScode看不到"><a href="#网页端能看到的格式-VScode看不到" class="headerlink" title="网页端能看到的格式|VScode看不到"></a>网页端能看到的格式|VScode看不到</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](&#x2F;_post&#x2F;_Linux常用命令&#x2F;GUP进程.png)![ceshi](&#x2F;GUP进程.png)![ceshi](GUP进程.png)</code></pre><h3 id="网页端和VScode都不能看到"><a href="#网页端和VScode都不能看到" class="headerlink" title="网页端和VScode都不能看到"></a>网页端和VScode都不能看到</h3><pre class="line-numbers language-md" data-language="md"><code class="language-md">![ceshi](_post&#x2F;Linux常用命令&#x2F;GUP进程.png)![ceshi](&#x2F;_post&#x2F;Linux常用命令&#x2F;GUP进程.png)![ceshi](&#x2F;Linux常用命令&#x2F;GUP进程.png)</code></pre><h1 id="如何插入链接"><a href="#如何插入链接" class="headerlink" title="如何插入链接"></a>如何插入链接</h1><span id="more"></span><h1 id="hexo-admin插件管理博客写作"><a href="#hexo-admin插件管理博客写作" class="headerlink" title="hexo-admin插件管理博客写作"></a>hexo-admin插件管理博客写作</h1><p>每次新建文章和写作文章都在<code>git</code>命令行中，很不方便，于是可以安装这款插件<br><a href="https://github.com/jaredly/hexo-admin">参考hexo-admin官方页面</a></p><pre class="line-numbers language-md" data-language="md"><code class="language-md">npm install --save hexo-adminhexo ghexo sopen &lt;http:&#x2F;&#x2F;localhost:4000&#x2F;admin&#x2F;&gt;</code></pre><p>然后浏览器输入<code>http://localhost:4000/admin/</code>进入管理界面<code>setting</code><br><img src="/post/writeblog/../writeblog/writeblog_setup.png" alt="设置"><br><img src="/post/writeblog/../writeblog/writeblog_pass.png" alt="登陆"></p><p><a href="/mynotes/math/common_dstribute.html">我的笔记</a></p><p>复制下面生成的 <code>Admin Config Section</code>内容到 <code>/blog/_config.yml</code>粘贴在最后即可<br>之后登陆需要输入账户密码</p><p>在Deploy之前，还要编辑网站配置文件<code>_config.yml</code> （否则会出现<code>Error: Config value &quot;admin.deployCommand&quot; not found</code>)报错<br>如果实在<code>Windows系统</code>，这在末尾加上</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">deployCommand:&#39;hexo-generate.bat&#39;</code></pre>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;创建新文章&quot;&gt;&lt;a href=&quot;#创建新文章&quot; class=&quot;headerlink&quot; title=&quot;创建新文章&quot;&gt;&lt;/a&gt;创建新文章&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git&lt;/code&gt; 中进入根目录输入 &lt;code&gt;hexo new &amp;lt;模板&amp;gt; &amp;lt;文章名&amp;gt;&lt;/code&gt; 新建文章&lt;br&gt;其中&lt;code&gt;&amp;lt;模板&amp;gt;&lt;/code&gt;在&lt;code&gt;source&lt;/code&gt;文件夹下面，默认有三个模板 &lt;code&gt;post&lt;/code&gt;,&lt;code&gt;draft&lt;/code&gt;,&lt;code&gt;page&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;命令行输入&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;hexo new post aiticle_title&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;此时会在 &lt;code&gt;source/_posts/&lt;/code&gt; 文件夹中多了一个 &lt;code&gt;aiticle_title.md&lt;/code&gt; 文件&lt;br&gt;打开后可以看到 &lt;code&gt;---&lt;/code&gt;之间的内容为文章的配置内容&lt;/p&gt;
 &lt;p&gt;模板配置文件可以在&lt;code&gt;/scaffolds/post.md&lt;/code&gt;修改&lt;code&gt;post.md&lt;/code&gt;模板&lt;/p&gt;
 &lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;---
@@ -308,31 +311,51 @@ categories:
 top: 1
 feature: true
 mathjx: true  #是否开启数学公式支持
-common: true
----
+comment: true
+---&lt;/code&gt;&lt;/pre&gt;
 
-# 如何插入图片
-HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用
-所以使用该方式引用本地图片时必须以“&amp;#x2F;”开头，表示地址都是基于主目录定位的，不会出现有的界面图片显示错误的情况。
-不是“&amp;#x2F;”开头表相对当前文档位置进行定位。
+&lt;h1 id=&quot;如何插入图片&quot;&gt;&lt;a href=&quot;#如何插入图片&quot; class=&quot;headerlink&quot; title=&quot;如何插入图片&quot;&gt;&lt;/a&gt;如何插入图片&lt;/h1&gt;&lt;p&gt;HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用&lt;/p&gt;
+&lt;p&gt;Vscode和Hexo在网页渲染的图片位置是不一样的试用好久才发现如下的格式两者都会显示图片&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;source&lt;/code&gt;中新建一个&lt;code&gt;images&lt;/code&gt;目录用于存放图片，将图片放在该目录下，示例:&lt;/p&gt;
+&lt;p&gt;例1. 如在&lt;code&gt;myblog/source/images/notecover/Firstblog.png&lt;/code&gt;的这张图片想引用的时候VScode和网页都能看到要用如下格式&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![](images&amp;#x2F;notecover&amp;#x2F;..&amp;#x2F;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)
+或者
+![](images&amp;#x2F;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)&lt;/code&gt;&lt;/pre&gt;
 
-而顶部导航页只会在一处地方生成，所以不带“&amp;#x2F;”开头不会出现失效，建议也统一使用“&amp;#x2F;”，开头。
+&lt;p&gt;如果使用格式&lt;/p&gt;
+&lt;h3 id=&quot;网页端看不到的格式-VScode能看到&quot;&gt;&lt;a href=&quot;#网页端看不到的格式-VScode能看到&quot; class=&quot;headerlink&quot; title=&quot;网页端看不到的格式|VScode能看到&quot;&gt;&lt;/a&gt;网页端看不到的格式|VScode能看到&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)
+![ceshi](&amp;#x2F;source&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)
+&lt;/code&gt;&lt;/pre&gt;
 
-## 语法 &amp;#96;![]()&amp;#96;
-&amp;#96;&amp;#96;&amp;#96;md
-![图片加载失败的描述](图片链接)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;VsCode看不到的格式-网页端能看到&quot;&gt;&lt;a href=&quot;#VsCode看不到的格式-网页端能看到&quot; class=&quot;headerlink&quot; title=&quot;VsCode看不到的格式|网页端能看到&quot;&gt;&lt;/a&gt;VsCode看不到的格式|网页端能看到&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在&lt;code&gt;source&lt;/code&gt;中新建一个&lt;code&gt;images&lt;/code&gt;目录用于存放图片，将图片放在该目录下，使用&lt;code&gt;/images/图片名&lt;/code&gt;引用，示例：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![第一篇博客](&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/images/notecover/Firstblog.png&quot; alt=&quot;第一篇博客&quot;&gt;&lt;/p&gt;
-&lt;p&gt;插入图片有很多问题&lt;br&gt;比如图片在 &lt;code&gt;myblog/source/_post/test/tupian.jpg/&lt;/code&gt;&lt;br&gt;你在&lt;code&gt;tupian.md&lt;/code&gt;中插入上面的图片&lt;br&gt;在VSCode中使用路径为&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![charutupian](&amp;#x2F;source&amp;#x2F;_posts&amp;#x2F;test&amp;#x2F;tupian.png)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;或者&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![charutupian](test&amp;#x2F;tupian.png)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;或者&lt;br&gt;&lt;img src=&quot;/post/writeblog/tupian.png&quot; alt=&quot;charutupian&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;如何插入链接&quot;&gt;&lt;a href=&quot;#如何插入链接&quot; class=&quot;headerlink&quot; title=&quot;如何插入链接&quot;&gt;&lt;/a&gt;如何插入链接&lt;/h1&gt;&lt;h1 id=&quot;如何&quot;&gt;&lt;a href=&quot;#如何&quot; class=&quot;headerlink&quot; title=&quot;如何&quot;&gt;&lt;/a&gt;如何&lt;/h1&gt;</summary>
+&lt;h3 id=&quot;网页端和VsCode都看不到的格式&quot;&gt;&lt;a href=&quot;#网页端和VsCode都看不到的格式&quot; class=&quot;headerlink&quot; title=&quot;网页端和VsCode都看不到的格式&quot;&gt;&lt;/a&gt;网页端和VsCode都看不到的格式&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](source&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)
+![ceshi](&amp;#x2F;images&amp;#x2F;notecover&amp;#x2F;Firstblog.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例2.  如在&lt;code&gt;myblog/source/_post/Linux常用命令.md&lt;/code&gt;文件中插入&lt;code&gt;myblog/source/_post/Linux常用命令/cup进程.png&lt;/code&gt;的这张图片想引用的时候VScode和网页都能看到要用如下格式&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](_post&amp;#x2F;..&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)
+![ceshi](_post&amp;#x2F;Linux常用命令&amp;#x2F;..&amp;#x2F;..&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下面的方法只能在文章&lt;code&gt;Linux常用命令.md&lt;/code&gt;中插入同文件夹路径下的图片&lt;code&gt;Linux常用命令/tupian.png&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](Linux常用命令&amp;#x2F;GUP进程.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;VScode能看到的格式-网页端看不到&quot;&gt;&lt;a href=&quot;#VScode能看到的格式-网页端看不到&quot; class=&quot;headerlink&quot; title=&quot;VScode能看到的格式|网页端看不到&quot;&gt;&lt;/a&gt;VScode能看到的格式|网页端看不到&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;网页端能看到的格式-VScode看不到&quot;&gt;&lt;a href=&quot;#网页端能看到的格式-VScode看不到&quot; class=&quot;headerlink&quot; title=&quot;网页端能看到的格式|VScode看不到&quot;&gt;&lt;/a&gt;网页端能看到的格式|VScode看不到&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](&amp;#x2F;_post&amp;#x2F;_Linux常用命令&amp;#x2F;GUP进程.png)
+![ceshi](&amp;#x2F;GUP进程.png)
+![ceshi](GUP进程.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;网页端和VScode都不能看到&quot;&gt;&lt;a href=&quot;#网页端和VScode都不能看到&quot; class=&quot;headerlink&quot; title=&quot;网页端和VScode都不能看到&quot;&gt;&lt;/a&gt;网页端和VScode都不能看到&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;![ceshi](_post&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)
+![ceshi](&amp;#x2F;_post&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)
+![ceshi](&amp;#x2F;Linux常用命令&amp;#x2F;GUP进程.png)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;如何插入链接&quot;&gt;&lt;a href=&quot;#如何插入链接&quot; class=&quot;headerlink&quot; title=&quot;如何插入链接&quot;&gt;&lt;/a&gt;如何插入链接&lt;/h1&gt;</summary>
     
     
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Hexo/"/>
     
     
     <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
@@ -478,9 +501,9 @@ HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首�
     <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
-    
     <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
     
     <category term="网站" scheme="https://rongkangxiong.top/tags/%E7%BD%91%E7%AB%99/"/>
     
