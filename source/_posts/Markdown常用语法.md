@@ -13,8 +13,7 @@ date: 2021-11-12 13:02:59
 
 [Typora下载](https://www.typora.io/#windows)
 
-
-## 小功能
+# 小功能
 
 ## 启用预览功能
 
@@ -56,6 +55,7 @@ date: 2021-11-12 13:02:59
 
 - 跳转到[我的笔记](/mynotes/math/common_dstribute.html)
     在内部的位置是`myblog/source/mynotes/math/common_dstribute.html`
+
     ```md
     [我的笔记](/mynotes/math/common_dstribute.html)
     ```
@@ -66,9 +66,84 @@ date: 2021-11-12 13:02:59
 [名称](链接)
 ```
 
+# 如何插入图片
 
-# 显示图片
+HEXO生成静态界面时，同一篇文章会在多处页面生成，例如首页、文章详情页等，而不同页面与图片的相对位置是不一样的，而该方式hexo不会自动处理图片引用
 
+Vscode和Hexo在网页渲染的图片位置是不一样的试用好久才发现如下的格式两者都会显示图片
+
+在`source`中新建一个`images`目录用于存放图片，将图片放在该目录下，示例:
+
+## 例1. 如在任意`_post`目录下的文章中引用
+
+`myblog/source/images/notecover/Firstblog.png`的这张图片
+想引用的时候VScode和网页都能看到要用如下格式
+
+```md
+![](images/notecover/../../../images/notecover/Firstblog.png)
+或者
+![](images/../../images/notecover/Firstblog.png)
+```
+
+如果使用格式以下格式
+
+### 网页端看不到的格式|VScode能看到
+
+```md
+![ceshi](images/notecover/Firstblog.png)
+![ceshi](/source/images/notecover/Firstblog.png)
+
+```
+
+### VsCode看不到的格式|网页端能看到
+
+```md
+![ceshi](images/notecover/Firstblog.png)
+```
+
+### 网页端和VsCode都看不到的格式
+
+```md
+![ceshi](source/images/notecover/Firstblog.png)
+![ceshi](/images/notecover/Firstblog.png)
+```
+
+## 例2.引用同级目录的同名文件夹下的图片
+
+`myblog/source/_post/Linux常用命令.md`文件中插入`myblog/source/_post/Linux常用命令/cup进程.png`的这张图片想引用的时候VScode和网页都能看到要用如下格式
+
+```md
+![ceshi](_post/../Linux常用命令/GUP进程.png)
+![ceshi](_post/Linux常用命令/../../Linux常用命令/GUP进程.png)
+```
+
+下面的方法只能在文章`Linux常用命令.md`中插入同文件夹路径下的图片`Linux常用命令/tupian.png`
+
+```md
+![ceshi](Linux常用命令/GUP进程.png)
+```
+
+### VScode能看到的格式|网页端看不到
+
+```md
+![ceshi](/Linux常用命令/GUP进程.png)
+```
+
+### 网页端能看到的格式|VScode看不到
+
+```md
+![ceshi](/_post/_Linux常用命令/GUP进程.png)
+![ceshi](/GUP进程.png)
+![ceshi](GUP进程.png)
+```
+
+### 网页端和VScode都不能看到
+
+```md
+![ceshi](_post/Linux常用命令/GUP进程.png)
+![ceshi](/_post/Linux常用命令/GUP进程.png)
+![ceshi](/Linux常用命令/GUP进程.png)
+```
 
 <!--more-->
 

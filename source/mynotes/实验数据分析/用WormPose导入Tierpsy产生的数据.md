@@ -18,8 +18,6 @@ date: 2021-11-12 13:25:55
 
 
 
-
-
 通过将`loader`声明为`tierpsy`
 ```python
 dataset_loader="tierpsy"

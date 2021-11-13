@@ -145,7 +145,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/RongkangXiong || fab fa-github
-  E-Mail: mailto:earth@mail.ustc.edu.cn || fa fa-envelope
+  earth@mail.ustc.edu.cn: mailto:earth@mail.ustc.edu.cn || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   Google: https://plus.google.com/duricankang || fab fa-google
   RSS: /atom.xml || fa fa-rss-square
@@ -512,7 +512,8 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: "code-3IHalljt83"
+#https://search.google.com/search-console/welcome
 
 
 # ---------------------------------------------------------------
