@@ -597,7 +597,7 @@ disp(a)</code></pre>
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-11-13 20:01:11 / 修改时间：21:35:19" itemprop="dateCreated datePublished" datetime="2021-11-13T20:01:11+08:00">2021-11-13</time>
+      <time title="创建时间：2021-11-13 20:01:11 / 修改时间：22:30:31" itemprop="dateCreated datePublished" datetime="2021-11-13T20:01:11+08:00">2021-11-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -616,14 +616,14 @@ disp(a)</code></pre>
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.2k</span>
+      <span>2.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -664,6 +664,73 @@ sitemap:
 <p>之后重新打包<code>hexo g -d</code>，若在你的博客根目录的<code>public</code>下面发现生成了<code>sitemap.xml</code>以及<code>baidusitemap.xml</code>就表示成功了</p>
 <p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213456005.png" alt="image-20211113213456005"></p>
 <p>其中<code>sitemap.xml</code>文件是搜索引擎通用的文件，<code>baidusitemap.xml</code>是百度专用的 `sitemap 文件。可以通过<a target="_blank" rel="noopener" href="https://xxx.github.io/baidusitemap.xml">https://xxx.github.io/baidusitemap.xml</a>查看该文件。</p>
+<h1 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h1><p>之后可以将生成的<code>sitemap</code>文件提交给百度，可以加快爬虫抓取速度</p>
+<p>在<a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/">站长平台</a>，找到 <code>网站支持-数据引入-链接提交</code>，选择<code>自动提交</code></p>
+<p>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法。从效率上来说：<code>主动推送&gt;自动推送&gt;sitemap</code>。</p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213906951.png" alt="image-20211113213906951"></p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213920196.png" alt="image-20211113213920196"></p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113214756683.png" alt="image-20211113214756683"></p>
+<p>在选择完网站的类型之后需要验证网站的所有权，有三种验证方式，文件验证、html 标签验证、<code>cname </code>解析验证。</p>
+<p>使用HTML验证最简单</p>
+<p>打开 Hexo 主题配置文件，按如下修改/添加：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">google_site_verification: #索引擎提供给你的HTML标签的content后的内容
+baidu_site_verification: #索引擎提供给你的HTML标签content后的内容</code></pre>
+
+<p>然后控制台输入<code>hexo g -d</code>，部署更新。</p>
+<p>验证完之后点击<code>提交资源</code></p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113215816088.png" alt="image-20211113215816088"></p>
+<p>点击普通收录</p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113220003266.png" alt="image-20211113220003266"></p>
+<p>安装插件：</p>
+<pre class="line-numbers language-npm" data-language="npm"><code class="language-npm">npm install hexo-baidu-url-submit --save</code></pre>
+
+<p>根目录配置文件<code>_config.ym</code>新增字段：</p>
+<pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: xxx.github.io # 在百度站长平台中注册的域名
+  token: xxxxxx # 秘钥，百度站长平台 &gt; 推送接口 &gt; 接口调用地址中token字段
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+  xz_appid: xxxxxx # 你的熊掌号 appid</code></pre>
+
+<p>其次，记得查看<code>_config.ym</code>文件中<code>url</code>， 必须是百度站长平台注册的域名（包含www）：</p>
+<pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">url: https:&#x2F;&#x2F;rongkangxiong.top
+permalink: &#x2F;post&#x2F;:title.html
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing &#39;index.html&#39; from permalinks
+  trailing_html: true # Set to false to remove trailing &#39;.html&#39; from permalinks</code></pre>
+
+<p>最后，根目录配置文件新增 deploy：</p>
+<pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">deploy:
+  type: baidu_url_submitter</code></pre>
+
+<p><strong>注意：参考 <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">hexo官网</a> 多个 deploy 时要这样写，前面加横杠：</strong></p>
+<pre class="line-numbers language-yam" data-language="yam"><code class="language-yam"># You can use multiple deployers. Hexo will execute each deployer in order.
+deploy:
+- type: git
+  repo:
+- type: heroku
+  repo:</code></pre>
+
+<p>这样以后每次执行<code>hexo deploy</code>，链接就会被推送给百度了。</p>
+<h1 id="让Google收录网站"><a href="#让Google收录网站" class="headerlink" title="让Google收录网站"></a>让Google收录网站</h1><p>进入<code>Google Search Console</code>控制台 <a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">链接</a></p>
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222436951.png" alt="image-20211113222436951"></p>
+<h2 id="验证所有权，有几种验证方法："><a href="#验证所有权，有几种验证方法：" class="headerlink" title="验证所有权，有几种验证方法："></a>验证所有权，有几种验证方法：</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">Domain 网域验证
+URL prefix 网址前缀验证，包含以下验证方法：
+	HTML file（文件验证）
+	HTML taghtml（标签验证）
+	Google Analytics
+	Google Tag Manager
+	Google name provider</code></pre>
+
+<p>URL prefix 验证下的，文件验证、标签验证和百度类似，我选的标签验证，在主题配置文件中修改：</p>
+<pre class="line-numbers language-yam" data-language="yam"><code class="language-yam"># Google Webmaster tools verification setting
+# See: https:&#x2F;&#x2F;www.google.com&#x2F;webmasters&#x2F;
+google_site_verification: xxxxxxxxxxxxx # 此处改为google提供给你的HTML标签content后的内容</code></pre>
+
+<p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222848795.png" alt="image-20211113222848795"></p>
+<h2 id="提交Sitemap"><a href="#提交Sitemap" class="headerlink" title="提交Sitemap"></a>提交Sitemap</h2><p>参考链接</p>
+<p>​    <a target="_blank" rel="noopener" href="https://www.luanzhuxian.com/post/82d92ad4.html">Hexo + Next 主题博客提交百度谷歌收录</a></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/post/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95.html#more" rel="contents">
@@ -1022,7 +1089,7 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
 
 
 
-<h1 id="重要的事情！！！"><a href="#重要的事情！！！" class="headerlink" title="重要的事情！！！"></a>重要的事情！！！</h1><h2 id="Error-404-rate-limit-exceeded"><a href="#Error-404-rate-limit-exceeded" class="headerlink" title="Error 404: rate_limit_exceeded"></a>Error 404: rate_limit_exceeded</h2><p>Google 对应用的新用户登录频率设有上限。您可以稍后尝试重新登录，或者要求开发者 (<a href="mailto:&#x64;&#114;&#105;&#x76;&#x65;&#45;&#x66;&#105;&#x6c;&#x65;&#x2d;&#x73;&#x74;&#x72;&#101;&#x61;&#109;&#x2d;&#x66;&#101;&#x65;&#100;&#x62;&#97;&#x63;&#x6b;&#x40;&#103;&#x6f;&#111;&#103;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#x64;&#114;&#105;&#x76;&#x65;&#45;&#x66;&#105;&#x6c;&#x65;&#x2d;&#x73;&#x74;&#x72;&#101;&#x61;&#109;&#x2d;&#x66;&#101;&#x65;&#100;&#x62;&#97;&#x63;&#x6b;&#x40;&#103;&#x6f;&#111;&#103;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;</a>) 提高此应用的登录速率限制。</p>
+<h1 id="重要的事情！！！"><a href="#重要的事情！！！" class="headerlink" title="重要的事情！！！"></a>重要的事情！！！</h1><h2 id="Error-404-rate-limit-exceeded"><a href="#Error-404-rate-limit-exceeded" class="headerlink" title="Error 404: rate_limit_exceeded"></a>Error 404: rate_limit_exceeded</h2><p>Google 对应用的新用户登录频率设有上限。您可以稍后尝试重新登录，或者要求开发者 (<a href="mailto:&#x64;&#114;&#x69;&#x76;&#x65;&#x2d;&#x66;&#x69;&#108;&#101;&#45;&#x73;&#116;&#114;&#x65;&#x61;&#x6d;&#x2d;&#x66;&#101;&#x65;&#x64;&#98;&#97;&#99;&#x6b;&#64;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;">&#x64;&#114;&#x69;&#x76;&#x65;&#x2d;&#x66;&#x69;&#108;&#101;&#45;&#x73;&#116;&#114;&#x65;&#x61;&#x6d;&#x2d;&#x66;&#101;&#x65;&#x64;&#98;&#97;&#99;&#x6b;&#64;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;</a>) 提高此应用的登录速率限制。</p>
 <h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>出现403错误是因为gdrive使用的谷歌的API使用频率超限，这个API调用的凭据（Credentials）是集成在gdrive里的，使用的人太多了，就导致超限错误</p>
 <p>所以为了解决这个错误，就需要把gdrive里内置的ClientId和ClientSecret替换为我们自己的。</p>
 <h2 id="申请API"><a href="#申请API" class="headerlink" title="申请API"></a>申请API</h2><ul>
@@ -1201,7 +1268,7 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-13 13:21:33" itemprop="dateModified" datetime="2021-11-13T13:21:33+08:00">2021-11-13</time>
+        <time title="修改时间：2021-11-13 22:30:31" itemprop="dateModified" datetime="2021-11-13T22:30:31+08:00">2021-11-13</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1224,7 +1291,7 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>476</span>
+      <span>598</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -1255,10 +1322,17 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
 
 <p>其中<code>PID</code> 是你的进程编号</p>
 <h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="统计文件夹下面文件个数"><a href="#统计文件夹下面文件个数" class="headerlink" title="统计文件夹下面文件个数"></a>统计文件夹下面文件个数</h2><p>长列表输出该目录下文件信息(注意这里的文件是指目录、链接、设备文件等)，每一行对应一个文件或目录</p>
-<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l</code></pre>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -l # 查看详细信息
+ls -a #查看隐藏文件
+ls -la #同时具备上述两者特点</code></pre>
 
 <p>统计当前目录下文件的个数包括子目录</p>
 <pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">ls -lR</code></pre>
+<p>查看文件中内容</p>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">cat</code></pre>
+
+
+
 <h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ul>
 <li><p>直接删除</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">rm filename</code></pre></li>
@@ -1285,6 +1359,9 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
 <p><code>-delete</code>删除包括子目录在内的所有空目录</p>
 </li>
 </ul>
+<h1 id="文件创建"><a href="#文件创建" class="headerlink" title="文件创建"></a>文件创建</h1><p><code>echo</code>文字输入</p>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">echo xxx &gt; y.txt  # 把 xxx 内容放到 y.txt 文件中，如果没有这个文件则创建这个文件，新存放的内容会替换原有文件的内容</code></pre>
+
 
       
     </div>
@@ -1491,14 +1568,14 @@ os.chdir(&quot;&#x2F;content&#x2F;gdrive&#x2F;My Drive&#x2F;Colab Notebooks&#x2F
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">23k</span>
+    <span title="站点总字数">24k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">21 分钟</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
