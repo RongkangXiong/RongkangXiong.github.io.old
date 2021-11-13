@@ -94,10 +94,10 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="../../index.html" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-about"><a href="../../about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="../../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">27</span></a></li>
-        <li class="menu-item menu-item-categories"><a href="../../categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">13</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="../../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">33</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="../../categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">17</span></a></li>
         <li class="menu-item menu-item-read"><a href="../../categories/read" rel="section"><i class="fa fa-book fa-fw"></i>读书</a></li>
-        <li class="menu-item menu-item-archives"><a href="../../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">16</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="../../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">20</span></a></li>
         <li class="menu-item menu-item-mynotes"><a href="../../mynotes/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
         <li class="menu-item menu-item-experience"><a href="../../experience/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>经验分享</a></li>
         <li class="menu-item menu-item-sitemap"><a href="../../sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
@@ -172,18 +172,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="../../archives/">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="../../categories/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="../../tags/">
-        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-count">33</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -193,7 +193,7 @@
         <a href="../../https:/github.com/RongkangXiong" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="../../mailto:earth@mail.ustc.edu.cn" title="E-Mail → mailto:earth@mail.ustc.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="../../mailto:earth@mail.ustc.edu.cn" title="earth@mail.ustc.edu.cn → mailto:earth@mail.ustc.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>earth@mail.ustc.edu.cn</a>
       </span>
       <span class="links-of-author-item">
         <a href="../../https:/plus.google.com/duricankang" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;duricankang" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
@@ -308,7 +308,7 @@
 </li>
 </ol>
 <p>$$<br>\begin{aligned}<br>&amp;I(\theta) = (I_{ij}(\theta))<em>{p\times p}, \quad I</em>{ij}(\theta)=E^{X|\theta} (-\frac{\partial^2 l}{\partial\theta_i \partial \theta_j}) , \quad (i,j=1,…,p) \<br>&amp;特别的对于单参数情形 \<br>&amp; I(\theta) = E^{X|\theta} (-\frac{\partial^2 l}{\partial\theta^2})<br>\end{aligned}<br>$$</p>
-<h2 id="Jeffreys无信息先验"><a href="#Jeffreys无信息先验" class="headerlink" title="Jeffreys无信息先验"></a>Jeffreys无信息先验</h2><p>参数是1维情形下,Jeffreys被证明是相当成功的<br>多参数不相关时使用Jeffreys时效果较好<br><a href>Bernardo(1979)</a>找到了在多维场合修改的Jeffreys先验方法,即Reference先验</p>
+<h2 id="Jeffreys无信息先验"><a href="#Jeffreys无信息先验" class="headerlink" title="Jeffreys无信息先验"></a>Jeffreys无信息先验</h2><p>参数是1维情形下,Jeffreys被证明是相当成功的<br>多参数不相关时使用Jeffreys时效果较好<br><a href="">Bernardo(1979)</a>找到了在多维场合修改的Jeffreys先验方法,即Reference先验</p>
 <ol>
 <li>求$\theta$的Jeffreys无信息先验密度<br>$$<br>\begin{aligned}<br>\pi(\theta) = [det I(\theta)]^{1/2}<br>\end{aligned}<br>$$</li>
 </ol>
@@ -332,7 +332,7 @@
 </li>
 </ol>
 <p>通过最大化<br>$I_{\pi(\theta)}\left(\theta, x^{(k)}\right)$,得到$\pi_{k}(\theta)=\arg \max <em>{\pi(\theta)} I</em>{\pi(\theta)}\left(\theta,x^{(k)}\right)$为了找到$\pi_{k}$的更方便的形式,改写$I_{\pi(\theta)}\left(\theta, x^{(k)}\right)$<br>如下:<br>$$<br>\begin{aligned}<br>I_{\pi(\theta)}\left(\theta, x^{(k)}\right) &amp;=\int_{X^{(k)}} p\left(x^{(k)}\right)\left[\int_{\theta} \pi\left(\theta \mid x^{(k)}\right) \ln \frac{\pi\left(\theta \mid x^{(k)}\right)}{\pi(\theta)} \mathrm{d} \theta\right] \mathrm{d} x^{(k)} \<br>&amp;=\int_{\theta} \pi(\theta)\left{\int_{X^{(k)}} p\left(x^{(k)} \mid \theta\right)\left[\ln \pi\left(\theta \mid x^{(k)}\right)-\ln \pi(\theta)\right] \mathrm{d} x^{(k)}\right} \mathrm{d} \theta \<br>&amp;= \int_{\Theta} \pi(\theta) \ln \frac{f_{k}(\theta)}{\pi(\theta)} \mathrm{d} \theta\end{aligned} \tag{5}<br>$$</p>
-<p>此处<br>$$<br>\begin{aligned}<br>f_{k}(\theta)=\exp \left{\int_{\mathscr{x}^{-(k)}} p\left(x^{(k)} \mid \theta\right) \ln \pi\left(\theta \mid x^{(k)}\right) \mathrm{d} x^{(k)}\right} \tag{6} \<br>此处 \pi(\theta|x^{(k)}) 近似 N(\hat{\theta},I(\theta))<br>\end{aligned}<br>$$<br>利用拉格朗日求条件极值的方法,在$\int \pi(\theta) \mathrm{d} \theta=1$的条件下求<br>$$<br>I_{\pi(\theta)}\left(\theta, x^{(k)}\right)=\int_{\Theta} \pi(\theta) \ln \frac{f_{k}(\theta)}{\pi(\theta)} \mathrm{d} \theta \tag{7}<br>$$<br>的极大值.利用变分法求解,<br>可知其解$\pi_{k}(\theta) \propto f_{k}(\theta)$. <a href>Berger 等(2009)</a><br>证明了在适当条件下 $\theta$ 的 Reference 先验为<br>$$<br>\pi^{*}(\theta)=\lim_{k \rightarrow \infty} \frac{f_{k}(\theta)}{f_{k}\left(\theta_{0}\right)} \tag{8}<br>$$<br>此处 $\theta_{0}$ 是参数空间 $\theta$ 的一个内点, $f_{k}(\theta)$<br>由式(6)给出.</p>
+<p>此处<br>$$<br>\begin{aligned}<br>f_{k}(\theta)=\exp \left{\int_{\mathscr{x}^{-(k)}} p\left(x^{(k)} \mid \theta\right) \ln \pi\left(\theta \mid x^{(k)}\right) \mathrm{d} x^{(k)}\right} \tag{6} \<br>此处 \pi(\theta|x^{(k)}) 近似 N(\hat{\theta},I(\theta))<br>\end{aligned}<br>$$<br>利用拉格朗日求条件极值的方法,在$\int \pi(\theta) \mathrm{d} \theta=1$的条件下求<br>$$<br>I_{\pi(\theta)}\left(\theta, x^{(k)}\right)=\int_{\Theta} \pi(\theta) \ln \frac{f_{k}(\theta)}{\pi(\theta)} \mathrm{d} \theta \tag{7}<br>$$<br>的极大值.利用变分法求解,<br>可知其解$\pi_{k}(\theta) \propto f_{k}(\theta)$. <a href="">Berger 等(2009)</a><br>证明了在适当条件下 $\theta$ 的 Reference 先验为<br>$$<br>\pi^{*}(\theta)=\lim_{k \rightarrow \infty} \frac{f_{k}(\theta)}{f_{k}\left(\theta_{0}\right)} \tag{8}<br>$$<br>此处 $\theta_{0}$ 是参数空间 $\theta$ 的一个内点, $f_{k}(\theta)$<br>由式(6)给出.</p>
 <ol start="4">
 <li><p>当存在多余参数时 Reference 先验的计算</p>
 <p> 在我们所讨论的统计模型中,当参数是多维时,我们感兴趣的参数常常是其中的一个参数(或某些参数的子集),其余的视为多余参数.此时求多参数情形下的无信息先验,可利用<br> Reference 先验来处理.<br> 其中的某些步聚可简化成一维的情形,通过计算 Jeffreys<br> 先验获得.具体说明如下.<br> 设似然函数为 $p(x \mid \theta, \lambda)$, 此处 $\theta$<br> 为感兴趣的参数, 而 $\lambda$ 为多余参数. 我们希望找到<br> 联合的无信息先验分布 $\pi(\theta, \lambda)$.<br> 处理这种带有多余参数的方法按下列步骤:</p>
@@ -527,14 +527,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">23k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
