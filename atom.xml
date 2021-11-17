@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-13T14:30:31.012Z</updated>
+  <updated>2021-11-17T05:37:08.085Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -15,6 +15,316 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typora如何让Markdown自动显示序号</title>
+    <link href="https://rongkangxiong.top/post/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7.html"/>
+    <id>https://rongkangxiong.top/post/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7.html</id>
+    <published>2021-11-17T03:57:52.000Z</published>
+    <updated>2021-11-17T05:37:08.085Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="内容中编号"><a href="#内容中编号" class="headerlink" title="内容中编号"></a>内容中编号</h1><p>打开Typora外观里面的主题文件夹</p><h2 id="菜单-偏好设置-外观-打开主题文件夹"><a href="#菜单-偏好设置-外观-打开主题文件夹" class="headerlink" title="菜单-偏好设置-外观-打开主题文件夹"></a><code>菜单-偏好设置-外观-打开主题文件夹</code></h2><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117123309505.png" alt="image-20211117123309505"></p><h2 id="新建一个名为base-user-css的文件，写入如下代码："><a href="#新建一个名为base-user-css的文件，写入如下代码：" class="headerlink" title="新建一个名为base.user.css的文件，写入如下代码："></a>新建一个名为<code>base.user.css</code>的文件，写入如下代码：</h2><pre class="line-numbers language-css" data-language="css"><code class="language-css">#write &#123;    counter-reset: h1&#125;h1 &#123;    counter-reset: h2&#125;h2 &#123;    counter-reset: h3&#125;h3 &#123;    counter-reset: h4&#125;h4 &#123;    counter-reset: h5&#125;h5 &#123;    counter-reset: h6&#125;#write h1:before &#123;    counter-increment: h1;    content: counter(h1) &quot; &quot;&#125;#write h2:before &#123;    counter-increment: h2;    content: counter(h1) &quot;.&quot; counter(h2) &quot; &quot;&#125;#write h3:before,h3.md-focus.md-heading:before &#123;    counter-increment: h3;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot; &quot;&#125;#write h4:before,h4.md-focus.md-heading:before &#123;    counter-increment: h4;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot;.&quot; counter(h4) &quot; &quot;&#125;#write h5:before,h5.md-focus.md-heading:before &#123;    counter-increment: h5;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot;.&quot; counter(h4) &quot;.&quot; counter(h5) &quot; &quot;&#125;#write h6:before,h6.md-focus.md-heading:before &#123;    counter-increment: h6;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot;.&quot; counter(h4) &quot;.&quot; counter(h5) &quot;.&quot; counter(h6) &quot; &quot;&#125;#write &gt; h3.md-focus:before,#write &gt; h4.md-focus:before,#write &gt; h5.md-focus:before,#write &gt; h6.md-focus:before,h3.md-focus:before,h4.md-focus:before,h5.md-focus:before,h6.md-focus:before &#123;    color: inherit;    border: inherit;    border-radius: inherit;    position: inherit;    left: initial;    float: none;    top: initial;    font-size: inherit;    padding-left: inherit;    padding-right: inherit;    vertical-align: inherit;    font-weight: inherit;    line-height: inherit;&#125;</code></pre><p>上边部分是左边的标题栏，下面部分是正文的标题</p><p>这是没有添加前：</p><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117124856611.png" alt="image-20211117124856611"></p><p>添加以后：</p><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117124948102.png" alt="image-20211117124948102"></p><p>自动添加好序号了</p><h1 id="大纲中编号"><a href="#大纲中编号" class="headerlink" title="大纲中编号"></a>大纲中编号</h1><h2 id="添加在base-user-css中添加如下代码"><a href="#添加在base-user-css中添加如下代码" class="headerlink" title="添加在base.user.css中添加如下代码"></a>添加在<code>base.user.css</code>中添加如下代码</h2><pre class="line-numbers language-css" data-language="css"><code class="language-css">.sidebar-content &#123;    counter-reset: h1&#125;.outline-h1 &#123;    counter-reset: h2&#125;.outline-h2 &#123;    counter-reset: h3&#125;.outline-h3 &#123;    counter-reset: h4&#125;.outline-h1&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h1;    content: counter(h1) &quot;. &quot;&#125;.outline-h2&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h2;    content: counter(h1) &quot;.&quot; counter(h2) &quot;. &quot;&#125;.outline-h3&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h3;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot;. &quot;&#125;</code></pre><p>重启Typora</p><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117125920057.png" alt="image-20211117125920057"></p><h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-css" data-language="css"><code class="language-css">#write &#123;    counter-reset: h1&#125;h1 &#123;    counter-reset: h2&#125;h2 &#123;    counter-reset: h3&#125;h3 &#123;    counter-reset: h4&#125;h4 &#123;    counter-reset: h5&#125;h5 &#123;    counter-reset: h6&#125;#write h1:before &#123;    counter-increment: h1;    content: counter(h1) &quot;.&quot;&#125;#write h2:before &#123;    counter-increment: h2;    content: counter(h1) &quot;.&quot; counter(h2) &quot; &quot;&#125;#write h3:before,h3.md-focus.md-heading:before &#123;    counter-increment: h3;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot; &quot;&#125;#write h4:before,h4.md-focus.md-heading:before &#123;    counter-increment: h4;    content: &quot;(&quot; counter(h4) &quot;) &quot;&#125;#write h5:before,h5.md-focus.md-heading:before &#123;    counter-increment: h5;    content: counter(h5) &quot;) &quot;&#125;.sidebar-content &#123;    counter-reset: h1&#125;.outline-h1 &#123;    counter-reset: h2&#125;.outline-h2 &#123;    counter-reset: h3&#125;.outline-h3 &#123;    counter-reset: h4&#125;.outline-h1&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h1;    content: counter(h1) &quot;. &quot;&#125;.outline-h2&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h2;    content: counter(h1) &quot;.&quot; counter(h2) &quot;. &quot;&#125;.outline-h3&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h3;    content: counter(h1) &quot;.&quot; counter(h2) &quot;.&quot; counter(h3) &quot;. &quot;&#125;.outline-h4&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h4;    content: &quot;(&quot; counter(h4) &quot;) &quot;&#125;.outline-h5&gt;.outline-item&gt;.outline-label:before &#123;    counter-increment: h5;    content: counter(h5) &quot;) &quot;&#125;#write &gt; h3.md-focus:before,#write &gt; h4.md-focus:before,#write &gt; h5.md-focus:before,#write &gt; h6.md-focus:before,h3.md-focus:before,h4.md-focus:before,h5.md-focus:before,h6.md-focus:before &#123;    color: inherit;    border: inherit;    border-radius: inherit;    position: inherit;    left: initial;    float: none;    top: initial;    font-size: inherit;    padding-left: inherit;    padding-right: inherit;    vertical-align: inherit;    font-weight: inherit;    line-height: inherit;&#125;</code></pre><h2 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a>效果图</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题###"></a>三级标题<code>###</code></h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题####"></a>四级标题<code>####</code></h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题#####"></a>五级标题<code>#####</code></h5><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117133645418.png" alt="image-20211117133645418"></p><p><img src="../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117133651299.png" alt="image-20211117133651299"></p><p>参考链接：</p><p>​    <a href="https://blog.csdn.net/lt6210925/article/details/109754804?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-109754804.pc_agg_new_rank&utm_term=markdown+%E5%BA%8F%E5%8F%B7&spm=1000.2123.3001.4430">[Markdown][typora]如何让markdown自动显示序号</a></p><p>​    <a href="https://blog.csdn.net/qq_50806329/article/details/112845330">Typora自动在大纲和编辑页面里显示编号</a></p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;内容中编号&quot;&gt;&lt;a href=&quot;#内容中编号&quot; class=&quot;headerlink&quot; title=&quot;内容中编号&quot;&gt;&lt;/a&gt;内容中编号&lt;/h1&gt;&lt;p&gt;打开Typora外观里面的主题文件夹&lt;/p&gt;
+&lt;h2 id=&quot;菜单-偏好设置-外观-打开主题文件夹&quot;&gt;&lt;a href=&quot;#菜单-偏好设置-外观-打开主题文件夹&quot; class=&quot;headerlink&quot; title=&quot;菜单-偏好设置-外观-打开主题文件夹&quot;&gt;&lt;/a&gt;&lt;code&gt;菜单-偏好设置-外观-打开主题文件夹&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117123309505.png&quot; alt=&quot;image-20211117123309505&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;新建一个名为base-user-css的文件，写入如下代码：&quot;&gt;&lt;a href=&quot;#新建一个名为base-user-css的文件，写入如下代码：&quot; class=&quot;headerlink&quot; title=&quot;新建一个名为base.user.css的文件，写入如下代码：&quot;&gt;&lt;/a&gt;新建一个名为&lt;code&gt;base.user.css&lt;/code&gt;的文件，写入如下代码：&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-css&quot; data-language=&quot;css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;#write &amp;#123;
+    counter-reset: h1
+&amp;#125;
+
+h1 &amp;#123;
+    counter-reset: h2
+&amp;#125;
+
+h2 &amp;#123;
+    counter-reset: h3
+&amp;#125;
+
+h3 &amp;#123;
+    counter-reset: h4
+&amp;#125;
+
+h4 &amp;#123;
+    counter-reset: h5
+&amp;#125;
+
+h5 &amp;#123;
+    counter-reset: h6
+&amp;#125;
+
+#write h1:before &amp;#123;
+    counter-increment: h1;
+    content: counter(h1) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h2:before &amp;#123;
+    counter-increment: h2;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h3:before,
+h3.md-focus.md-heading:before &amp;#123;
+    counter-increment: h3;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h4:before,
+h4.md-focus.md-heading:before &amp;#123;
+    counter-increment: h4;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;.&amp;quot; counter(h4) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h5:before,
+h5.md-focus.md-heading:before &amp;#123;
+    counter-increment: h5;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;.&amp;quot; counter(h4) &amp;quot;.&amp;quot; counter(h5) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h6:before,
+h6.md-focus.md-heading:before &amp;#123;
+    counter-increment: h6;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;.&amp;quot; counter(h4) &amp;quot;.&amp;quot; counter(h5) &amp;quot;.&amp;quot; counter(h6) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write &amp;gt; h3.md-focus:before,
+#write &amp;gt; h4.md-focus:before,
+#write &amp;gt; h5.md-focus:before,
+#write &amp;gt; h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before &amp;#123;
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left: initial;
+    float: none;
+    top: initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上边部分是左边的标题栏，下面部分是正文的标题&lt;/p&gt;
+&lt;p&gt;这是没有添加前：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117124856611.png&quot; alt=&quot;image-20211117124856611&quot;&gt;&lt;/p&gt;
+&lt;p&gt;添加以后：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117124948102.png&quot; alt=&quot;image-20211117124948102&quot;&gt;&lt;/p&gt;
+&lt;p&gt;自动添加好序号了&lt;/p&gt;
+&lt;h1 id=&quot;大纲中编号&quot;&gt;&lt;a href=&quot;#大纲中编号&quot; class=&quot;headerlink&quot; title=&quot;大纲中编号&quot;&gt;&lt;/a&gt;大纲中编号&lt;/h1&gt;&lt;h2 id=&quot;添加在base-user-css中添加如下代码&quot;&gt;&lt;a href=&quot;#添加在base-user-css中添加如下代码&quot; class=&quot;headerlink&quot; title=&quot;添加在base.user.css中添加如下代码&quot;&gt;&lt;/a&gt;添加在&lt;code&gt;base.user.css&lt;/code&gt;中添加如下代码&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-css&quot; data-language=&quot;css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;.sidebar-content &amp;#123;
+    counter-reset: h1
+&amp;#125;
+
+.outline-h1 &amp;#123;
+    counter-reset: h2
+&amp;#125;
+
+.outline-h2 &amp;#123;
+    counter-reset: h3
+&amp;#125;
+
+.outline-h3 &amp;#123;
+    counter-reset: h4
+&amp;#125;
+
+.outline-h1&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h1;
+    content: counter(h1) &amp;quot;. &amp;quot;
+&amp;#125;
+
+.outline-h2&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h2;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;. &amp;quot;
+&amp;#125;
+
+.outline-h3&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h3;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;. &amp;quot;
+&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重启Typora&lt;/p&gt;
+&lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117125920057.png&quot; alt=&quot;image-20211117125920057&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;完整代码&quot;&gt;&lt;a href=&quot;#完整代码&quot; class=&quot;headerlink&quot; title=&quot;完整代码&quot;&gt;&lt;/a&gt;完整代码&lt;/h1&gt;&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-css&quot; data-language=&quot;css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;#write &amp;#123;
+    counter-reset: h1
+&amp;#125;
+
+h1 &amp;#123;
+    counter-reset: h2
+&amp;#125;
+
+h2 &amp;#123;
+    counter-reset: h3
+&amp;#125;
+
+h3 &amp;#123;
+    counter-reset: h4
+&amp;#125;
+
+h4 &amp;#123;
+    counter-reset: h5
+&amp;#125;
+
+h5 &amp;#123;
+    counter-reset: h6
+&amp;#125;
+
+#write h1:before &amp;#123;
+    counter-increment: h1;
+    content: counter(h1) &amp;quot;.&amp;quot;
+&amp;#125;
+
+#write h2:before &amp;#123;
+    counter-increment: h2;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h3:before,
+h3.md-focus.md-heading:before &amp;#123;
+    counter-increment: h3;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot; &amp;quot;
+&amp;#125;
+
+#write h4:before,
+h4.md-focus.md-heading:before &amp;#123;
+    counter-increment: h4;
+    content: &amp;quot;(&amp;quot; counter(h4) &amp;quot;) &amp;quot;
+&amp;#125;
+
+#write h5:before,
+h5.md-focus.md-heading:before &amp;#123;
+    counter-increment: h5;
+    content: counter(h5) &amp;quot;) &amp;quot;
+&amp;#125;
+
+
+
+.sidebar-content &amp;#123;
+    counter-reset: h1
+&amp;#125;
+
+.outline-h1 &amp;#123;
+    counter-reset: h2
+&amp;#125;
+
+.outline-h2 &amp;#123;
+    counter-reset: h3
+&amp;#125;
+
+.outline-h3 &amp;#123;
+    counter-reset: h4
+&amp;#125;
+
+.outline-h1&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h1;
+    content: counter(h1) &amp;quot;. &amp;quot;
+&amp;#125;
+
+.outline-h2&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h2;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;. &amp;quot;
+&amp;#125;
+
+.outline-h3&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h3;
+    content: counter(h1) &amp;quot;.&amp;quot; counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;. &amp;quot;
+&amp;#125;
+
+.outline-h4&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h4;
+    content: &amp;quot;(&amp;quot; counter(h4) &amp;quot;) &amp;quot;
+&amp;#125;
+
+.outline-h5&amp;gt;.outline-item&amp;gt;.outline-label:before &amp;#123;
+    counter-increment: h5;
+    content: counter(h5) &amp;quot;) &amp;quot;
+&amp;#125;
+
+#write &amp;gt; h3.md-focus:before,
+#write &amp;gt; h4.md-focus:before,
+#write &amp;gt; h5.md-focus:before,
+#write &amp;gt; h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before &amp;#123;
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left: initial;
+    float: none;
+    top: initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+&amp;#125;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;效果图-1&quot;&gt;&lt;a href=&quot;#效果图-1&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;h3 id=&quot;三级标题&quot;&gt;&lt;a href=&quot;#三级标题&quot; class=&quot;headerlink&quot; title=&quot;三级标题###&quot;&gt;&lt;/a&gt;三级标题&lt;code&gt;###&lt;/code&gt;&lt;/h3&gt;&lt;h4 id=&quot;四级标题&quot;&gt;&lt;a href=&quot;#四级标题&quot; class=&quot;headerlink&quot; title=&quot;四级标题####&quot;&gt;&lt;/a&gt;四级标题&lt;code&gt;####&lt;/code&gt;&lt;/h4&gt;&lt;h5 id=&quot;五级标题&quot;&gt;&lt;a href=&quot;#五级标题&quot; class=&quot;headerlink&quot; title=&quot;五级标题#####&quot;&gt;&lt;/a&gt;五级标题&lt;code&gt;#####&lt;/code&gt;&lt;/h5&gt;&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117133645418.png&quot; alt=&quot;image-20211117133645418&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Typora%E5%A6%82%E4%BD%95%E8%AE%A9Markdown%E8%87%AA%E5%8A%A8%E6%98%BE%E7%A4%BA%E5%BA%8F%E5%8F%B7/image-20211117133651299.png&quot; alt=&quot;image-20211117133651299&quot;&gt;&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;​    &lt;a href=&quot;https://blog.csdn.net/lt6210925/article/details/109754804?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-109754804.pc_agg_new_rank&amp;utm_term=markdown+%E5%BA%8F%E5%8F%B7&amp;spm=1000.2123.3001.4430&quot;&gt;[Markdown][typora]如何让markdown自动显示序号&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;​    &lt;a href=&quot;https://blog.csdn.net/qq_50806329/article/details/112845330&quot;&gt;Typora自动在大纲和编辑页面里显示编号&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Markdown" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Markdown/"/>
+    
+    
+    <category term="Markdown" scheme="https://rongkangxiong.top/tags/Markdown/"/>
+    
+    <category term="Typora" scheme="https://rongkangxiong.top/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>国企改革究竟改的是什么？</title>
+    <link href="https://rongkangxiong.top/post/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9%E7%A9%B6%E7%AB%9F%E6%94%B9%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html"/>
+    <id>https://rongkangxiong.top/post/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9%E7%A9%B6%E7%AB%9F%E6%94%B9%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html</id>
+    <published>2021-11-14T12:46:41.000Z</published>
+    <updated>2021-11-14T12:53:46.159Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>转载自 佐伊23</p><p>链接：<a href="https://www.zhihu.com/question/30105824/answer/1484712593">https://www.zhihu.com/question/30105824/answer/1484712593</a></p><p>来源：知乎</p></blockquote><p>“国企工人不就是大锅饭吗，不就是磨洋工吗，这样不改还得了啊？”</p><p>“他们不就是喜欢从厂里面偷东西吗，这不就是产权不明确无人负责导致的吗？”</p><p>“居然还有人说当时的国企好，国企这么好，那为什么垮了？”</p><p>“那些下岗的自己不努力，怪谁！”</p><p>当过程被人有意无意忽略的时候，某些结果就显得不可理解。但是当我们把过程补齐的时候，一切看似矛盾的事物又都显得那么自洽。</p><p>改革开放前，我国国营企业有三大特点。</p><p>经济上。企业的利润扣除社会保障基金和扩大再生产的资金外，归根结底要通过各种福利制度返还职工。国企有自己的医院、学校和修房子的住建科，职工享受免费的医疗和教育，并且享受福利分房。也就是说，国企的钱不光要给职工发工资，还要给职工修房子、上学、看病。</p><p>管理上。企业在逐步实行“两参一改三结合”（有些实行得好点，有些差一点），即“干部参加劳动，工人参加管理；改革不合理的规章制度；工程技术人员、管理者和工人在生产实践和技术革新中相结合”。工人在劳动中不是被动的工具，不是被动的领受任务，而是主动的自觉的人，主动参与到企业计划的制定之中。</p><p>工人和企业的关系上。工人是企业的主人，而不是企业的雇员。企业管理人员（厂长、书记等等）没有权力开除工人。一般而言，只要工人不犯罪，厂里就没有开除工人的权力。</p><p>对国企而言，改革改的就是这三点。</p><span id="more"></span><h2 id="一、从放权让利到经济责任制"><a href="#一、从放权让利到经济责任制" class="headerlink" title="一、从放权让利到经济责任制"></a>一、从放权让利到经济责任制</h2><p>国企改革的第一阶段叫做放权让利。</p><p>1978年后我国确立了放权让利的基调，要求“扩大企业自主权，并且把企业经营好坏同职工的物质利益结合起来。”从1979年4月开始，中央在2100多个企业进行了试点。</p><p>我国历史上有两次大规模企业权力下放，一次是1958年，一次是1979年。但是，两者有本质不同。1958年在工业企业下放的同时，大力推行工人民主管理，而1979年的放权让利同时大力推行厂长经理负责制。这实际是用物质刺激（奖金）回收工人管理工厂的权力，从短期看工人收入增加，从长期看工人权力丧失，最终必然导致更大的经济利益的丧失。</p><p>放权扩大了厂长经理享有的特权，使企业经营管理人员的公权力私有化，破坏了工人阶级在企业中的领导权。也就是说，国家把权力下放给企业，企业却把权力集中到了厂长经理手里。这显然会损害工人阶级积极性，是不利于国营企业发展的。</p><p>在扩权的初期，企业表现出很高的增产增收的积极性，也多发了一些工资，工人的经济收入在不断提高，而且增长的速度较快。以北京某机械厂为例，1983年机械厂开始对直接生产工人实行超额计件工资制，即超额完成生产指标颁发超额奖，全厂职工的月平均工资从1978年的52元上升到1985年的119元，年均工资增长13％。在这一阶段上，工人逐渐放弃了管理权利，从以前的政治挂帅走向了关注物质利益。然而好景不长，国家提高工资是通过增发货币形成的，这导致经济混乱、财政赤字和通货膨胀。到1980年底，中央决定“进一步调整国民经济”，国有企业也由进行“扩权”改革转向强化完成国家计划的“责任制”，这宣告了放权让利的结束。但是，放权让利虽然结束了，工人被回收的管理权力，却是再也拿不回来了。</p><h2 id="二、利改税和拨改贷"><a href="#二、利改税和拨改贷" class="headerlink" title="二、利改税和拨改贷"></a>二、利改税和拨改贷</h2><p>1983年的利改税和1985年的拨改贷，是国企改制史上至关重要的两个环节。通过利改税和拨改贷两个制度设计，国企在极度不公平的环境下参与了市场竞争，为之后国企破产埋下伏笔。</p><p>我国企业以前所有利润统一上缴国家，如果需要扩建厂房或者购买设备，则由国家无偿拨款给企业。利改税就是用所得税替代利润上缴，用贷款替代无偿拨款。</p><p>企业利润全部上缴，国家就无偿拨款给企业搞建设；企业利润不上交了（只缴税而不交利润），国家就不拨款了，企业搞建设就去银行贷款。这听起来很公平，但事实上全然不是。</p><p>首先看利改税。我们以大企业为例，国家对有盈利的国营大中型企业，按55％的比例税率征收所得税，所得税后剩下的利润，一部分上缴国家，一部分按照国家核定的留利水平留给企业。整体而言，企业要将大约7-8成的利润通过利税方式上缴国家。</p><p>再看拨改贷。国家收走了企业8成的盈利，却不再给企业的建设拨款，而是要求企业向银行借贷。这使得国有企业面临异常困难的境地。当时国有企业已经开始和私企、外企竞争了，但是私企外企的综合税率只有17%-33%（本身税就低，还有各种减免），而国企的综合税率却在70%-80%。这是典型的不平等竞争。外企和私企赚钱了，大部分可以留下来扩大再生产或者购买更新的设备，国企赚钱了，大部分给了国家，国家却不再拨款给企业建设，而要求企业自己去贷款买新设备。这直接导致国企设备老旧，资金不足。</p><p>国企数十年来的利润都给了国家搞建设，而没有用来发展国企自身，本指望国家拨款更新设备，结果突然拨改贷，使得它要么不更新设备，要么背负巨额债务去发展生产。拨改贷实施后，原先的国营企业负债率从20%左右急速升至80%以上，个别企业全额负债，这严重影响了企业的积极性和发展后劲。</p><p>不仅如此，拨改贷项目仍然沿袭由国家定项目，企业和建设单位听命使用资金的做法。国家定项目就是领导人定项目，厂里面的领导人为了政绩胡乱贷款上项目。这导致上届领导借钱下届领导人还款，对借钱者没有有效的制约手段。在“拨改贷”实行后不久，一些厂长经理就悟出了“不贷白不贷”的道理，向国家争投资、争项目、争贷款，最终导致国企债务高企，并引发了80年代数次经济失衡。</p><h2 id="三、一长制和工人的积极性降低"><a href="#三、一长制和工人的积极性降低" class="headerlink" title="三、一长制和工人的积极性降低"></a>三、一长制和工人的积极性降低</h2><p>随着一长制的恢复，工人失去已有的民主权利，管理层逐渐失控。《工人日报》指出：“随着改革方向的明确，厂长、经理及其他经营管理人员的地位、作用已经得到了明确的界定，他们的权力得到了明确的保证。然而，无庸讳言，我们在正确地强调和注重了厂长、经理阶层的权力和职能时，却不恰当地疏忽了职工劳动者的应有权利。致使职工在分享改革成果的预期未得实现的同时，又未能分享参与协调的机会”。</p><p>1982年全国职工状况调查表明，一些领导干部通过不正当的手段为自己的子女安排较好的工种，在提干、晋级、住房分配等涉及群众利益方面，都给自己以及自己的子女和亲属以特殊的照顾。1984年，国家开始改革劳动用工制度，招收合同制工人，1986年废除子女顶替和内部招工办法。</p><p>1986年有调查表明，由于搞活企业的需要，企业管理者向经营者转化，被赋予了更大的企业权力。企业厂长由上级领导任命、委派，实行负责制，职工满意不满意都得接受，干好干坏群众既不能褒，也不能贬。他们说：“工人只尽主人翁义务，没有主人翁权利，主人担风险（企业办不好，领不到工资），公仆有保险（企业办垮了照样当官或调走了事）”。企业干群关系开始紧张，工人用消极怠工来对付干部，已经成为公开的秘密。</p><p>据中华全国总工会1988年对17个城市400多个企业的21万职工所作的劳动积极性调查显示，“国营企业劳动者的劳动热情不在峰值而在谷底。21万职工中认为自己的劳动积极性得到了充分发挥的只占12%。”因为此时工人队伍已经瓦解，所谓的劳动积极性就是关心私利的积极性，当工人的个人利益得不到满足时，劳动积极性自然就会消失。</p><h2 id="四、承包制和工人积极性的进一步降低"><a href="#四、承包制和工人积极性的进一步降低" class="headerlink" title="四、承包制和工人积极性的进一步降低"></a>四、承包制和工人积极性的进一步降低</h2><p>1987年5月，国务院在全国推广承包制。承包制就是把国营企业的各个车间部门承包给各种厂长、书记、主任等等，这些人按承诺缴纳一定的利润，剩下的钱可以自行分配。</p><p>承包制使得工人和干部的收入差距迅速扩大。按照国家的规定，应当采取公开招标办法，通过竞争确定承包经营者，但实际中很少有采用竞争办法的，基本上都是主管领导拍板。在政府和企业之间，企业的承包基数和分成比例等指标取决于政府发包部门和厂长的谈判，没有统一和科学的标准；在企业内部，根据游正林的调查，承包人和承包监督人一般为分厂厂长和书记，在承包指标上有讨价还价余地，承包指标也不会订的太高，正常情况下承包任务完成都不会很难，因此“完不成年度责任目标的，应扣减厂长的个人收入”也就成了空话。</p><p>承包奖包括风险抵押金和超额奖两部分，超额奖的分配由承包者自主决定，不再是公开的。这样，通过两权分离就创造出来“先富起来”的一批干部。现代化大生产彼此之间的联系密切，很难按照计件工资的方式来计算劳动成果，再加上辅助工人和非生产工人没有有形的劳动产品，因此工人的工资改革变成了普调。同时也开始发年度奖和红包，工人之间的年度奖基本都一样，工人与经营者奖金差距日益拉大。工人对工厂的变化看的非常清楚，工人中都流传着这样的话：“工人穷，厂长富，车间主任万元户，厂长挣钱没有数。”</p><h2 id="五、所谓的懒汉"><a href="#五、所谓的懒汉" class="headerlink" title="五、所谓的懒汉"></a>五、所谓的懒汉</h2><p>一长制使得厂长建立了工厂里面的独裁，承包制扩大了工人和干部的收入差距，这还没完。厂里面的领导为了赚更多的钱，开始在外面建小厂。钢铁厂的领导开个焦炭厂，高价把焦炭卖给自己单位；媒矿的领导在外面开个洗煤厂，私底下利益输送。</p><p>作为小说《抉择》原型的那家纺织厂每年的招待费就一千多万元。每个厂长经理退休，发给一百万元办三产，也就是个人小纺织厂。于是大纺织厂周围布满了小纺织厂，国家的资金、原料、市场都流到了小纺织厂。小厂红红火火，大厂一点一点被蚕食。大厂的工人失业，被小厂以低价招来，一天干十几个小时，随意压榨剥削。</p><p>这一切，都被工人看在眼里。就在这样的大背景下，工人和工厂的关系发生了根本性变化。曾经在毛时代积极奋战的工人，有一些人开始变得偷奸耍滑。</p><p>70年代的时候，某个钢铁厂的领导公车私用，被一群工人堵在厂门口，要求他下车来解释，这个车拿去干嘛了，为什么要占国家的便宜。80年代的时候，还是那个钢铁厂，还是那些工人，他们开始从厂里面偷钢偷铁，拿一块好点的钢回家去打把菜刀，或者投点特殊钢材拿去卖给私人老板。你问工人，“你为什么要这样干啊？”他说，“领导大偷，工人小偷，这有什么问题吗？国家的便宜，不占白不占。”</p><p>部分工人开始了磨洋工。当资本制度全面建立时，曾经的主人由抱怨而愤怒、由愤怒而反抗，最初这种反抗是消极的，是以怠工或磨洋工的形式体现出来的。这就是磨洋工的原因。</p><p>一种声音出现了，他们痛斥工人偷懒，他们大呼人性本恶，他们说国企效率就是低下，国企工人就是磨洋工，他们说这一切的原因就是国企没有清晰的产权制度，“全民所有就是全民所无”。他们献言献策，要建立一个由严格的规章制度和明晰的产权制度构成的现代化企业，去防范工人从厂里面拿钢拿铁。但是，他们却从来不说这一切都是什么造成的，他们也从不建立一个规章制度去限制资本占有工人的剩余价值。</p><p>【然而，即使在这样的条件下，很多国企工人照样还是勤勤恳恳的工作，我曾经问过很多老工人，他们怎么看待大锅饭养懒汉的说法。他们无一例外痛斥这种污蔑他们的说法，“我们是企业的主人，不是懒汉！”】</p><h2 id="六、1993年后的国企改革"><a href="#六、1993年后的国企改革" class="headerlink" title="六、1993年后的国企改革"></a>六、1993年后的国企改革</h2><p>1993年11月开始了新一轮国企改革，三个重点：一是抓大放小，二是建立公司法人治理结构，三是理顺企业产权关系。与此同时，全国人大颁布了《公司法》，这标志着按份占有资本并实行权力的产权制度在中国有了法律依据。结合1993年的增值税改革前后的五个文件，可以得出两个结论：</p><p>1、国家除了17%的增值税，还可以获得33%的所得税。表面上看税率较以前的55%有所降低，但由于增值税的税基较原来扩大了很多，因此，国家所得较以前有大幅增加（这从后来津津乐道的税收增长中可以看出来）。更为重要的是，在税负增加的同时，我国彻底抛弃了教育、医疗和住房的包袱，国民不再能通过财政收入享受国有资产的收益。工人曾经享有的医疗、教育和住房福利，基本被改革掉了（1998年后明确终止福利分房，最终完结了工人从经济上获取国企利润的途径）。</p><p>2、对于企业职工福利和奖金，由于原来的文件被废止，而新文件没有交代，于是，它的法律地位被弱化。因此，企业留存的利润，从理论上来讲，除了用于投资，便没有任何可以索取的途径。</p><p>从1993年起，国有资产分成了三大块：政府的税收，约占50%或更多；用于投资的利润，大致占50%弱；没有任何法律保障的职工福利，份额微不足道。</p><p>1994年通过并于1995年实施的《劳动法》，从法律层面上明确了劳动者仅仅是企业的雇员，而不是工厂的主人，也就是说，从法律意义而言，工厂有权力开除工人了。与此前后，国企开始全面推行合同制，国有单位的劳动合同制职工由1992年的2059万人猛增到1996年的5549万人。在签合同的过程中，一开始领导告诉工人这不过是“走过场”，签个字就行了；到了90年代末开始优化的时候，签了字的合同就开始起作用，领导们宣布“老人老办法，新人新办法”，合同制的职工这时就傻眼了。</p><p>1996年一季度，在长期不公平的竞争中（至少有两点：其一、税收不平等。其二、私企和外企只给职工发工资，而国企除了工资，还要给职工修房子、看病、上学），在国企乱象横生的背景下，国有工业企业首次出现全行业净亏损。国有及国有控股大中型亏损企业6599户，亏损面达39.1％。</p><p>而导致这一切的锅，自然又是由那些“磨洋工”的国企工人背了。</p><p>面对当时的局面，领导人提出要进一步深化改革，用各种方法让国企三年脱困。砸三铁、甩包袱，也就是在这个大背景下出台的。在此前后，国有企业甩卖了自己的医院、学校，分出了自己的住建科成立房地产公司，优化了大批老工人以减少成本。</p><p>被优化的工人生活境遇迅速下降，以三线职工为例，2005年三线被优化的职工月收入低于300元的有68％，收入的92％用于衣食和子女教育，88％的人无法养活自己而不得不依靠政府福利、亲友救济。被优化的那些人生活没有着落，出现了各种人间悲剧。有女工成为霓虹灯下的新哨兵，而她的男人每次都驮着她去上岗。有男工为了自己的小孩上学，吃了某种药制造一个大新闻，让社会捐助自己的遗孤。去问问那些经历过这个时期的人，哪一个不是对这些专家学者恨的咬牙切齿。一个老工人这样说，“我们不是懒汉，我们是社会主义的建设者！”还有很多不甘心的老工人开始了串联，上访，甚至实施了其他更激进的措施。《那儿》，《问苍茫》等等优秀的文学作品，就生动地描述了这段对中国有深刻影响的历史。</p><p>1997年刘欢的《从头再来》就是给这些被优化的人。“昨天所有的荣誉，已变成遥远的回忆，辛辛苦苦已度过半生，今夜重又走进风雨……心若在梦就在，天地之间还有真爱，看成败人生豪迈，只不过是从头再来。”工人听了当时就直骂娘，你为什么不走进风雨，凭什么叫我们从头再来！</p><p>而这一切也构成了黄宏那个小品的时代背景。刘欢的歌还比较隐晦，你骂他，他还能闪躲。黄宏的小品实在说不上高明，用这样直白的话，去刺痛工人的心，“工人要为国家想，我不下岗谁下岗”。人家一辈子都在为国家想，人家老了，希望安定一点，希望你也为他想想。结果你倒好，把人家当包袱一甩了之。这就难怪那么多为国家奉献一身的老工人，恨黄宏入骨。</p><p>2000年开始，国家对全国的国有企业改革实行分类指导，对陷入困境的老企业通过出售一块、盘活一块、加强一块等各种方式，进行国企“改革”。数千万工人被优化，众多国企被甩卖。通过甩包袱卖企业，2000年底，终于如期基本实现了国企改革与脱困的三年两大目标。</p><p>从实质而非形式的意义来讲，至此，国企改革已经完毕。后续的行动，无论怎么冠以改革的名义，其实质仅仅是垄断资本的重组而已。2003年组建国资委，对国有垄断资本进行打散重组，这之后的进程，多数人至少也有耳闻了。</p><p>21世纪初期，与资本对立的那些曾经的主人还在动。他们的切身利益受到前所未有的冲击，迫使他们开始关注自身的利益。到2005年，全国群体上访涉及约400万人，其中以他们为主体的有40％。各种消息在他们之间传播。一个城市的那些人，甚至形成了某种网络式的联系。一棉、二棉、三棉联系在一起，钢铁、五金、采矿、炼焦联系在一起，木材厂和肉联厂的也在沟通，这导致了巨大的不安定。这些不安定因素，用自己气吞山河的壮举，延缓了私有化的进程。</p><p>作为曾经的主人，在资本全面复兴的时代，他们唱出了极为悲壮的挽歌，也因此而奏响了新时代的号角。</p><p>-——————————————-</p><p>主要参考文献：</p><p>​    游正林.内部分化与流动——一家国有企业的二十年.北京：社会科学文献出版社，1998</p><p>​    刘卓红.现代化建设主体——当代工人阶级地位研究[M].广东人民出版社，2000</p><p>​    冯同庆，围绕工人阶级理论的争论与工人阶级状况</p><p>​    柳可白，王玫，阎春芝.当代工人阶级的地位和作用.中国工人出版社，2007</p><p>​    胡鞍钢.关于我国就业问题的若干看法</p><p>​    于建嵘.当代中国工人的以理维权</p><p>-————————————————</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自 佐伊23&lt;/p&gt;
+&lt;p&gt;链接：&lt;a href=&quot;https://www.zhihu.com/question/30105824/answer/1484712593&quot;&gt;https://www.zhihu.com/question/30105824/answer/1484712593&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;来源：知乎&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“国企工人不就是大锅饭吗，不就是磨洋工吗，这样不改还得了啊？”&lt;/p&gt;
+&lt;p&gt;“他们不就是喜欢从厂里面偷东西吗，这不就是产权不明确无人负责导致的吗？”&lt;/p&gt;
+&lt;p&gt;“居然还有人说当时的国企好，国企这么好，那为什么垮了？”&lt;/p&gt;
+&lt;p&gt;“那些下岗的自己不努力，怪谁！”&lt;/p&gt;
+&lt;p&gt;当过程被人有意无意忽略的时候，某些结果就显得不可理解。但是当我们把过程补齐的时候，一切看似矛盾的事物又都显得那么自洽。&lt;/p&gt;
+&lt;p&gt;改革开放前，我国国营企业有三大特点。&lt;/p&gt;
+&lt;p&gt;经济上。企业的利润扣除社会保障基金和扩大再生产的资金外，归根结底要通过各种福利制度返还职工。国企有自己的医院、学校和修房子的住建科，职工享受免费的医疗和教育，并且享受福利分房。也就是说，国企的钱不光要给职工发工资，还要给职工修房子、上学、看病。&lt;/p&gt;
+&lt;p&gt;管理上。企业在逐步实行“两参一改三结合”（有些实行得好点，有些差一点），即“干部参加劳动，工人参加管理；改革不合理的规章制度；工程技术人员、管理者和工人在生产实践和技术革新中相结合”。工人在劳动中不是被动的工具，不是被动的领受任务，而是主动的自觉的人，主动参与到企业计划的制定之中。&lt;/p&gt;
+&lt;p&gt;工人和企业的关系上。工人是企业的主人，而不是企业的雇员。企业管理人员（厂长、书记等等）没有权力开除工人。一般而言，只要工人不犯罪，厂里就没有开除工人的权力。&lt;/p&gt;
+&lt;p&gt;对国企而言，改革改的就是这三点。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="鉴证" scheme="https://rongkangxiong.top/categories/%E9%89%B4%E8%AF%81/"/>
+    
+    <category term="国企改革" scheme="https://rongkangxiong.top/categories/%E9%89%B4%E8%AF%81/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9/"/>
+    
+    
+    <category term="鉴证" scheme="https://rongkangxiong.top/tags/%E9%89%B4%E8%AF%81/"/>
+    
+    <category term="改革" scheme="https://rongkangxiong.top/tags/%E6%94%B9%E9%9D%A9/"/>
+    
+    <category term="国企改革" scheme="https://rongkangxiong.top/tags/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo + Next 主题博客提交百度谷歌收录</title>
@@ -837,72 +1147,6 @@ comment: true
     
     
     <category term="入站须知" scheme="https://rongkangxiong.top/tags/%E5%85%A5%E7%AB%99%E9%A1%BB%E7%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>First Blog-制作个人博客</title>
-    <link href="https://rongkangxiong.top/post/Firstblog.html"/>
-    <id>https://rongkangxiong.top/post/Firstblog.html</id>
-    <published>2021-11-09T15:02:32.000Z</published>
-    <updated>2021-11-11T09:25:28.386Z</updated>
-    
-    <content type="html"><![CDATA[<p>自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。<br>直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。</p><h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便生成静态网页托管在GitHub或者Coding上。</p><h1 id="HEXO搭建步骤"><a href="#HEXO搭建步骤" class="headerlink" title="HEXO搭建步骤"></a>HEXO搭建步骤</h1><ol><li>安装<a href="https://git-scm.com/download/win">git</a></li><li>安装<a href="https://nodejs.org/en/download/">Node.js</a>，选择LTS版本就行</li><li>安装Hexo</li><li>Github建立个人仓库</li><li>生成SSH添加到GitHub</li><li>将Hexo部署到GitHub</li><li>设置个人域名</li><li>发布文章</li></ol><span id="more"></span><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><h3 id="Windows检查安装是否成功"><a href="#Windows检查安装是否成功" class="headerlink" title="Windows检查安装是否成功"></a>Windows检查安装是否成功</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">node -vnpm -v</code></pre><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下(或者在这个文件夹下直接右键git bash打开)</p><h3 id="开始安装Hexo"><a href="#开始安装Hexo" class="headerlink" title="开始安装Hexo"></a>开始安装Hexo</h3><p>输入命令</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g hexo-cli</code></pre><p>你会发现出现</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">changed 57 packages in 6s1 package is looking for funding  run &#96;npm fund&#96; for details</code></pre><p>这不是报错，只是开发者寻求捐赠支持<br>翻译：1个包正在寻找资金，运行<font color='red'> npm fund</font>了解详细信息</p><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo init myblog</code></pre><h4 id="当下载很慢的时候可以更换源"><a href="#当下载很慢的时候可以更换源" class="headerlink" title="当下载很慢的时候可以更换源"></a>当下载很慢的时候可以更换源</h4><ul><li><p>淘宝npm镜像</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npmmirror.com</code></pre></li><li><p>阿里源</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.orgnpm config set registry https:&#x2F;&#x2F;registry.npm.taobao.orgnpm config list</code></pre></li><li><p>输入代码检查换源是否成功过</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm config list</code></pre></li></ul><p>然后</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">cd myblog &#x2F;&#x2F;进入这个myblog文件夹npm installhexo g</code></pre><p>新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public: 存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li><strong>_config.yml: 博客的配置文件</strong></li></ul><p>继续输入</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo ghexo server</code></pre><p>打开hexo的服务，在浏览器输入<a href="localhost:4000">localhost:4000</a>就可以在本地看到你生成的博客</p><h3 id="修改配置文件-config-yml"><a href="#修改配置文件-config-yml" class="headerlink" title="修改配置文件 _config.yml"></a>修改配置文件 <strong>_config.yml</strong></h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">deploy:    type: git    repo: https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong&#x2F;RongkangXiong.github.io.git    branch: main</code></pre><p>注意空格还有对齐</p><h3 id="安装deploy-git"><a href="#安装deploy-git" class="headerlink" title="安装deploy-git"></a>安装deploy-git</h3><p>也就是部署的命令,这样你才能用命令部署到GitHub</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install hexo-deployer-git --save</code></pre><p>然后确认是否连接成功</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">ssh -T git@github.com</code></pre><p>会出现让你确认密码</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cleanhexo generatehexo deploy</code></pre><p>其中<strong>hexo clean</strong>清除了你之前生成的东西，也可以不加。<br><strong>hexo generate</strong> 顾名思义，生成静态文章，可以用<strong>hexo g</strong>缩写<br><strong>hexo deploy</strong> 部署文章，可以用<strong>hexo d</strong>缩写</p><p>出现一下信息表示部署成功</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">Branch &#39;master&#39; set up to track remote branch &#39;main&#39; from &#39;https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong&#x2F;RongkangXiong.github.io&#39;.INFO  Deploy done: git</code></pre><p>过一会儿就可以在 <a href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="出现 OpenSSL SSL_read: Connection was reset, errno 10054"></a>出现 <em><strong>OpenSSL SSL_read: Connection was reset, errno 10054</strong></em></h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">    git config --global http.sslVerify &quot;false&quot;&#96;&#96;&#96;自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。# Hexo简介Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便生成静态网页托管在GitHub或者Coding上。# HEXO搭建步骤1. 安装[git](https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win)2. 安装[Node.js](https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F;)，选择LTS版本就行3. 安装Hexo4. Github建立个人仓库5. 生成SSH添加到GitHub6. 将Hexo部署到GitHub7. 设置个人域名8. 发布文章# 安装hexo### Windows检查安装是否成功&#96;&#96;&#96;gitnode -vnpm -v</code></pre><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下(或者在这个文件夹下直接右键git bash打开)</p><h3 id="开始安装Hexo-1"><a href="#开始安装Hexo-1" class="headerlink" title="开始安装Hexo"></a>开始安装Hexo</h3><p>输入命令</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g hexo-cli</code></pre><p>你会发现出现</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">changed 57 packages in 6s1 package is looking for funding  run &#96;npm fund&#96; for details</code></pre><p>这不是报错，只是开发者寻求捐赠支持<br>翻译：1个包正在寻找资金，运行<font color='red'> npm fund</font>了解详细信息</p><h3 id="初始化Hexo-1"><a href="#初始化Hexo-1" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo init myblog</code></pre><h4 id="当下载很慢的时候可以更换源-1"><a href="#当下载很慢的时候可以更换源-1" class="headerlink" title="当下载很慢的时候可以更换源"></a>当下载很慢的时候可以更换源</h4><ul><li><p>淘宝npm镜像</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npmmirror.com</code></pre></li><li><p>阿里源</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.orgnpm config set registry https:&#x2F;&#x2F;registry.npm.taobao.orgnpm config list</code></pre></li><li><p>输入代码检查换源是否成功过</p>  <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm config list</code></pre></li></ul><p>然后</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">cd myblog &#x2F;&#x2F;进入这个myblog文件夹npm installhexo g</code></pre><p>新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public: 存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li><strong>_config.yml: 博客的配置文件</strong></li></ul><p>继续输入</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo ghexo server</code></pre><p>打开hexo的服务，在浏览器输入<a href="localhost:4000">localhost:4000</a>就可以在本地看到你生成的博客</p><h3 id="修改配置文件-config-yml-1"><a href="#修改配置文件-config-yml-1" class="headerlink" title="修改配置文件 _config.yml"></a>修改配置文件 <strong>_config.yml</strong></h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">deploy:    type: git    repo: https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong&#x2F;RongkangXiong.github.io.git    branch: main</code></pre><p>这里 repo内容可以换为：</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git@github.com:RongkangXiong&#x2F;RongkangXiong.github.io.git</code></pre><p>从而避免每次都要输入密码</p><p>注意空格还有对齐</p><h3 id="安装deploy-git-1"><a href="#安装deploy-git-1" class="headerlink" title="安装deploy-git"></a>安装deploy-git</h3><p>也就是部署的命令,这样你才能用命令部署到GitHub</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install hexo-deployer-git --save</code></pre><p>然后确认是否连接成功</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">ssh -T git@github.com</code></pre><p>会出现让你确认密码</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cleanhexo generatehexo deploy</code></pre><p>其中<strong>hexo clean</strong>清除了你之前生成的东西，也可以不加。<br><strong>hexo generate</strong> 顾名思义，生成静态文章，可以用<strong>hexo g</strong>缩写<br><strong>hexo deploy</strong> 部署文章，可以用<strong>hexo d</strong>缩写</p><p>快速代码为:</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo clean &amp; hexo g &amp; hexo d</code></pre><p>出现一下信息表示部署成功</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">Branch &#39;master&#39; set up to track remote branch &#39;main&#39; from &#39;https:&#x2F;&#x2F;github.com&#x2F;RongkangXiong&#x2F;RongkangXiong.github.io&#39;.INFO  Deploy done: git</code></pre><p>过一会儿就可以在 <a href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了</p><h2 id="hexo基本配置"><a href="#hexo基本配置" class="headerlink" title="hexo基本配置"></a>hexo基本配置</h2><p>在文件根目录下的 <em>_config.yml</em>，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考<a href="https://hexo.io/zh-cn/docs/configuration">官方的配置</a>描述。</p><h3 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h3><p>| 参数 | 描述 |  作用<br>| - | :-: | -: | -: |<br>| title | 网站标题 | |<br>|subtitle|网站副标题| |<br>|description| 网站描述| 主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词 |<br>|author |您的名字| 显示文章的作者 |<br>|language |网站使用的语言| |<br>|timezone |网站时区Hexo，比如说：America/New_York, Japan和 UTC| 默认使用您电脑的时区 |</p><h3 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h3><p>| 参数 | 描述 | 操作 |<br>| - | :-: | :-: | :-: |<br>|url|网址| url改成你的网站域名|<br>|root|网站根目录| |<br>|permalink |文章的 永久链接 格式| 生成某个文章时候的链接格式，官方给出的<a href="https://hexo.io/zh-cn/docs/permalinks">永久链接变量</a>很多 |<br>|permalink_defaults |永久链接中各部分的默认值|</p><h3 id="运行Hexo服务器"><a href="#运行Hexo服务器" class="headerlink" title="运行Hexo服务器"></a>运行Hexo服务器</h3><p>在127.0.0.1::8080 上启动服务器</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo server -i 127.0.0.1 -p 8080</code></pre><h2 id="问题-1"><a href="#问题-1" class="headerlink" title="问题"></a>问题</h2><h3 id="出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054-1"><a href="#出现-OpenSSL-SSL-read-Connection-was-reset-errno-10054-1" class="headerlink" title="出现 OpenSSL SSL_read: Connection was reset, errno 10054"></a>出现 <em><strong>OpenSSL SSL_read: Connection was reset, errno 10054</strong></em></h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global http.sslVerify &quot;false&quot;</code></pre><h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p>觉得默认的landscape主题不好看，那么可以在<a href="https://hexo.io/themes/">官网的主题</a>中，选择你喜欢的一个主题进行修改就可以啦</p><h2 id="Hexo主题安装教程"><a href="#Hexo主题安装教程" class="headerlink" title="Hexo主题安装教程"></a>Hexo主题安装教程</h2><p>进入<a href="https://hexo.io/themes/">官网的主题</a>，选择喜欢主题，点击链接进入github界面<br>然后复制 <strong>Code</strong> 的 <strong>HTTPS</strong> 或者 <strong>Github CLI</strong>链接</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre><p>如果下载不了可以下载zip解压到 themes/hueman 下面<br>也可以用GitHub桌面端进行Clone</p><h3 id="安装搜索系统"><a href="#安装搜索系统" class="headerlink" title="安装搜索系统"></a>安装搜索系统</h3><h3 id="安装评论系统"><a href="#安装评论系统" class="headerlink" title="安装评论系统"></a>安装评论系统</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install valine --save</code></pre><p>参考链接：</p><ul><li><a href="https://www.jianshu.com/p/ec4e678f6cef">Hexo 更换主题</a></li><li><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029?utm_source=wechat_session&utm_medium=social&utm_oi=1018674094685900800">hexo史上最全搭建教程</a></li><li><a href="https://aurora.tridiamond.tech/zh/">aurora主题</a></li><li><a href="https://blog.meerost.com/post/AuroraMagicChangeFirst">魔改aurora主题</a></li><li><a href="https://github.com/vuepress-aurora/vuepress-theme-aurora">vuepress-theme-aurora主题</a></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;自己购买域名和服务器，搭建博客的成本比较高，光是搭建和维护，就对大多数人来说，没有这样的精力和时间。&lt;br&gt;直接在github平台上托管我们的博客，就可以安心写作，而不需要定期维护。&lt;/p&gt;
-&lt;h1 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;headerlink&quot; title=&quot;Hexo简介&quot;&gt;&lt;/a&gt;Hexo简介&lt;/h1&gt;&lt;p&gt;Hexo是一款基于Node.js的静态博客框架，依赖少，易于安装使用，可以方便生成静态网页托管在GitHub或者Coding上。&lt;/p&gt;
-&lt;h1 id=&quot;HEXO搭建步骤&quot;&gt;&lt;a href=&quot;#HEXO搭建步骤&quot; class=&quot;headerlink&quot; title=&quot;HEXO搭建步骤&quot;&gt;&lt;/a&gt;HEXO搭建步骤&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;安装&lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;安装&lt;a href=&quot;https://nodejs.org/en/download/&quot;&gt;Node.js&lt;/a&gt;，选择LTS版本就行&lt;/li&gt;
-&lt;li&gt;安装Hexo&lt;/li&gt;
-&lt;li&gt;Github建立个人仓库&lt;/li&gt;
-&lt;li&gt;生成SSH添加到GitHub&lt;/li&gt;
-&lt;li&gt;将Hexo部署到GitHub&lt;/li&gt;
-&lt;li&gt;设置个人域名&lt;/li&gt;
-&lt;li&gt;发布文章&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Hexo" scheme="https://rongkangxiong.top/tags/Hexo/"/>
-    
-    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="网站" scheme="https://rongkangxiong.top/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="Github" scheme="https://rongkangxiong.top/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何制作输出电子笔记</title>
-    <link href="https://rongkangxiong.top/post/HowtoWriteNotes.html"/>
-    <id>https://rongkangxiong.top/post/HowtoWriteNotes.html</id>
-    <published>2021-11-09T15:02:32.000Z</published>
-    <updated>2021-11-10T03:56:28.380Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="How-to-Write-MyNotes"><a href="#How-to-Write-MyNotes" class="headerlink" title="How to Write MyNotes"></a>How to Write MyNotes</h1><p>通过 plantuml绘制流程图</p><h3 id="支持类型"><a href="#支持类型" class="headerlink" title="支持类型"></a>支持类型</h3><p><a href="">MindMap diagram</a><br><a href="">Sequence diagram</a><br><a href="">Usecase diagram</a><br><a href="">Class diagram</a>  </p><h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><h4 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">删去&#96; &#96; &#96;之间的空格&#96; &#96; &#96;pythondef helloworld():    print(&quot;helloworld&quot;)&#96; &#96; &#96;</code></pre><p>得到效果</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">def helloworld():    print(&quot;hello world&quot;)</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;How-to-Write-MyNotes&quot;&gt;&lt;a href=&quot;#How-to-Write-MyNotes&quot; class=&quot;headerlink&quot; title=&quot;How to Write MyNotes&quot;&gt;&lt;/a&gt;How to Write MyNotes&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="个人博客制作" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C/"/>
-    
-    
-    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="笔记" scheme="https://rongkangxiong.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Notes" scheme="https://rongkangxiong.top/tags/Notes/"/>
     
   </entry>
   
