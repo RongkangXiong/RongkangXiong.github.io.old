@@ -60,6 +60,24 @@ comment: true
 
 ![image-20211113195210299](../../images/blog/使用DropIt整理数据/image-20211113195210299.png)
 
+# DropIt常用规则
+
+## 重命名文件为序号
+
+![image-20211121190304673](../../images/blog/使用DropIt整理数据/image-20211121190304673.png)
+
+## 将文件中的关键字替换
+
+
+
+
+
+
+
+
+
+
+
 参考资料：
 
  [https://sspai.com/post/45532](https://sspai.com/post/45532)

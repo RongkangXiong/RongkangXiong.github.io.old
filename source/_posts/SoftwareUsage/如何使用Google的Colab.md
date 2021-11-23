@@ -24,15 +24,15 @@ Google Colab(Colaboratory) 是一个研究项目，可免费使用。
 
 点击 `我的云端硬盘-更多-关联更多应用`
 
-![image-20211113105751743](../images/blog/如何使用Google的Colab/image-20211113105751743.png)
+![image-20211113105751743](../../images/blog/如何使用Google的Colab/image-20211113105751743.png)
 
 选择`Colaboratory`然后点击进去安装
 
-![image-20211113105832690](../images/blog/如何使用Google的Colab/image-20211113105832690.png)
+![image-20211113105832690](../../images/blog/如何使用Google的Colab/image-20211113105832690.png)
 
 安装Colaboratory插件,选择自己的Google账号，，选择与Google云端硬盘关联
 
-![image-20211113105925943](../images/blog/如何使用Google的Colab/image-20211113105925943.png)
+![image-20211113105925943](../../images/blog/如何使用Google的Colab/image-20211113105925943.png)
 
 
 
@@ -44,15 +44,15 @@ Google Colab(Colaboratory) 是一个研究项目，可免费使用。
 
 链接到Google云端硬盘
 
-![image-20211113110505754](../images/blog/如何使用Google的Colab/image-20211113110505754.png)
+![image-20211113110505754](../../images/blog/如何使用Google的Colab/image-20211113110505754.png)
 
 允许授权
 
-![image-20211113110430488](../images/blog/如何使用Google的Colab/image-20211113110430488.png)
+![image-20211113110430488](../../images/blog/如何使用Google的Colab/image-20211113110430488.png)
 
 然后你的文件夹编程如下形式
 
-![image-20211113110605422](../images/blog/如何使用Google的Colab/image-20211113110605422.png)
+![image-20211113110605422](../../images/blog/如何使用Google的Colab/image-20211113110605422.png)
 
 查看是否能使用GPU
 
@@ -63,7 +63,7 @@ tf.test.gpu_device_name()
 
 如果结果为空，则不能使用GPU
 
-![image-20211113110919130](../images/blog/如何使用Google的Colab/image-20211113110919130.png)
+![image-20211113110919130](../../images/blog/如何使用Google的Colab/image-20211113110919130.png)
 
 选择`Runtime-GPU-Save`然后再重新运行代码
 
@@ -74,7 +74,7 @@ tf.test.gpu_device_name()
 
 如果结果为`/device:GPU:0`
 
-![image-20211113111100800](../images/blog/如何使用Google的Colab/image-20211113111100800.png)
+![image-20211113111100800](../../images/blog/如何使用Google的Colab/image-20211113111100800.png)
 
 使用`!/opt/bin/nvidia-smi`查看显存情况
 
@@ -82,7 +82,7 @@ tf.test.gpu_device_name()
 !/opt/bin/nvidia-smi
 ```
 
-![image-20211113111158328](../images/blog/如何使用Google的Colab/image-20211113111158328.png)
+![image-20211113111158328](../../images/blog/如何使用Google的Colab/image-20211113111158328.png)
 
 查看显卡内存使用上限
 
@@ -91,7 +91,7 @@ from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
 ```
 
-![image-20211113111238429](../images/blog/如何使用Google的Colab/image-20211113111238429.png)
+![image-20211113111238429](../../images/blog/如何使用Google的Colab/image-20211113111238429.png)
 
 查看内存信息
 
@@ -147,9 +147,9 @@ Google 对应用的新用户登录频率设有上限。您可以稍后尝试重�
 
 - 创建项目
 
-![image-20211113143740935](../images/blog/如何使用Google的Colab/image-20211113143740935.png)
+![image-20211113143740935](../../images/blog/如何使用Google的Colab/image-20211113143740935.png)
 
-![image-20211113143814842](../images/blog/如何使用Google的Colab/image-20211113143814842.png)
+![image-20211113143814842](../../images/blog/如何使用Google的Colab/image-20211113143814842.png)
 
 项目名称随意填写
 
@@ -157,7 +157,7 @@ Google 对应用的新用户登录频率设有上限。您可以稍后尝试重�
 
 打开[https://console.developers.google.com/apis/library/drive.googleapis.com]( https://console.developers.google.com/apis/library/drive.googleapis.com)点击**启用**
 
-![image-20211113144026038](../images/blog/如何使用Google的Colab/image-20211113144026038.png)
+![image-20211113144026038](../../images/blog/如何使用Google的Colab/image-20211113144026038.png)
 
 - 创建凭据
 

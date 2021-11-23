@@ -38,11 +38,11 @@ writetable(T,'H:\WenLabData\wormdata\N2_Crawl_202105\Labels\ceshi2.xlsx')
 
 Table的形式是这样
 
-![image-20211113161130571](../../images/blog/CSV存储标记数据/image-20211113161130571.png)
+![image-20211113161130571](../../../images/blog/CSV存储标记数据/image-20211113161130571.png)
 
 写进文件后是这样
 
-![image-20211113161155174](../../images/blog/CSV存储标记数据/image-20211113161155174.png)
+![image-20211113161155174](../../../images/blog/CSV存储标记数据/image-20211113161155174.png)
 
 如果左边还要加一列的话可以写为:
 
@@ -58,5 +58,5 @@ writetable(T,'H:\WenLabData\wormdata\N2_Crawl_202105\Labels\ceshi4.xlsx')
 
 得到写入的'xlsx'文件的效果为
 
-![image-20211113161649625](../../images/blog/CSV存储标记数据/image-20211113161649625.png)
+![image-20211113161649625](../../../images/blog/xlsx表格存储标记数据/image-20211113161649625.png)
 

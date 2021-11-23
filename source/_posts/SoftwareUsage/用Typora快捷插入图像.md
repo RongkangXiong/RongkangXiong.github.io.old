@@ -25,11 +25,11 @@ date: 2021-11-13 01:29:04
 
 <!--more-->
 
-<img src="../images/blog/用Typora快捷插入图像/image-20211113012957221.png" alt="image-20211113012957221"  />
+<img src="../../images/blog/用Typora快捷插入图像/image-20211113012957221.png" alt="image-20211113012957221"  />
 
 点击`图像-选择操作 复制到指定路径`
 
-![image-20211113013313305](../images/blog/用Typora快捷插入图像/image-20211113013313305.png)
+![image-20211113013313305](../../images/blog/用Typora快捷插入图像/image-20211113013313305.png)
 
 
 
@@ -45,11 +45,11 @@ date: 2021-11-13 01:29:04
 
 直接复制一张图片粘贴到Typora中
 
-![image-20211113013626874](../images/blog/用Typora快捷插入图像/image-20211113013626874.png)
+![image-20211113013626874](../../images/blog/用Typora快捷插入图像/image-20211113013626874.png)
 
 效果如图
 
-![image-20211113013709011](../images/blog/用Typora快捷插入图像/image-20211113013709011.png)
+![image-20211113013709011](../../images/blog/用Typora快捷插入图像/image-20211113013709011.png)
 
 `Ctrl+s`保存一下`md`文件，然后我们打开网页查看是否有图片
 
@@ -57,7 +57,7 @@ date: 2021-11-13 01:29:04
 hexo s
 ```
 
-![image-20211113014052910](../images/blog/用Typora快捷插入图像/image-20211113014052910.png)
+![image-20211113014052910](../../images/blog/用Typora快捷插入图像/image-20211113014052910.png)
 
 Nice!
 
