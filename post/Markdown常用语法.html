@@ -31,7 +31,7 @@
 <meta property="og:description" content="Typora下载 小功能启用预览功能直接在文章中插入即可，此代码一下的需要点击 阅读更多 才能此代码下面的内容 &lt;!--more--&gt;  文章内部锚点跳转这个方式是由John Tsai给出的，分成两步：  定义一个锚(id)：  &lt;span id&#x3D;&quot;jump&quot;&gt;跳转到的地方&lt;&#x2F;span&gt;   使用markdown语法：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-12T05:02:59.000Z">
-<meta property="article:modified_time" content="2021-11-12T16:58:27.170Z">
+<meta property="article:modified_time" content="2021-11-22T12:48:08.378Z">
 <meta property="article:author" content="Rongkang Xiong">
 <meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
@@ -92,11 +92,12 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="../index.html" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-about"><a href="../about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">36</span></a></li>
-        <li class="menu-item menu-item-categories"><a href="../categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">20</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">53</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="../categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">34</span></a></li>
         <li class="menu-item menu-item-read"><a href="../categories/read" rel="section"><i class="fa fa-book fa-fw"></i>读书</a></li>
-        <li class="menu-item menu-item-archives"><a href="../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">22</span></a></li>
-        <li class="menu-item menu-item-mynotes"><a href="../mynotes/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
+        <li class="menu-item menu-item-archives"><a href="../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">42</span></a></li>
+        <li class="menu-item menu-item-ceshi"><a href="../categories/%E9%89%B4%E8%AF%81/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>ceshi</a></li>
+        <li class="menu-item menu-item-mynotes"><a href="../mynotes/math/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
         <li class="menu-item menu-item-experience"><a href="../experience/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>经验分享</a></li>
         <li class="menu-item menu-item-sitemap"><a href="../sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
@@ -155,7 +156,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">1.</span> <span class="nav-text">小功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.</span> <span class="nav-text">启用预览功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%86%85%E9%83%A8%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.2.</span> <span class="nav-text">文章内部锚点跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.3.</span> <span class="nav-text">自己写的文章的跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.4.</span> <span class="nav-text">链接跳转</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">如何插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B1-%E5%A6%82%E5%9C%A8%E4%BB%BB%E6%84%8F-post%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0%E4%B8%AD%E5%BC%95%E7%94%A8"><span class="nav-number">2.1.</span> <span class="nav-text">例1. 如在任意_post目录下的文章中引用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-VScode%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.1.1.</span> <span class="nav-text">网页端看不到的格式|VScode能看到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VsCode%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-%E7%BD%91%E9%A1%B5%E7%AB%AF%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.1.2.</span> <span class="nav-text">VsCode看不到的格式|网页端能看到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E5%92%8CVsCode%E9%83%BD%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.1.3.</span> <span class="nav-text">网页端和VsCode都看不到的格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B2-%E5%BC%95%E7%94%A8%E5%90%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E7%9A%84%E5%90%8C%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E5%9B%BE%E7%89%87"><span class="nav-number">2.2.</span> <span class="nav-text">例2.引用同级目录的同名文件夹下的图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VScode%E8%83%BD%E7%9C%8B%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-%E7%BD%91%E9%A1%B5%E7%AB%AF%E7%9C%8B%E4%B8%8D%E5%88%B0"><span class="nav-number">2.2.1.</span> <span class="nav-text">VScode能看到的格式|网页端看不到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E8%83%BD%E7%9C%8B%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-VScode%E7%9C%8B%E4%B8%8D%E5%88%B0"><span class="nav-number">2.2.2.</span> <span class="nav-text">网页端能看到的格式|VScode看不到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E5%92%8CVScode%E9%83%BD%E4%B8%8D%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.2.3.</span> <span class="nav-text">网页端和VScode都不能看到</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCode%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.</span> <span class="nav-text">VSCode快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E4%BF%AE%E5%A4%8D"><span class="nav-number">3.1.</span> <span class="nav-text">快速修复</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">1.</span> <span class="nav-text">小功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.</span> <span class="nav-text">启用预览功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%86%85%E9%83%A8%E9%94%9A%E7%82%B9%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.2.</span> <span class="nav-text">文章内部锚点跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0%E7%9A%84%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.3.</span> <span class="nav-text">自己写的文章的跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC"><span class="nav-number">1.4.</span> <span class="nav-text">链接跳转</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">如何插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B1-%E5%A6%82%E5%9C%A8%E4%BB%BB%E6%84%8F-post%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0%E4%B8%AD%E5%BC%95%E7%94%A8"><span class="nav-number">2.1.</span> <span class="nav-text">例1. 如在任意_post目录下的文章中引用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-VScode%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.1.1.</span> <span class="nav-text">网页端看不到的格式|VScode能看到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VsCode%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-%E7%BD%91%E9%A1%B5%E7%AB%AF%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.1.2.</span> <span class="nav-text">VsCode看不到的格式|网页端能看到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E5%92%8CVsCode%E9%83%BD%E7%9C%8B%E4%B8%8D%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.1.3.</span> <span class="nav-text">网页端和VsCode都看不到的格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B2-%E5%BC%95%E7%94%A8%E5%90%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E7%9A%84%E5%90%8C%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E5%9B%BE%E7%89%87"><span class="nav-number">2.2.</span> <span class="nav-text">例2.引用同级目录的同名文件夹下的图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VScode%E8%83%BD%E7%9C%8B%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-%E7%BD%91%E9%A1%B5%E7%AB%AF%E7%9C%8B%E4%B8%8D%E5%88%B0"><span class="nav-number">2.2.1.</span> <span class="nav-text">VScode能看到的格式|网页端看不到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E8%83%BD%E7%9C%8B%E5%88%B0%E7%9A%84%E6%A0%BC%E5%BC%8F-VScode%E7%9C%8B%E4%B8%8D%E5%88%B0"><span class="nav-number">2.2.2.</span> <span class="nav-text">网页端能看到的格式|VScode看不到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%AB%AF%E5%92%8CVScode%E9%83%BD%E4%B8%8D%E8%83%BD%E7%9C%8B%E5%88%B0"><span class="nav-number">2.2.3.</span> <span class="nav-text">网页端和VScode都不能看到</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCode%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.</span> <span class="nav-text">VSCode快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E4%BF%AE%E5%A4%8D"><span class="nav-number">3.1.</span> <span class="nav-text">快速修复</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%BB%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text">画图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">4.1.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E5%BA%8F%E5%9B%BE"><span class="nav-number">4.2.</span> <span class="nav-text">时序图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%98%E7%89%B9%E5%9B%BE"><span class="nav-number">4.3.</span> <span class="nav-text">甘特图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E8%A1%A8"><span class="nav-number">4.4.</span> <span class="nav-text">图表</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -170,18 +171,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="../archives/">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">42</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="../categories/">
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">34</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="../tags/">
-        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -300,7 +301,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-13 00:58:27" itemprop="dateModified" datetime="2021-11-13T00:58:27+08:00">2021-11-13</time>
+        <time title="修改时间：2021-11-22 20:48:08" itemprop="dateModified" datetime="2021-11-22T20:48:08+08:00">2021-11-22</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -330,14 +331,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.9k</span>
+      <span>3.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
+      <span>3 分钟</span>
     </span>
 </div>
 
@@ -412,7 +413,190 @@
 <span id="more"></span>
 
 <h1 id="VSCode快捷键"><a href="#VSCode快捷键" class="headerlink" title="VSCode快捷键"></a>VSCode快捷键</h1><h2 id="快速修复"><a href="#快速修复" class="headerlink" title="快速修复"></a>快速修复</h2><p><code>Windows</code> 上是 <code>Ctrl + .</code></p>
+<h1 id="画图"><a href="#画图" class="headerlink" title="画图"></a>画图</h1><p>流程图、时序图、甘特图。画图都是用代码形式输入的，所以，都是以代码块形式来输入。画图引用的是mermai代码模块</p>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><blockquote>
+<ul>
+<li><code>graph</code> 是指画流程图，<code>TD</code>表示竖版,<code>LR</code>表示横版</li>
+<li>双括号<code>(( ))</code>表示圆圈; <code>[ ]</code>表示圆角矩形; <code>/ /</code>表示菱形</li>
+<li><code>--&gt;</code>表示箭头连接线</li>
+</ul>
+</blockquote>
+<p>语法样例：</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&#96;&#96;&#96;mermaid
+graph TD
+o((开始))--&gt;A[模块A]
 
+A --&gt;|A1| B(模块B)
+
+A--&gt;|a2|G(模块b1)
+
+B --&gt; C&#123;判断条件C&#125;
+
+C --&gt;|条件C1| D[模块D]
+
+C --&gt;|条件C2| E[模块E]
+
+C --&gt;|条件C3| F[模块F]
+
+G--&gt;H&#123;if tt&#125;
+
+H--&gt;|tt1|I[tt1]
+
+H--&gt;|tt2|J[tt2]
+
+H--&gt;|tt3|K[tt3]
+
+D--&gt;Z((end))
+
+E--&gt;Z((end))
+
+F--&gt;Z((end))
+
+I--&gt;Z((end))
+
+J--&gt;Z((end))
+
+K--&gt;Z((end))
+&#96;&#96;&#96;</code></pre>
+
+
+
+<p>自动生成的竖版效果如下：</p>
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">graph TD
+o((开始))--&gt;A[模块A]
+
+A --&gt;|A1| B(模块B)
+
+A--&gt;|a2|G(模块b1)
+
+B --&gt; C&#123;判断条件C&#125;
+
+C --&gt;|条件C1| D[模块D]
+
+C --&gt;|条件C2| E[模块E]
+
+C --&gt;|条件C3| F[模块F]
+
+G--&gt;H&#123;if tt&#125;
+
+H--&gt;|tt1|I[tt1]
+
+H--&gt;|tt2|J[tt2]
+
+H--&gt;|tt3|K[tt3]
+
+D--&gt;Z((end))
+
+E--&gt;Z((end))
+
+F--&gt;Z((end))
+
+I--&gt;Z((end))
+
+J--&gt;Z((end))
+
+K--&gt;Z((end))</code></pre>
+
+<p>自动生成的横版效果如下：</p>
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">graph LR
+o((开始))--&gt;A[模块A]
+
+A --&gt;|A1| B(模块B)
+
+A--&gt;|a2|G(模块b1)
+
+B --&gt; C&#123;判断条件C&#125;
+
+C --&gt;|条件C1| D[模块D]
+
+C --&gt;|条件C2| E[模块E]
+
+C --&gt;|条件C3| F[模块F]
+
+G--&gt;H&#123;if tt&#125;
+
+H--&gt;|tt1|I[tt1]
+
+H--&gt;|tt2|J[tt2]
+
+H--&gt;|tt3|K[tt3]
+
+D--&gt;Z((end))
+
+E--&gt;Z((end))
+
+F--&gt;Z((end))
+
+I--&gt;Z((end))
+
+J--&gt;Z((end))
+
+K--&gt;Z((end))</code></pre>
+
+<h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p><code>sequenceDiagram</code>表示时序图</p>
+<p>语法示例:</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&#96;&#96;&#96;mermaid
+
+sequenceDiagram
+
+电脑A-&gt;&gt;电脑B: SYN：seq&#x3D;x
+
+电脑B--&gt;&gt;电脑A: ACK+SYN：ack&#x3D;x+1，seq&#x3D;y
+
+电脑A-&gt;&gt;电脑B: ACK：ack&#x3D;y+1，seq&#x3D;x+1
+
+&#96;&#96;&#96;</code></pre>
+
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">
+sequenceDiagram
+
+电脑A-&gt;&gt;电脑B: SYN：seq&#x3D;x
+
+电脑B--&gt;&gt;电脑A: ACK+SYN：ack&#x3D;x+1，seq&#x3D;y
+
+电脑A-&gt;&gt;电脑B: ACK：ack&#x3D;y+1，seq&#x3D;x+1
+</code></pre>
+
+<h2 id="甘特图"><a href="#甘特图" class="headerlink" title="甘特图"></a>甘特图</h2><p><code>gantt</code>表示甘特图</p>
+<p>语法示例：</p>
+<pre class="line-numbers language-md" data-language="md"><code class="language-md">&#96;&#96;&#96;mermaid
+gantt
+
+title 甘特图
+
+dateFormat YYYY-MM-DD
+
+section 项目A
+
+任务1 :a1, 2019-07-01, 15d
+
+任务2 :a2, after a1, 20d
+
+任务3 :a3, 2019-07-20, 20d
+
+任务4 :a4, after a3, 10d
+
+任务5 :a5, after a4, 15d
+&#96;&#96;&#96;</code></pre>
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">gantt
+
+title 甘特图
+
+dateFormat YYYY-MM-DD
+
+section 项目A
+
+任务1 :a1, 2019-07-01, 15d
+
+任务2 :a2, after a1, 20d
+
+任务3 :a3, 2019-07-20, 20d
+
+任务4 :a4, after a3, 10d
+
+任务5 :a5, after a4, 15d</code></pre>
+
+<h2 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h2>
     </div>
 
     
@@ -452,20 +636,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="../tags/Markdown/" rel="tag"># Markdown</a>
+              <a href="../tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="../post/add-photo-album.html" rel="prev" title="Hexo-NexT主题添加相册">
-                  <i class="fa fa-chevron-left"></i> Hexo-NexT主题添加相册
+                <a href="../post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E7%BA%BF%E8%99%AB%E6%95%B0%E6%8D%AE.html" rel="prev" title="如何分析线虫数据">
+                  <i class="fa fa-chevron-left"></i> 如何分析线虫数据
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="../post/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" rel="next" title="Linux常用命令">
-                  Linux常用命令 <i class="fa fa-chevron-right"></i>
+                <a href="../post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%94%A8WormPose%E5%AF%BC%E5%85%A5Tierpsy%E4%BA%A7%E7%94%9F%E7%9A%84%E6%95%B0%E6%8D%AE.html" rel="next" title="用WormPose导入用Tierpsy tracker产生的数据">
+                  用WormPose导入用Tierpsy tracker产生的数据 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -499,14 +683,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">35k</span>
+    <span title="站点总字数">71k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">32 分钟</span>
+    <span title="站点阅读时长">1:04</span>
   </span>
 </div>
 <div class="busuanzi-count">
