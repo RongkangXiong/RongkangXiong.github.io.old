@@ -23,16 +23,16 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"rongkangxiong.top","root":"/","images":"../../../images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":100,"offset":30},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"../../../search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":-1,"unescape":false,"preload":true}}</script><script src="../../../js/config.js"></script>
-<meta name="description" content="举栗子数据分布：$$y \sim f(y|\theta)$$先验参数$\theta$，超参数$\lambda$$$\theta \sim g_1(\theta|\lambda)$$超参数$\lambda$的分布$$\lambda \sim g_2(\lambda)$$  先验参数$\theta&#x3D; (\theta_1,…\theta_k)$参数是可交换的，不改变分布形式 $\theta_1,…,\t">
+<meta name="description" content="当所给先验分布中的超参数难以确定的时候，可以对超参数再给出一个先验（超先验）；若超先验中的参数还是难以确定，还可以给出第三个先验  第一步：设 ​    $\Gamma_1 &#x3D; {\pi_1(\theta|\lambda): \pi_1的函数形式已知,\lambda\in D_1},D_1$是超参数的取值范围   第二步：设$\lambda$为随机变量 ​    $\Gamma_2&#x3D;{\pi_2(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常见分布">
 <meta property="og:url" content="https://rongkangxiong.top/post/mynotes/math/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B.html">
 <meta property="og:site_name" content="Rongkang&#39;s Blog">
-<meta property="og:description" content="举栗子数据分布：$$y \sim f(y|\theta)$$先验参数$\theta$，超参数$\lambda$$$\theta \sim g_1(\theta|\lambda)$$超参数$\lambda$的分布$$\lambda \sim g_2(\lambda)$$  先验参数$\theta&#x3D; (\theta_1,…\theta_k)$参数是可交换的，不改变分布形式 $\theta_1,…,\t">
+<meta property="og:description" content="当所给先验分布中的超参数难以确定的时候，可以对超参数再给出一个先验（超先验）；若超先验中的参数还是难以确定，还可以给出第三个先验  第一步：设 ​    $\Gamma_1 &#x3D; {\pi_1(\theta|\lambda): \pi_1的函数形式已知,\lambda\in D_1},D_1$是超参数的取值范围   第二步：设$\lambda$为随机变量 ​    $\Gamma_2&#x3D;{\pi_2(">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://rongkangxiong.top/images/blog/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B/image-20211122204938175.png">
 <meta property="article:published_time" content="2021-11-22T12:16:00.000Z">
-<meta property="article:modified_time" content="2021-11-22T13:00:37.721Z">
+<meta property="article:modified_time" content="2021-11-23T05:08:43.425Z">
 <meta property="article:author" content="Rongkang Xiong">
 <meta property="article:tag" content="math">
 <meta property="article:tag" content="概率统计分布">
@@ -100,8 +100,6 @@
         <li class="menu-item menu-item-categories"><a href="../../../categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">34</span></a></li>
         <li class="menu-item menu-item-read"><a href="../../../categories/read" rel="section"><i class="fa fa-book fa-fw"></i>读书</a></li>
         <li class="menu-item menu-item-archives"><a href="../../../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">42</span></a></li>
-        <li class="menu-item menu-item-ceshi"><a href="../../../categories/%E9%89%B4%E8%AF%81/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>ceshi</a></li>
-        <li class="menu-item menu-item-mynotes"><a href="../../../mynotes/math/" rel="section"><i class="fa fa-sticky-note fa-fw"></i>我的笔记</a></li>
         <li class="menu-item menu-item-experience"><a href="../../../experience/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>经验分享</a></li>
         <li class="menu-item menu-item-sitemap"><a href="../../../sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
@@ -297,10 +295,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-11-22 20:16:00 / 修改时间：21:00:37" itemprop="dateCreated datePublished" datetime="2021-11-22T20:16:00+08:00">2021-11-22</time>
+      <time title="创建时间：2021-11-22 20:16:00" itemprop="dateCreated datePublished" datetime="2021-11-22T20:16:00+08:00">2021-11-22</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-23 13:08:43" itemprop="dateModified" datetime="2021-11-23T13:08:43+08:00">2021-11-23</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -333,7 +337,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>261</span>
+      <span>1.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -351,13 +355,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="举栗子"><a href="#举栗子" class="headerlink" title="举栗子"></a>举栗子</h1><p>数据分布：<br>$$<br>y \sim f(y|\theta)<br>$$<br>先验参数$\theta$，超参数$\lambda$<br>$$<br>\theta \sim g_1(\theta|\lambda)<br>$$<br>超参数$\lambda$的分布<br>$$<br>\lambda \sim g_2(\lambda)<br>$$</p>
+        <p>当所给先验分布中的超参数难以确定的时候，可以对超参数再给出一个先验（超先验）；若超先验中的参数还是难以确定，还可以给出第三个先验</p>
+<blockquote>
+<p>第一步：设</p>
+<p>​    $\Gamma_1 = {\pi_1(\theta|\lambda): \pi_1的函数形式已知,\lambda\in D_1},D_1$是超参数的取值范围</p>
+</blockquote>
+<blockquote>
+<p>第二步：设$\lambda$为随机变量</p>
+<p>​    $\Gamma_2={\pi_2(\lambda|\delta):\pi_2的函数形式已知,\delta\in D_2  },D_2$是超参数$\delta$的取值范围</p>
+</blockquote>
+<blockquote>
+<p>第三步：设$\delta$也是随机变量，有先验分布$\pi_3(\delta)$</p>
+</blockquote>
+<p>任何一个先验都可以写成一个一般规范的先验：</p>
+<p>对于两层先验：<br>$$<br>\pi(\theta) = \int_{D_1}\pi_1(\theta|\lambda)\pi_2(\lambda)d\lambda=\int_{D_1}\pi(\theta,\lambda)d\lambda<br>$$<br>其中：$\theta \sim \pi_1(\theta|\lambda),\lambda\sim \pi_2(\lambda)$</p>
+<p>公式：<br>$$<br>\begin{align}<br>\pi(\theta,\lambda|x) &amp;\propto \pi(x|\theta)\pi(\theta|\lambda)\pi(\lambda) \<br>\pi(\theta|\lambda,x) &amp;= \prod_{i=1}^{k} \pi(\theta_i|\lambda,x_i) \<br> &amp;= \prod_{i=1}^{k} \pi(x_i|\theta_i)\pi(\theta_i|\lambda) \<br> \pi(\lambda|x) &amp;= \int \pi(\theta,\lambda|x)d\theta \<br> \pi(\theta,\lambda|x) &amp;= \pi(\theta|\lambda,x)\pi(\lambda|x) \<br> \pi(\lambda|x) &amp;= \frac{\pi(\theta,\lambda|x)}{\pi(\theta|\lambda,x)}\<br> \pi(\lambda|\theta,x)<br> \end{align}<br>$$<br>对于三层先验：<br>$$<br>\pi(\theta) = \int_{D_1}\int_{D_2}\pi_1(\theta|\lambda)\pi_2(\lambda|\delta)\pi_3(\delta)d\lambda d\delta=\int_{D_1}\pi(\theta|\lambda)[\int_{D_2}\pi(\lambda,\delta)d\delta]d\lambda<br>$$<br>其中：$\pi(\lambda,\delta) = \pi_2(\lambda|\delta)\pi_3(\delta)$</p>
+<h1 id="举栗子"><a href="#举栗子" class="headerlink" title="举栗子"></a>举栗子</h1><p>数据分布：<br>$$<br>y \sim f(y|\theta)<br>$$<br>先验参数$\theta$，超参数$\lambda$<br>$$<br>\theta \sim g_1(\theta|\lambda)<br>$$<br>超参数$\lambda$的分布<br>$$<br>\lambda \sim g_2(\lambda)<br>$$</p>
 <ul>
 <li>先验参数$\theta= (\theta_1,…\theta_k)$参数是可交换的，不改变分布形式</li>
 <li>$\theta_1,…,\theta_k$是从$g_1(\theta|\lambda)$随机采样的</li>
 <li></li>
 </ul>
-<h2 id="估计医院的死亡率"><a href="#估计医院的死亡率" class="headerlink" title="估计医院的死亡率"></a>估计医院的死亡率</h2><h2 id="估计大学平均绩点"><a href="#估计大学平均绩点" class="headerlink" title="估计大学平均绩点"></a>估计大学平均绩点</h2><h2 id="估计职业轨迹"><a href="#估计职业轨迹" class="headerlink" title="估计职业轨迹"></a>估计职业轨迹</h2><p><img src="../../../images/blog/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B/image-20211122204938175.png" alt="image-20211122204938175"></p>
+<h2 id="估计医院的死亡率"><a href="#估计医院的死亡率" class="headerlink" title="估计医院的死亡率"></a>估计医院的死亡率</h2><p>死亡率$y_i$遵循泊松分布，均值为$e_i\lambda_i$,$y_i/e_i$是单位时间内的死亡人数</p>
+<p>每家医院估计死亡率<br>$$<br>(1-\lambda)\frac{y_i}{e_i}+\lambda\frac{\sum_{j=1}^{n}y_j}{\sum_{j=1}^{n}e_j}<br>$$<br>其中$0&lt;\lambda&lt;1$是放缩参数，这是可交换的先验模型，由单家医院死亡率和平均死亡率组合</p>
+<h2 id="估计大学平均绩点"><a href="#估计大学平均绩点" class="headerlink" title="估计大学平均绩点"></a>估计大学平均绩点</h2><h2 id="估计职业轨迹"><a href="#估计职业轨迹" class="headerlink" title="估计职业轨迹"></a>估计职业轨迹</h2><p><img src="../../../images/blog/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B/image-20211122204938175.png" alt="image-20211122204938175"></p>
 <p>9名棒球运动员的职业生涯曲线</p>
 
     </div>
@@ -445,14 +466,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">71k</span>
+    <span title="站点总字数">73k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:04</span>
+    <span title="站点阅读时长">1:06</span>
   </span>
 </div>
 <div class="busuanzi-count">

@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-22T13:00:37.721Z</updated>
+  <updated>2021-11-23T05:08:43.425Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -21,14 +21,17 @@
     <link href="https://rongkangxiong.top/post/mynotes/math/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B.html"/>
     <id>https://rongkangxiong.top/post/mynotes/math/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B.html</id>
     <published>2021-11-22T12:16:00.000Z</published>
-    <updated>2021-11-22T13:00:37.721Z</updated>
+    <updated>2021-11-23T05:08:43.425Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="举栗子"><a href="#举栗子" class="headerlink" title="举栗子"></a>举栗子</h1><p>数据分布：<br>$$<br>y \sim f(y|\theta)<br>$$<br>先验参数$\theta$，超参数$\lambda$<br>$$<br>\theta \sim g_1(\theta|\lambda)<br>$$<br>超参数$\lambda$的分布<br>$$<br>\lambda \sim g_2(\lambda)<br>$$</p><ul><li>先验参数$\theta= (\theta_1,…\theta_k)$参数是可交换的，不改变分布形式</li><li>$\theta_1,…,\theta_k$是从$g_1(\theta|\lambda)$随机采样的</li><li></li></ul><h2 id="估计医院的死亡率"><a href="#估计医院的死亡率" class="headerlink" title="估计医院的死亡率"></a>估计医院的死亡率</h2><h2 id="估计大学平均绩点"><a href="#估计大学平均绩点" class="headerlink" title="估计大学平均绩点"></a>估计大学平均绩点</h2><h2 id="估计职业轨迹"><a href="#估计职业轨迹" class="headerlink" title="估计职业轨迹"></a>估计职业轨迹</h2><p><img src="../../../images/blog/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B/image-20211122204938175.png" alt="image-20211122204938175"></p><p>9名棒球运动员的职业生涯曲线</p>]]></content>
+    <content type="html"><![CDATA[<p>当所给先验分布中的超参数难以确定的时候，可以对超参数再给出一个先验（超先验）；若超先验中的参数还是难以确定，还可以给出第三个先验</p><blockquote><p>第一步：设</p><p>​    $\Gamma_1 = {\pi_1(\theta|\lambda): \pi_1的函数形式已知,\lambda\in D_1},D_1$是超参数的取值范围</p></blockquote><blockquote><p>第二步：设$\lambda$为随机变量</p><p>​    $\Gamma_2={\pi_2(\lambda|\delta):\pi_2的函数形式已知,\delta\in D_2  },D_2$是超参数$\delta$的取值范围</p></blockquote><blockquote><p>第三步：设$\delta$也是随机变量，有先验分布$\pi_3(\delta)$</p></blockquote><p>任何一个先验都可以写成一个一般规范的先验：</p><p>对于两层先验：<br>$$<br>\pi(\theta) = \int_{D_1}\pi_1(\theta|\lambda)\pi_2(\lambda)d\lambda=\int_{D_1}\pi(\theta,\lambda)d\lambda<br>$$<br>其中：$\theta \sim \pi_1(\theta|\lambda),\lambda\sim \pi_2(\lambda)$</p><p>公式：<br>$$<br>\begin{align}<br>\pi(\theta,\lambda|x) &amp;\propto \pi(x|\theta)\pi(\theta|\lambda)\pi(\lambda) \<br>\pi(\theta|\lambda,x) &amp;= \prod_{i=1}^{k} \pi(\theta_i|\lambda,x_i) \<br> &amp;= \prod_{i=1}^{k} \pi(x_i|\theta_i)\pi(\theta_i|\lambda) \<br> \pi(\lambda|x) &amp;= \int \pi(\theta,\lambda|x)d\theta \<br> \pi(\theta,\lambda|x) &amp;= \pi(\theta|\lambda,x)\pi(\lambda|x) \<br> \pi(\lambda|x) &amp;= \frac{\pi(\theta,\lambda|x)}{\pi(\theta|\lambda,x)}\<br> \pi(\lambda|\theta,x)<br> \end{align}<br>$$<br>对于三层先验：<br>$$<br>\pi(\theta) = \int_{D_1}\int_{D_2}\pi_1(\theta|\lambda)\pi_2(\lambda|\delta)\pi_3(\delta)d\lambda d\delta=\int_{D_1}\pi(\theta|\lambda)[\int_{D_2}\pi(\lambda,\delta)d\delta]d\lambda<br>$$<br>其中：$\pi(\lambda,\delta) = \pi_2(\lambda|\delta)\pi_3(\delta)$</p><h1 id="举栗子"><a href="#举栗子" class="headerlink" title="举栗子"></a>举栗子</h1><p>数据分布：<br>$$<br>y \sim f(y|\theta)<br>$$<br>先验参数$\theta$，超参数$\lambda$<br>$$<br>\theta \sim g_1(\theta|\lambda)<br>$$<br>超参数$\lambda$的分布<br>$$<br>\lambda \sim g_2(\lambda)<br>$$</p><ul><li>先验参数$\theta= (\theta_1,…\theta_k)$参数是可交换的，不改变分布形式</li><li>$\theta_1,…,\theta_k$是从$g_1(\theta|\lambda)$随机采样的</li><li></li></ul><h2 id="估计医院的死亡率"><a href="#估计医院的死亡率" class="headerlink" title="估计医院的死亡率"></a>估计医院的死亡率</h2><p>死亡率$y_i$遵循泊松分布，均值为$e_i\lambda_i$,$y_i/e_i$是单位时间内的死亡人数</p><p>每家医院估计死亡率<br>$$<br>(1-\lambda)\frac{y_i}{e_i}+\lambda\frac{\sum_{j=1}^{n}y_j}{\sum_{j=1}^{n}e_j}<br>$$<br>其中$0&lt;\lambda&lt;1$是放缩参数，这是可交换的先验模型，由单家医院死亡率和平均死亡率组合</p><h2 id="估计大学平均绩点"><a href="#估计大学平均绩点" class="headerlink" title="估计大学平均绩点"></a>估计大学平均绩点</h2><h2 id="估计职业轨迹"><a href="#估计职业轨迹" class="headerlink" title="估计职业轨迹"></a>估计职业轨迹</h2><p><img src="../../../images/blog/%E5%A4%9A%E5%B1%82%E5%85%88%E9%AA%8C%E6%A8%A1%E5%9E%8B/image-20211122204938175.png" alt="image-20211122204938175"></p><p>9名棒球运动员的职业生涯曲线</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;举栗子&quot;&gt;&lt;a href=&quot;#举栗子&quot; class=&quot;headerlink&quot; title=&quot;举栗子&quot;&gt;&lt;/a&gt;举栗子&lt;/h1&gt;&lt;p&gt;数据分布：&lt;br&gt;$$&lt;br&gt;y \sim f(y|\theta)&lt;br&gt;$$&lt;br&gt;先验参数$\theta$，超参数$\lambd</summary>
+    <summary type="html">&lt;p&gt;当所给先验分布中的超参数难以确定的时候，可以对超参数再给出一个先验（超先验）；若超先验中的参数还是难以确定，还可以给出第三个先验&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一步：设&lt;/p&gt;
+&lt;p&gt;​    $\Gamma_1 = {\pi_1(\theta|\lambda)</summary>
       
     
     
