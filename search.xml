@@ -122,8 +122,59 @@
 <p>其中 $I_{A}(x)$ 表示集合 $A$ 上的示性函数,<br>而$K_{i}\left(\theta_{1}\right)=1 / \int_{\Omega_{i, 0},} \pi\left(\theta_{2} \mid \theta_{1}\right) \mathrm{d} \theta_{2} .$<br>(3) 求参数 $\theta_{1}$ 关于<br>$\pi_{i}\left(\theta_{2} \mid \theta_{1}\right)$ 的边缘Reference先验<br>$\pi_{i}\left(\theta_{1}\right)$, 其公式为</p>
 <p>$$<br>\pi_{i} (\theta_1)=\exp {\frac{1}{2}\int_{\Omega_{i,\theta_1}}\pi_{i}(\theta_{2} \mid \theta_{1})\ln\frac{|I(\theta_{1}, \theta_{2})|}{|I_{22}(\theta_{1},\theta_{2})|}d\theta_{2} } \tag{12}<br>$$<br>此处 $I\left(\theta_{1}, \theta_{2}\right)$ 和<br>$I_{22}\left(\theta_{1}, \theta_{2}\right)$ 由式(10)给出 (4) 求极限得到<br>$\left(\theta_{1}, \theta_{2}\right)$ 的 Reference 先验<br>$$<br>\pi\left(\theta_{1}, \theta_{2}\right)=\lim_{i \rightarrow \infty}\left[\frac{K_{i}\left(\theta_{1}\right) \pi_{i}\left(\theta_{1}\right)}{K_{i}\left(\theta_{10}\right) \pi_{i}\left(\theta_{10}\right)}\right] \pi\left(\theta_{2} \mid \theta_{1}\right) \tag{13}<br>$$<br>比处假定极限存在, $\theta_{10}$ 为任一固定点</p>
 <h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>设 $X \sim N\left(\mu, \sigma^{2}\right)$.<br>求$\theta=\left(\mu, \sigma^{2}\right)$的<br>(1) Jeffreys 先验<br>(2) Reference先验</p>
-<h1 id="数学函数及统计方法"><a href="#数学函数及统计方法" class="headerlink" title="数学函数及统计方法"></a>数学函数及统计方法</h1><h2 id="Gamma-函数"><a href="#Gamma-函数" class="headerlink" title="$\Gamma$函数"></a>$\Gamma$函数</h2><p>$$\Gamma(\alpha) = \int_{0}^{+\infty}x^{\alpha-1}e^{-x}dx$$</p>
-<h2 id="beta-函数"><a href="#beta-函数" class="headerlink" title="$\beta$函数"></a>$\beta$函数</h2><h1 id="离散分布"><a href="#离散分布" class="headerlink" title="离散分布"></a>离散分布</h1><h2 id="伯努利分布（又称之为二点分布或者0-1分布）"><a href="#伯努利分布（又称之为二点分布或者0-1分布）" class="headerlink" title="伯努利分布（又称之为二点分布或者0-1分布）"></a>伯努利分布（又称之为二点分布或者0-1分布）</h2><ol>
+<h1 id="数学函数及统计方法"><a href="#数学函数及统计方法" class="headerlink" title="数学函数及统计方法"></a>数学函数及统计方法</h1><h2 id="Gamma-函数"><a href="#Gamma-函数" class="headerlink" title="$\Gamma$函数"></a>$\Gamma$函数</h2><p>$$\Gamma(z) = \int_{0}^{+\infty}x^{z-1}e^{-x}dx$$</p>
+<p>性质：</p>
+<ul>
+<li><p>$\Gamma(1)=1,\Gamma(\frac{1}{2}) = \sqrt{\pi}$</p>
+</li>
+<li><p>$\Gamma(a+1) =a\Gamma(a)$</p>
+</li>
+<li><p>$\Gamma(n+1)=n!$</p>
+</li>
+<li><p>$\Gamma(n+\frac{1}{2}) = \frac{(2n-1)!!}{2^n}\sqrt{\pi}$</p>
+</li>
+<li><p>$\frac{1}{\Gamma(z)} = lim_{n\rightarrow\infty} \frac{n^{-z}}{n!}z(z+1)\cdots(z+n)$</p>
+</li>
+<li><p>$\Gamma(z)\Gamma(1-z)=\frac{\pi}{sin(\pi z)},z \neq 0$</p>
+</li>
+<li><p>$\Gamma(a)\Gamma(b)=\Gamma(a+b)\int_0^1 u^{a-1}(1-u)^{b-1}du$</p>
+</li>
+</ul>
+<h2 id="Gamma-函数对数digamma的导数"><a href="#Gamma-函数对数digamma的导数" class="headerlink" title="$\Gamma$函数对数digamma的导数"></a>$\Gamma$函数对数<code>digamma</code>的导数</h2><p><code>Weierstrass</code>无穷乘积形式<br>$$<br>\Gamma(z) = \frac{e^{-\gamma z}}{z}\prod_{p=1}{\infty} (1+\frac{z}{p})^{-1}e^{\frac{z}{p}}<br>$$<br>$\Gamma$函数对数的导数<br>$$<br>\psi(x) = \frac{d ln(\Gamma(x))}{dx} = \frac{\Gamma’(x)}{\Gamma(x)}<br>$$<br>利用<code>Weierstrass</code>级数<br>$$<br>ln(\Gamma(z)) = -\gamma z-ln(z)+\sum_{p=1}^{\infty}(\frac{z}{p}-ln(1+\frac{z}{p}))\<br>\psi(x) = -\gamma+\sum_{p=1}^{\infty}\frac{x-1}{p(x+p-1)}<br>$$</p>
+<p>性质：</p>
+<ul>
+<li><p>$\psi(x+1) = \psi(x)+\frac{1}{x}$</p>
+</li>
+<li><p>$\psi(1-x)= \psi(x)+x cot(\pi x)$</p>
+</li>
+<li><p>$\psi(2x)=\frac{1}{2}\psi(x)+\frac{1}{2}\psi(x+\frac{1}{2})+ln(2)$</p>
+</li>
+</ul>
+<h2 id="多伽马函数Polygamma"><a href="#多伽马函数Polygamma" class="headerlink" title="多伽马函数Polygamma"></a>多伽马函数<code>Polygamma</code></h2><ol>
+<li><p>定义<br>$$<br>\phi_n(x) = \psi^{(n)}(x) = \sum_{p=1}^{\infty} \frac{(-1)^{n+1}n!}{(p+x-1)^{n+1}}<br>$$</p>
+</li>
+<li><p>性质</p>
+</li>
+</ol>
+<ul>
+<li>$\phi_0(x) = \psi(x)$</li>
+<li>$\phi_n(x+1) = \phi_n(x)+\frac{(-1)^{n+1}n!}{x^{n+1}}$</li>
+<li>$\phi_0(1) = -\gamma,\phi_1(1) =\xi(2)= \frac{\pi^2}{6},\phi_2(1) = 2\xi(3),\phi_n(1) = (-1)^{n+1}n!\xi(n+1)$</li>
+<li></li>
+</ul>
+<h2 id="beta-函数"><a href="#beta-函数" class="headerlink" title="$\beta$函数"></a>$\beta$函数</h2><ol>
+<li><p>定义<br>$$<br>\beta(P,Q) = \int_0^1 x^{P-1}(1-x)^{Q-1}dx \<br>P&lt;1,是以x=0为瑕点的无界函数反常积分\<br>Q&lt;1，是以x=1为瑕点的无界函数反常积分\<br>应用柯西判别法当P&gt;0,Q&gt;0，这两个无界函数反常积分都收敛\<br>因此定义域为P&gt;0,Q&gt;0<br>$$</p>
+</li>
+<li><p>性质</p>
+</li>
+</ol>
+<ul>
+<li>$\beta(P,Q) = \beta(Q,P)$</li>
+<li>$\beta(P,Q) = \frac{Q-1}{P+Q-1}\beta(P,Q-1)，(P&gt;0,Q&gt;1)$</li>
+<li>$\beta(P,Q)=  \frac{P-1}{P+Q-1}\beta(P-1,Q)，(P&gt;1,Q&gt;0)$</li>
+<li></li>
+</ul>
+<h1 id="离散分布"><a href="#离散分布" class="headerlink" title="离散分布"></a>离散分布</h1><h2 id="伯努利分布（又称之为二点分布或者0-1分布）"><a href="#伯努利分布（又称之为二点分布或者0-1分布）" class="headerlink" title="伯努利分布（又称之为二点分布或者0-1分布）"></a>伯努利分布（又称之为二点分布或者0-1分布）</h2><ol>
 <li><p>密度分布函数</p>
 </li>
 <li><p>数字特征</p>
@@ -188,9 +239,9 @@
 </li>
 </ol>
 <h2 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h2><ol>
-<li><p>密度分布函数<br> $$<br> \begin{aligned}<br> f(x;) =<br> \end{aligned}<br> $$</p>
+<li><p>密度分布函数<br> $$<br> \begin{aligned}<br> f(x;\mu,\sigma^2) =\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}<br> \end{aligned}<br> $$</p>
 </li>
-<li><p>数字特征<br> $$<br> \begin{aligned}<br> E[x] &amp; =  \<br> Var[x] &amp;=  \<br> mod[x] &amp;=<br> \end{aligned}<br> $$</p>
+<li><p>数字特征<br> $$<br> \begin{aligned}<br> E[x] &amp; = \mu  \<br> Var[x] &amp;= \sigma^2 \<br> Mode[x] &amp;= \mu<br> \end{aligned}<br> $$</p>
 </li>
 <li><p>性质</p>
 </li>
@@ -205,7 +256,10 @@
 </ol>
 <h2 id="Beta-x-alpha-beta-分布"><a href="#Beta-x-alpha-beta-分布" class="headerlink" title="$Beta(x;\alpha,\beta)$分布"></a>$Beta(x;\alpha,\beta)$分布</h2><p>(1)    密度分布函数<br>$$<br>f(x;\alpha,\beta) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}, 0&lt;x&lt;1,\alpha&gt;0,\beta&gt;0<br>$$<br>(2)    数字特征<br>$$<br>E[X] =\frac{\alpha}{\alpha+\beta} \<br>Var[X]=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)} \<br>Mode[X] = \frac{\alpha-1}{\alpha+\beta-2}<br>$$<br>(3)    性质</p>
 <ul>
-<li>若$X\sim \chi^2_{2\alpha},Y\sim \chi_{2\beta}^2$独立，则$U=\frac{X}{X+Y} \sim Be(\alpha,\beta)$</li>
+<li><p>若$X\sim \chi^2_{2\alpha},Y\sim \chi_{2\beta}^2$独立，则$U=\frac{X}{X+Y} \sim Be(\alpha,\beta)$</p>
+</li>
+<li><p>若$X_1\sim Beta(x;\alpha,\beta),…,X_n \sim Beta(x;\alpha,\beta)$，则$\sum_{i=1}^{n} X_i \sim$</p>
+</li>
 </ul>
 <p>(4)    R语言用法</p>
 <p>​    $shape1 = \alpha,shape2=\beta$</p>
@@ -309,6 +363,11 @@ rgamma(n, shape, rate &#x3D; 1, scale &#x3D; 1&#x2F;rate)</code></pre>
 </li>
 <li><p>性质</p>
 </li>
+</ol>
+<h2 id="瑞利分布"><a href="#瑞利分布" class="headerlink" title="瑞利分布"></a>瑞利分布</h2><ol>
+<li>密度分布函数<br>$$<br>f(x;a,b) = \frac{2}{b}(x-a)e^{-\frac{(x-a)^2}{b}},\quad z\geq a<br>$$</li>
+<li>数字特征<br>$$<br>E[x] = a+\frac{1}{2}\sqrt{\pi b}\<br>Var[x] = \frac{b(4-\pi)}{4}<br>$$</li>
+<li>性质</li>
 </ol>
 <h1 id="统计检验量"><a href="#统计检验量" class="headerlink" title="统计检验量"></a>统计检验量</h1><h2 id="单变量偏度系数-Skewness-test-of-normality"><a href="#单变量偏度系数-Skewness-test-of-normality" class="headerlink" title="单变量偏度系数(Skewness test of normality)"></a>单变量偏度系数(Skewness test of normality)</h2><p>$$<br>\sqrt{\beta_1} = \frac{E[(X-\mu)^3]}{\sigma_X^3}, \mu_X= E[X],\sigma_X^2=Var[X] \<br>样本偏度 :\sqrt{b_1}=\frac{\frac{1}{n}\sum_{i=1}^n (X_i-\bar{X})^3}{(\frac{1}{n}\sum_{i=1}^n(X_i-\bar{X})^2)^{3/2}} \<br>如果X是正态的,那么\sqrt{b_1} \sim N(0,\frac{6}{n}) \<br>而对于有限的采样 Var(\sqrt{b_1}) = \frac{6(n-2)}{(n+1)(n+3)} 会使得 Type \ I\ error\ rate与\alpha相当<br>$$</p>
 <h2 id="多变量偏度系数"><a href="#多变量偏度系数" class="headerlink" title="多变量偏度系数"></a>多变量偏度系数</h2><p>$$<br>\begin{aligned}<br>\beta_{1, d}=E[(X-\mu)^{T} \Sigma^{-1}(Y-\mu)]^{3}<br>\end{aligned}<br>$$</p>
@@ -446,6 +505,44 @@ rgamma(n, shape, rate &#x3D; 1, scale &#x3D; 1&#x2F;rate)</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>贝叶斯近似计算</title>
+    <url>//post/mynotes/math/%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.html</url>
+    <content><![CDATA[<h1 id="贝叶斯大样本性质"><a href="#贝叶斯大样本性质" class="headerlink" title="贝叶斯大样本性质"></a>贝叶斯大样本性质</h1><h2 id="后验分布相合性-consistency"><a href="#后验分布相合性-consistency" class="headerlink" title="后验分布相合性(consistency)"></a>后验分布相合性(consistency)</h2><p>随着样本量的增加，$\theta$的后验信息应该越来越集中在$\theta_0$附近（越来越少地依赖于先验分布），这种性质即为后验分布在$\theta_0$处的相合性<br>$$<br>设 X_1,…,X_n为在第n阶段获得的全部样本，记为\mathbf{X_n},其密度为f(\mathbf{x_n}|\vec{\theta}) \</p>
+<p>$$</p>
+<h3 id="参数空间可数情形"><a href="#参数空间可数情形" class="headerlink" title="参数空间可数情形"></a>参数空间可数情形</h3><p>定理 1. 设 $X \mid \theta \sim f(\cdot \mid \theta)$, 其中 $\theta \in \Theta=\left{\theta_{1}, \theta_{2}, \ldots\right}$ 可数集, 假设 $\theta_{t} \in \Theta$ 为 $\theta$ 的真值。如果先验分布 $\pi(\theta)$ 满足 $\pi\left(\theta_{i}\right)&gt;0, i=1,2, \ldots$ 以及<br>$$<br>K L\left(f_{\theta_{t}} | f_{\theta_{i}}\right)=\int f\left(x \mid \theta_{t}\right) \log \frac{f\left(x \mid \theta_{t}\right)}{f\left(x \mid \theta_{i}\right)} d x&gt;0 \quad \forall i \neq t<br>$$<br>则对样本 $\mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)$ 有<br>$$<br>\lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{t} \mid \mathbf{x}\right)=1 \text { 以及 } \lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{i} \mid \mathbf{x}\right)=0 \quad \forall i \neq t<br>$$<br>注: 如果 $\theta_{t} \notin \Theta$, 则后验分布收敛到一个在 <code>Kullback-Leibler </code>距 离意义下距离真实模型最近的一个离散分布。</p>
+<p>证明:<br>$$<br>\begin{aligned}<br>\pi\left(\theta_{i} \mid \mathbf{x}\right) &amp;=\frac{\pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right)}{\sum_{i} \pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right)} \<br>&amp;=\frac{\pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right) / f\left(\mathbf{x} \mid \theta_{t}\right)}{\sum_{i} \pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right) / f\left(\mathbf{x} \mid \theta_{t}\right)} \<br>&amp;=\frac{\exp \left(\log \pi\left(\theta_{i}\right)+S_{i}\right)}{\sum_{i} \exp \left(\log \pi\left(\theta_{i}\right)+S_{i}\right)} \quad \text { 其中 } S_{i}=\sum_{j=1}^{n} \log \frac{f\left(x_{j} \mid \theta_{i}\right)}{f\left(x_{j} \mid \theta_{t}\right)}<br>\end{aligned}<br>$$<br>给定 $\theta_{t}, S_{i}$ 为<code> i.i.d</code> 随机变量之和, 因此由 <code>LLN</code> 有<br>$$<br>\lim <em>{n \rightarrow \infty} \frac{1}{n} S</em>{i}=\int f\left(x \mid \theta_{t}\right) \log \frac{f\left(x \mid \theta_{i}\right)}{f\left(x \mid \theta_{t}\right)} d x<br>$$<br>由定理假设知此量当 $i \neq t$ 时为负, 当 $i=t$ 时为 0 . 因此当 $n \rightarrow \infty$ 时, $S_{t} \rightarrow 0,\pi(\theta_t|x)\rightarrow 1,i \neq t ,S_{i} \rightarrow-\infty,\pi(\theta_i|x)\rightarrow 0$ 。从而定理得证。</p>
+<h3 id="参数空间连续情形"><a href="#参数空间连续情形" class="headerlink" title="参数空间连续情形"></a>参数空间连续情形</h3><p>上述定理可以推广到参数空间是连续的场合, 此时, $\theta$ 取任意值 的概率为 0 . 因此, 我们定义<br>$$<br>\theta_{t}=\arg \min H(\theta)=\int f_{t}(x) \log \frac{f_{t}(x)}{f(x \mid \theta)} d x<br>$$<br>定理 2. 设 $X \mid \theta \sim f(\cdot \mid \theta)$, 其中 $\theta \in \Theta$ 紧集, 假设 $\theta_{t} \in \Theta$ 为 $\theta$ 的真 值。 $A$ 为 $\theta_{t}$ 的先验概率非零的任意一个邻域 (例如以 $\theta_{t}$ 为中心的一 个开集), 则对样本 $\mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)$ 有<br>$$<br>\lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{t} \in A \mid \mathbf{x}\right)=1, \quad n \rightarrow \infty<br>$$<br>定理的证明可以通过将参数空间离散化来证明。由于 $\Theta$ 为紧集, 故存在有限子覆盖，其中仅有 $A$ 包含 $\theta_{t}$. 于是由离散场合的结论可证。<br>此时, 称后验分布 $\pi(\theta \mid \mathbf{x})$ 在 $\theta_{t}$ 处相合。</p>
+<h2 id="后验分布渐进正态性"><a href="#后验分布渐进正态性" class="headerlink" title="后验分布渐进正态性"></a>后验分布渐进正态性</h2><blockquote>
+<p>Le Cam (1953) 首次证明了后验分布的渐近正态性。  </p>
+</blockquote>
+<p>记$x$为数据,使用后验分布对未知量$\theta$进行推断的时候<br>$$<br>\pi(\theta|x) = \frac{\pi(\theta,x)}{\pi(x)} = \frac{\pi(x|\theta)\pi(\theta)}{\int \pi(x|\theta)\pi(\theta)}<br>$$<br>绝大部分情况下，分布不能解析计算，需要逼近后验推断</p>
+<ul>
+<li>计算后验特征$E[g(\theta|x)]$</li>
+</ul>
+<p>$$<br>E[g(\theta|x)] \approx \int g(\theta)\phi(\theta;\hat{\theta},I(\hat{\theta})^{-1})<br>$$</p>
+<p>找一个可以计算的分布$q^*(\theta)\approx \pi(\theta|x)$，使得<br>$$<br>E^{q^*(\theta)}[g(\theta)]\approx E^{\pi(\theta|x)}[g(\theta)]<br>$$</p>
+<h1 id="Laplace逼近"><a href="#Laplace逼近" class="headerlink" title="Laplace逼近"></a>Laplace逼近</h1><p>考虑如下形式积分：<br>$$<br>I(N;h) = \int e^{-Nh(x)}dx<br>$$<br>统计问题中$N$为样本量，尝尝感兴趣$N$趋于无穷大时候上述积分值</p>
+<p>假设$h(x)$单峰，且$h(x)$在其众数$\hat{x}$处有严格正的二阶导数</p>
+<p><code>Taylor</code>展开到四阶：<br>$$<br>h(x) \approx h(\hat{x})+\frac{1}{2}h_2(\hat{x})(x-\hat{x})^2+\frac{1}{6}h_3(\hat{x})(x-\hat{x})^3+\frac{1}{24}h_3(\hat{x})(x-\hat{x})^4\<br>其中h_i(\hat{x})表示h(x)在\hat{x}处的i阶导数,\hat{x}满足h_1(\hat{x})=0<br>$$<br>带入积分可以得到：<br>$$<br>\begin{align}<br>I(N;h) &amp;= \int e^{-Nh(x)}dx \<br>&amp;\approx \int exp{-N[h(\hat{x})+\frac{1}{2}h_2(\hat{x})(x-\hat{x})^2\<br>&amp;+\frac{1}{6}h_3(\hat{x})(x-\hat{x})^3+\frac{1}{24}h_3(\hat{x})(x-\hat{x})^4] }dx,变量代换u=x-\hat{x} \<br>&amp; = e^{-Nh(\hat{x})} \int e^{-\frac{N}{2} \hat{h}_2 u^2}exp{ -\frac{N}{6}\hat{h}_3 u^3-\frac{N}{24}\hat{h}_4 u^4} du<br>\end{align}<br>$$<br>对指数项进一步做<code>Taylor</code>展开到二阶：<br>$$<br>\begin{align}<br>I(N;h) &amp;\approx e^{-Nh(\hat{x})} \int e^{-\frac{N}{2} \hat{h}_2 u^2} (1-\frac{N}{6}\hat{h}_3 u^3-\frac{N}{24}\hat{h}_4 u^4\<br>&amp;+\frac{1}{2}(\frac{N^2}{36}\hat{h}_3^2 u^6+\frac{2N^2}{144}\hat{h}_3\hat{h}_4 u^7+\frac{N^2}{576}\hat{h}_4^2 u^8)) du \<br>&amp; =  e^{-Nh(\hat{x})}\int e^{-\frac{N}{2} \hat{h}_2 u^2}(1-\frac{N}{24}\hat{h}_4 u^4+\frac{N^2}{72}\hat{h}_3^2 u^6+\frac{N^2}{1052}\hat{h}_4^2 u^8)du\<br>\end{align}<br>$$<br>利用奇函数阶积分为0，剩余积分可以用<code>gamma</code>积分：<br>$$<br>\int e^{-sx^2}x^{2m}dx=\frac{2m!}{m!2^{2m}}\pi^{1/2}s^{-(m+1)/2}<br>$$<br>得到：<br>$$<br>\begin{align}<br>I(N;h) &amp;\approx e^{-Nh(\hat{x})} \sqrt{2\pi}N^{-1/2}(1-\frac{\hat{h}_4\sigma^4}{8N}+\frac{5\hat{h}_4\sigma^6}{24N}) \<br>&amp; = e^{-Nh(\hat{x})}\sqrt{2\pi}N^{-1/2}(1+O(\frac{1}{N}))<br>\end{align}<br>$$<br>其中$\sigma^2=\frac{1}{\hat{h}_2}$</p>
+<p>当$\hat{x}$无法分析得到的时候，一般用$\tilde{x}$，满足$\hat{x}-\tilde{x}=O(1/N)$</p>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><h2 id="Laplace并计算后验特征"><a href="#Laplace并计算后验特征" class="headerlink" title="Laplace并计算后验特征"></a>Laplace并计算后验特征</h2><p>$$<br>E^{\pi(\theta|x)}[g(\theta)] = \frac{\int_{R^k}g(\theta)f(x|\theta)\pi(\theta)d\theta}{\int_{R^k}f(x|\theta)\pi(\theta)d\theta}<br>$$</p>
+<p>其中$g,f,\pi$是$\theta$的光滑可微取正值的函数<br>$$<br>\begin{align}<br>h^*(\theta) &amp;= -\frac{1}{N}ln(g(\theta)f(x|\theta)\pi(\theta))\<br>&amp;= -\frac{1}{N}(ln(g(\theta))+ln(f(x|\theta))+ln(\pi(\theta))) \<br>\hat{\theta} = arg\ max_{\theta\in \Theta} h^*(\theta),&amp; \Sigma^* = \frac{\partial^2 h^*}{\partial \theta\partial\theta^{‘}} \<br>I(N;h^*) &amp;= \int_{R^k} g(\theta)f(x|\theta)\pi(\theta) d\theta = \int e^{-Nh^*(\theta)}d\theta\<br>&amp; = e^{-Nh^{<em>}(\hat{\theta})}(2\pi)^{k/2}\mid \Sigma^</em> \mid^{-1/2}N^{-k/2}(1+O(1/N))<br>\end{align}<br>$$<br>对分母令$h(\theta)=-\frac{1}{N}(ln(f(x|\theta))+ln(\pi(\theta))),\tilde{\theta} = arg\ max_{\theta\in\Theta} h(\theta),\Sigma= \frac{\partial^2 h}{\partial \theta\partial\theta^{‘}}$<br>$$<br>\begin{align}<br>I(N;h) &amp;= \int_{R^k}f(x|\theta)\pi(\theta) d\theta = \int e^{-Nh(\theta)}d\theta\<br>&amp; = e^{-Nh(\tilde{\theta})}(2\pi)^{k/2}\mid \Sigma \mid^{-1/2}N^{-k/2}(1+O(1/N))<br>\end{align}<br>$$<br>因此<br>$$<br>E(g(\theta)|x) \approx \frac{g(\hat{\theta})f(x|\hat{\theta})\pi(\hat{\theta})\mid \Sigma^* \mid^{-1/2}}{f(x|\tilde{\theta})\pi(\tilde{\theta})\mid \Sigma\mid^{-1/2}}<br>$$<br>不完全取正值的函数$g(\theta)$，再加上充分大的数后可以只取正值，上述方法仍然适用</p>
+<h3 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h3><p>设$X_1,…,X_n \ i.i.d \sim B(1,\theta), \theta\sim Beta(\alpha,\beta)$，求后验均值的Laplace近似</p>
+<p>解：</p>
+<p>记 $X = \sum X_i,\theta|X \sim Beta(\alpha+x,\beta+n-x)$，不妨设$0&lt;\alpha,\beta\leq 1$，将后验密度写为<br>$$<br>\begin{align}<br>\pi(x_1,…,x_n|\theta) &amp; = \theta^{X}(1-\theta)^{n-X}  \<br>\pi(\theta) &amp; = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}, 0&lt;x&lt;1,\alpha&gt;0,\beta&gt;0 \<br>\pi(\theta|x_1,…,x_n) &amp;\propto \pi(x_1,…,x_n|\theta)\pi(\theta) \propto \theta^{\alpha+X-1}(1-\theta)^{\beta+n-X-1}\propto exp(-nh(\theta)) \<br>h(\theta) &amp; = -\frac{(\alpha+X-1)ln(\theta)+(\beta+n-X-1)ln(1-\theta)}{n}<br>\end{align}<br>$$</p>
+<h3 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h3>]]></content>
+      <categories>
+        <category>Math</category>
+        <category>近似计算</category>
+        <category>贝叶斯</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>近似计算</tag>
+        <tag>贝叶斯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>采样方法</title>
     <url>//post/mynotes/math/%E9%87%87%E6%A0%B7%E6%96%B9%E6%B3%95.html</url>
     <content><![CDATA[<h1 id="重要性采样法"><a href="#重要性采样法" class="headerlink" title="重要性采样法"></a>重要性采样法</h1><h1 id="拒绝采样法"><a href="#拒绝采样法" class="headerlink" title="拒绝采样法"></a>拒绝采样法</h1><p><img src="../../images/blog/%E9%87%87%E6%A0%B7%E6%96%B9%E6%B3%95/1463534-20180813184957114-1198916282.png" alt="example"></p>
@@ -486,6 +583,318 @@ disp(a)</code></pre>
         <tag>MATLAB</tag>
         <tag>CSV</tag>
         <tag>文件操作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Synology如何固定IP地址</title>
+    <url>//post/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80.html</url>
+    <content><![CDATA[<h1 id="固定Synergy的IP"><a href="#固定Synergy的IP" class="headerlink" title="固定Synergy的IP"></a>固定Synergy的IP</h1><p>打开控制面板</p>
+<p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190558796.png" alt="image-20211130190558796"></p>
+<p>点击网络</p>
+<p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190636367.png" alt="image-20211130190636367"></p>
+<p>在常规页面找到服务器名称，自己设置一个</p>
+<p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190738478.png" alt="image-20211130190738478"></p>
+<p>点击进入网络界面</p>
+<p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190941760.png" alt="image-20211130190941760"></p>
+<p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130191020974.png" alt="image-20211130191020974"></p>
+<p>设置固定的IP</p>
+<h1 id="校内申请固定IP"><a href="#校内申请固定IP" class="headerlink" title="校内申请固定IP"></a>校内申请固定IP</h1><h2 id="固定IP后怎么启用防止别人用"><a href="#固定IP后怎么启用防止别人用" class="headerlink" title="固定IP后怎么启用防止别人用"></a>固定IP后怎么启用防止别人用</h2><h1 id="用电脑直接连Synology"><a href="#用电脑直接连Synology" class="headerlink" title="用电脑直接连Synology"></a>用电脑直接连Synology</h1><p><a href="http://find.synology.com/">http://find.synology.com/</a></p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>gitee和github搭建博客的优劣</title>
+    <url>//post/buildblog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3.html</url>
+    <content><![CDATA[<ul>
+<li>gitee是国内站点，网络稳定高速，github访问有时不稳定</li>
+<li>站点项目更新部署到github/gitee后，github会自动重新部署更新，失败后还会给你发邮件，gitee则需要到respository里手动更新(除非你升级会员)</li>
+<li>github上搭建的博客不挂梯子国内看不了</li>
+</ul>
+<p>思路：通过<code>github</code>搭建博客然后自动构建同步到<code>gitee</code></p>
+<span id="more"></span>
+
+<h1 id="博客仓库命名规则"><a href="#博客仓库命名规则" class="headerlink" title="博客仓库命名规则"></a>博客仓库命名规则</h1><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><ul>
+<li><p>创建一个仓库，<strong>仓库设置为公开</strong>的才能免费使用<code>Github Pages</code>服务。</p>
+</li>
+<li><p>仓库名必须设置为：**&lt;用户名&gt;.github.io**</p>
+</li>
+<li><p>如下图：我的<code>Github</code>用户名为<code>RongkangXiong</code>，那么就需要创建一个名为<code>RongkangXiong.github.io</code>的公开仓库。</p>
+</li>
+<li><p>创建完成后，我们就可以通过<code>&lt;用户名&gt;.github.io</code>来访问我们的站点了。</p>
+</li>
+</ul>
+<h2 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h2><ul>
+<li><p>创建一个仓库，设置为公开或私有都可以。</p>
+</li>
+<li><p>仓库名如果设置成和个人空间地址一样，那么访问地址就是： <code>&lt;个人空间地址名&gt;.gitee.io</code></p>
+</li>
+<li><p>个人空间地址可在个人资料中查看。我的个人空间地址是<code>NeuronBear</code>，那么我的博客地址就是：<code>NeuronBear.gitee.io</code></p>
+<p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/image-20211130000225927.png" alt="image-20211130000225927"></p>
+</li>
+<li><p>仓库名如果设置成别的，那么访问地址则是：<code>&lt;个人空间地址名&gt;.gitee.io/仓库名</code></p>
+</li>
+<li><p>例如我把仓库名设置为<code>myblog</code>，那么我的博客访问地址就是：<code>gavincrown.gitee.io/myblog</code></p>
+</li>
+<li><p>创建完成后，我们需要在该仓库页面中 点击“服务” &gt; <code>Gitee Pages</code> &gt; 勾选“强制使用<code>HTTPS</code>” &gt; 点击“启动”即可。</p>
+</li>
+</ul>
+<h1 id="自动同步方法"><a href="#自动同步方法" class="headerlink" title="自动同步方法"></a>自动同步方法</h1><p>建议导入和自己gitee用户名同名的文件（不是github原名！）</p>
+<h2 id="方法1：手动同步"><a href="#方法1：手动同步" class="headerlink" title="方法1：手动同步"></a>方法1：手动同步</h2><p>在 Gitee 仓库主页点击同步更新按钮即可！这里的同步功能默认是强制同步（新代码直接覆盖）</p>
+<blockquote>
+<p>定时同步目前官方不支持</p>
+<p><a href="https://gitee.com/oschina/git-osc/issues/IKH12">https://gitee.com/oschina/git-osc/issues/IKH12</a></p>
+</blockquote>
+<p>每一次push代码都需要点一下同步，比较麻烦</p>
+<h2 id="方法2：本地仓库同时推送github和gitee"><a href="#方法2：本地仓库同时推送github和gitee" class="headerlink" title="方法2：本地仓库同时推送github和gitee"></a>方法2：本地仓库同时推送github和gitee</h2><p>可以通过本地仓库的形式，同时推送到github和gitee，相当于执行两次commit的操作，push两次。但显然也不是我想要的</p>
+<p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/8c67a672dac937a54888514dcfa5efd3.png" alt="image-20210402203842701"></p>
+<p>1、首先通过 <code>git remote -v</code> 查看您要同步的仓库的远程库列表，如果在列表中没有您 Gitee 的远程库地址，您需要新增一个地址</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote add 远程库名 远程库地址
+eg: git remote add gitee git@github.com:xxx&#x2F;xxx.git</code></pre>
+
+<p>如果在 add 的时候出现<code>error: Could not remove config section ‘remote.xxx’.</code>一类的错误，通过把仓库下<code>.git/config</code> 文件里面的<code>[remote “xxx”]</code>删掉或者是用别的远程库名即可。</p>
+<p>2、从 GitHub 上拉取最新代码到本地</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git pull 远程库名 分支名
+eg：git pull origin master</code></pre>
+
+<p>3、推送本地最新代码到 Gitee 上</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git push 远程库名 分支名
+eg：git push gitee master</code></pre>
+
+<p>如果出现有差异的话需要自己手动解决差异</p>
+<h2 id="方法3：GitHub-Action"><a href="#方法3：GitHub-Action" class="headerlink" title="方法3：GitHub Action"></a>方法3：GitHub Action</h2><p>官方的Action方法<a href="https://github.com/features/actions">Github Action</a></p>
+<p>运用CI/CD的思想，从github中自动化的执行流程，完美符合我们的预期。</p>
+<p>原理<br>Github Action提供了2种方式去实现Action：</p>
+<ul>
+<li><p>Docker container. 这种方式相当于在Github提供的计算资源起个container，在container里面把功能实现。具体的原理大致如下：</p>
+<p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/aa54f4c5ec64b3574f114d1da5432978.png" alt="image-20210402205215202"></p>
+</li>
+<li><p>JavaScript. 这种方式相当于在Github提供的计算资源上，直接用JS脚本去实现功能。</p>
+</li>
+</ul>
+<p>选择第一种类型，关于怎么构建一个Github的Action可以参考Github的官方文档<a href="https://docs.github.com/en/actions/creating-actions">Building actions</a>。官方文档真的写的非常详细了，并且也有hello-world级别的入门教程。</p>
+<p>同步的核心代码实现，而最终的关键实现就是，我们需要定义这个容器运行的脚本，原理很简单：</p>
+<p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/e6b037d4323b7fe8aad1073a29d96ad0.png" alt="image-20210402205304730"></p>
+<p>大致就是以上4步：</p>
+<ol>
+<li>通过Github API读取Repo列表。</li>
+<li>下载或者更新Github repo的代码</li>
+<li>设置远端分支</li>
+<li>将最新同步的commit、branch、tag推送到Gitee。</li>
+</ol>
+<p>关心细节的同学，具体可以参考代码：<a href="https://github.com/Yikun/gitee-mirror-action/blob/master/entrypoint.sh">https://github.com/Yikun/gitee-mirror-action/blob/master/entrypoint.sh</a></p>
+<p>参考链接：</p>
+<ul>
+<li><a href="https://blog.csdn.net/outman_1921/article/details/115454572">CSDN：github博客自动同步到gitee（保姆级教程）</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/157391730?ivk_sa=1024320u">知乎：Hexo博客部署到Github和Gitee</a></li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>个人博客</tag>
+        <tag>gitee</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过gitee和hexo搭建个人博客</title>
+    <url>//post/buildblog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</url>
+    <content><![CDATA[<p>首先准备软件：</p>
+<ul>
+<li>git (提供命令git) <a href="https://git-scm.com/">git官网</a></li>
+<li>notepad++(方便编辑)<a href="https://notepad-plus-plus.org/">notepad++官网</a></li>
+<li>nodejs(hexo依赖)<a href="https://nodejs.org/en/">nodejs官网</a></li>
+<li>7z(压缩包)<a href="https://www.7-zip.org/">7z官网</a></li>
+</ul>
+<p>还有<a href="https://gitee.com/">码云主页</a></p>
+<span id="more"></span>
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>nodejs、git、notepad++和7z的安装过程省略。主要要说的是hexo的安装和配置。<br>再以上几个安装好后，注意测试是否可以再命令行可以使用：<code>git</code>,<code>npm</code><br>这里虽然使用的是Windows值作但是全部都是使用命令完成，与Linux的命令相同，所以可以Linux也是可以完成的。<br>Win+R-&gt; ‘cmd’ 打开命令行<br>首先需要配置npm的国内源</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org		#配置国内的镜像源
+npm info hexo	# 测试查看hexo的安装信息，是否是taobao.org的源</code></pre>
+
+<p>然后再是安装hexo：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo 		# 通过npm安装hexo
+# -g 指定全局安装，可以使用hexo命令</code></pre>
+
+<p>在需要保存自己博客’/Myblog/‘的路径下执行下面操作</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init test		# 初始化创建，会创建test文件夹&#x2F;Myblog&#x2F;test&#x2F;
+cd test			# 进入Myblog目录
+npm install			# 进一步安装hexo所需文件</code></pre>
+
+<p>新建完成后，指定文件夹目录下有：</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public: 存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li><strong>_config.yml: 博客的配置文件</strong></li>
+</ul>
+<p>这样hexo就安装完成了，接下来就可以启动<code>hexo</code>了</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean			# 清除所有记录
+hexo g		# 生成静态网页
+hexo s	# 启动服务</code></pre>
+
+<p>然后使用浏览器访问<code>http://localhost:4000/</code></p>
+<p><img src="../../images/blog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20211129224310796.png" alt="image-20211129224310796"></p>
+<h1 id="创建Gitee的仓库"><a href="#创建Gitee的仓库" class="headerlink" title="创建Gitee的仓库"></a>创建Gitee的仓库</h1><p><a href="https://gitee.com/">gitee主页</a><br>再gitee创建自己的账户，然后再创建一个自己仓库</p>
+<p><img src="../../images/blog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20211129222455332.png" alt="image-20211129222455332"></p>
+<p>在创建仓库完成后进入到仓库</p>
+<p>然后在<code>Myblog</code>下打开<code>git bash</code>进行<code>clone</code></p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git clone https:&#x2F;&#x2F;gitee.com&#x2F;NeuronBear&#x2F;RongkangXiongBlog.git</code></pre>
+
+<p>然后将<code>/Myblog/test</code>刚刚的文件除了<code>.github</code>文件以外都复制到<code>/Myblog/你的克隆下来的仓库文件下</code>，之后你可以将<code>test</code>文件夹整个删除（后面没啥用了）</p>
+<p>然后cd进入<code>/Myblog/test</code>目录下</p>
+<p>你可以重新启动服务</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo s</code></pre>
+
+<p>然后打开浏览器<code>http://localhost:4000/</code>查看生成的页面</p>
+<h1 id="现在将更新的文件上传到gitee"><a href="#现在将更新的文件上传到gitee" class="headerlink" title="现在将更新的文件上传到gitee"></a>现在将更新的文件上传到<code>gitee</code></h1><p>之后的<code>/blog</code>指的是你的clone下来的文件夹的名称</p>
+<p>复制URL，到hexo的网站配置文件<code>/blog/_config.yml</code>的最后</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">……
+deploy:
+  - type: git    # type为git
+    repo: git@gitee.com:NeuronBear&#x2F;RongkangXiongBlog.git  # 仓库的URL
+    branch: master   #构建网页的分支
+……</code></pre>
+
+<p>这里在<code>gitee</code>上再创建一个除了<code>master</code>外的分支<code>hexo</code>用来放源码</p>
+<p>这里先安装一个hexo的插件</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install hexo-deployer-git --save	# 安装git插件</code></pre>
+
+<p>然后上传文件到仓库</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">git commit -m &quot;test push&quot;
+git remote add origin_gitee https:&#x2F;&#x2F;gitee.com&#x2F;NeuronBear&#x2F;RongkangXiongBlog.git #链接到gitee,默认是origin,但为了之后不冲突要和github区分
+git push -u origin master</code></pre>
+
+<p>然后就可以看到push上去了</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">git config --global user.email *********@qq.com	# 设置gitee邮箱（gitee的注册邮箱）
+git config --global user.name &#39;****&#39;			# 设置用户名（git的注册昵称）
+hexo deploy	# 上传到gitee
+# 在上传时，需要再次输入gitee的注册邮箱作为username，账户密码作为password</code></pre>
+
+
+
+
+
+<p>上传完成之后，仓库就会多出以下文件</p>
+<h1 id="配置Gitee-Pages"><a href="#配置Gitee-Pages" class="headerlink" title="配置Gitee Pages"></a>配置Gitee Pages</h1><p>点击<code>服务-Gitee Pages-实名认证</code></p>
+<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>如果不喜欢这个主题可以换一个<br>比如next主题，<a href="http://theme-next.iissnan.com/">next官网</a> <a href="https://github.com/iissnan/hexo-theme-next/">next的github网页</a>，去github下载压缩包然后放到test下的themes目录下。</p>
+<p>然后配置<code>_config.yml</code></p>
+<p>然后配置<code>_config.yml</code></p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">……
+theme: next		# 这里需要注意:后面要有一个空格，名称要和theme下的主题目录名称相同。
+……</code></pre>
+
+<p>hexo的其他配置参考<a href="https://hexo.io/zh-cn/docs/">hexo官方文档</a><br>next的配置参考<a href="http://theme-next.iissnan.com/getting-started.html">next官方文档</a></p>
+<p>然后重启hexo服务</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean			# 清除所有记录
+hexo generate		# 生成静态网页
+hexo server -p 80	# 启动服务</code></pre>
+
+<p>然后重新访问网页，就会发生变化</p>
+<h1 id="上传到gitee"><a href="#上传到gitee" class="headerlink" title="上传到gitee"></a>上传到gitee</h1>]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>图像中常见噪声及去除</title>
+    <url>//post/%E5%9B%BE%E5%83%8F%E4%B8%AD%E5%B8%B8%E8%A7%81%E5%99%AA%E5%A3%B0%E5%8F%8A%E5%8E%BB%E9%99%A4.html</url>
+    <content><![CDATA[<h1 id="常见噪声分布"><a href="#常见噪声分布" class="headerlink" title="常见噪声分布"></a>常见噪声分布</h1><h2 id="高斯噪声"><a href="#高斯噪声" class="headerlink" title="高斯噪声"></a>高斯噪声</h2><h2 id="瑞丽噪声"><a href="#瑞丽噪声" class="headerlink" title="瑞丽噪声"></a>瑞丽噪声</h2><h2 id="伽马噪声（Erlang-噪声）"><a href="#伽马噪声（Erlang-噪声）" class="headerlink" title="伽马噪声（Erlang 噪声）"></a>伽马噪声（Erlang 噪声）</h2><h2 id="指数噪声"><a href="#指数噪声" class="headerlink" title="指数噪声"></a>指数噪声</h2><h2 id="均匀噪声"><a href="#均匀噪声" class="headerlink" title="均匀噪声"></a>均匀噪声</h2><h2 id="椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise"><a href="#椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise" class="headerlink" title="椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)"></a>椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)</h2><p>$$<br>p(z) =\left{ \begin{array}{rcl}<br>P_s &amp; \mbox{for} &amp; z=2^k-1 \<br>P_p &amp; \mbox{for} &amp; z=0 \<br>1-(P_s+P_p) &amp; \mbox{for} &amp; z=V<br>\end{array}\right.<br>$$</p>
+<p>如果$Ps$或者 $P_p$任何一个为$0$，那么冲击噪声被称为<code>unipolar</code></p>
+<p>如果两个都不等于$0$，那么被称为椒盐噪声</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>哈密顿MC方法</title>
+    <url>//post/mynotes/%E5%93%88%E5%AF%86%E9%A1%BF%E8%92%99%E7%89%B9%E5%8D%A1%E7%BD%97/%E5%93%88%E5%AF%86%E9%A1%BFMC%E6%96%B9%E6%B3%95.html</url>
+    <content><![CDATA[<p>许多MCMC算法中的随机游走是使得马氏链收敛到平稳分布，但是非常慢。</p>
+<p>哈密顿MC方法(HMC)是一种采用物理系统动力学而不是概率分布来产生马氏链的未来状态提议值，这使得马氏链可以更有效探索目标分布，从而加快收敛速度，特别是在更高维和更复杂的模型中。</p>
+<p>该方法具有优秀的介绍和计算能力(<a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.882.666&rep=rep1&type=pdf">Neal et al. 2011</a>)</p>
+<span id="more"></span>
+
+
+
+<h1 id="背景简介"><a href="#背景简介" class="headerlink" title="背景简介"></a>背景简介</h1><p>​    哈密顿MC最开始是在20世纪80年代后期作为混合MC开发的，用于解决晶格量子色动力学<a href="https://sci-hub.se/https://www.sciencedirect.com/science/article/abs/pii/037026938791197X">(Duane et al.,1987)</a>，该领域专注了解构成原子核，原子以及最终构成我们世界的质子和中子的结构。几年内，<a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.446.9306&rep=rep1&type=pdf">(Radford Neal, 1995)</a>在应用贝叶斯神经网络的开创性工作中认识到了该方法在应用统计学问题中的潜力。接下来十年中，这种方法开始在教科书中出现，特别是<a href="https://www.inference.org.uk/itprnn/book.pdf">Mackay,2003</a>，他首先使用 <code>Hamiltonian Monte Carlo</code>一词而不是<code>hybrid Monte Carlo</code></p>
+<p>，以及<a href="http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf">Bishop,2006</a>。随着Stan<a href="https://mc-stan.org/">(Stan 开发团队,2017)</a>等高性能软件实现的兴起，该方法已成为许多科学、医疗和工业应用中的普遍工具。</p>
+<p>​    哈密顿MC特别适用于高维问题<a href="https://arxiv.org/pdf/1410.5110.pdf">(Betancourt et al., 2014)</a>，不幸的是，这种理论基础是根据微分几何来建立的，微分几何是高等数学领域的分支，很少包含在统计教学中。这种理论对大多人来说遥不可及。</p>
+<p>​    高维概率分布的几何学如何阻碍统计计算的，然后从几何角度考虑MCMC，得到将此方法扩展到高维问题所需要的特征。</p>
+<p>考虑目标分布$\pi(q)$，数据从$D$维空间$Q$中采样，$q\in Q$</p>
+<p>函数$f(q)$的期望：<br>$$<br>E^{\pi}[f] = \int_{Q}f(q)\pi(q)dq<br>$$</p>
+<h1 id="高维空间几何"><a href="#高维空间几何" class="headerlink" title="高维空间几何"></a>高维空间几何</h1><p>​    高维空间的特征之一是，任何给定领域的外部的体积都比其内部大得多。</p>
+<p>​    例如，考虑将参数空间划分为以mode(众数)为中心的矩形盒子</p>
+<h1 id="哈密顿系统"><a href="#哈密顿系统" class="headerlink" title="哈密顿系统"></a>哈密顿系统</h1><p>一个物体在时刻$t$处在位置$\vec{x}$，具有动量（或者速度，假设为单位质量）$\vec{v}$</p>
+<p>系统的总能量为：<br>$$<br>H(\vec{x},\vec{v}) = U(\vec{x})+E_k(\vec{v}) \<br>其中U(\vec{x})是势能,E_k(\vec{v})是动能<br>$$<br>此类系统满足哈密顿方程组：<br>$$<br>\frac{d\vec{x}}{dt} = \frac{\partial H}{\partial v_i} = \frac{\partial K(\vec{v})}{\partial v_i} \<br>\frac{d v_i}{dt} = -\frac{\partial H}{\partial x_i} = -\frac{\partial U(\vec{x})}{\partial x_i}<br>$$<br>我们有了$\frac{\partial U(\vec{x})}{\partial x_i}$和$\frac{\partial K(\vec{v})}{\partial v_i}$的表达式，以及初始条件（比如在时刻$t_0$的位置$x_0$和初始动量$\vec{v}_0$，就有可能通过模拟系统在时长$T$的演变来预测物体在$t=t_0+T$时刻的位置和动量</p>
+<h2 id="将目标分布与统计力学规范分布联系起来"><a href="#将目标分布与统计力学规范分布联系起来" class="headerlink" title="将目标分布与统计力学规范分布联系起来"></a>将目标分布与统计力学规范分布联系起来</h2><p>将$H(\vec{x},\vec{v})$与$p(\vec{x})$关联起来<br>$$<br>\begin{align}<br>p(\vec{x},\vec{v}) &amp;\propto e^{-H(\vec{x},\vec{v})} \<br>&amp; = e^{-U(\vec{x})}e^{-K(\vec{v})} \<br>&amp; = p(\vec{x})p(\vec{v})<br>\end{align}<br>$$<br>抽样后只需要$\vec{x}$而忽略掉$\vec{v}$（类似数据扩张中的辅助变量），由于$\vec{x},\vec{v}$相互独立，因此可以使用任何分布来抽样得到$\vec{v}$，常用正态分布<br>$$<br>p(\vec{v}) \propto e^{-\vec{v}^T\vec{v}/2}<br>$$<br>等价的取 $K(\vec{v}) =\vec{v}^T\vec{v}/2 $</p>
+<p>给定目标分布$P(\vec{x})$，我们可以定义<br>$$<br>U(\vec{x}) = -ln(p(\vec{x}))\<br>\frac{\partial U(\vec{x})}{\partial x_i} = -\frac{1}{p(\vec{x})}\frac{\partial p(\vec{x})}{\partial x_i}<br>$$<br>计算接受概率<br>$$<br>\alpha = min{1,\frac{p(\vec{x}^*,\vec{v}^*)}{p(\vec{x}_0,\vec{v}_0)}} \<br>= min{1,exp(-U(\vec{x}^*)+U(\vec{x}_0)-K(\vec{v}^*)+K(\vec{v}_0))  }<br>$$</p>
+<h2 id="Leap-Frog方法模拟哈密顿动力学"><a href="#Leap-Frog方法模拟哈密顿动力学" class="headerlink" title="Leap Frog方法模拟哈密顿动力学"></a>Leap Frog方法模拟哈密顿动力学</h2><p>哈密顿方程描述了物体随连续时间的运动. 为了在计算机上数值模拟哈密顿动力学, 必须通过离散化时间来近似哈密顿方程. 我们将 时长$T$分成一系列较小的长度为$\delta$的间隔. 离散化时间的方法有多种, 包括 <code>Euler</code> 方法和<code>Leap Frog</code>方法.  </p>
+<ol>
+<li><p>首先Taylor展开<br>$$<br>v_i(t+\delta/2)=v_i(t)-(\delta/2)\frac{\partial U(\vec{x})}{\partial x_i(t)}<br>$$</p>
+</li>
+<li><p>更新位置<br>$$<br>x_i(t+\delta) = x_i(t)+\delta \frac{\partial K(\vec{v})}{\partial v_i(t+\delta/2)}<br>$$</p>
+</li>
+<li><p>更新动量<br>$$<br>v_i(t+\delta) = v_i(t+\delta/2)-(\delta/2)\frac{\partial U(\vec{x})}{\partial x_i(t+\delta)}<br>$$</p>
+</li>
+</ol>
+<h2 id="Euler方法模拟哈密顿动力学"><a href="#Euler方法模拟哈密顿动力学" class="headerlink" title="Euler方法模拟哈密顿动力学"></a>Euler方法模拟哈密顿动力学</h2><h1 id="HMC总结"><a href="#HMC总结" class="headerlink" title="HMC总结"></a>HMC总结</h1><h2 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h2><ol>
+<li>令 t = 0, 产生初始位置 x(0) ∼ π(0)</li>
+<li>重复 $t = 1, . . . , T$<ul>
+<li>令 $t = t + 1$, 产生一个新的动量 $\vec{v}_0 \sim p(\vec{v})$</li>
+<li>令$ \vec{x}_0 = \vec{x}^{(t-1)}$</li>
+<li>使用 <code>Leap Frog</code> 算法, 从$ (\vec{x}_0, \vec{v}_0)$ 出发, 时长 $L$ 和步长 $\delta$,得到$ \vec{x}^∗, \vec{v}^∗$</li>
+<li>计算<code> Metroplis</code> 接收概率<br>$α = min{1, exp(-U(\vec{x}^∗) + U(\vec{x}0) - K(\vec{v}^∗) + K(\vec{v}_0))}$</li>
+<li>以概率$ \alpha $接受 $\vec{x}^{(t)} = \vec{x}^∗$, 否则$ \vec{x}^{(t)}= \vec{x}^{(t-1)}$</li>
+</ul>
+</li>
+</ol>
+<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><ul>
+<li>连续生成的两个状态之间的距离一般比较大, 因此抽取代表性样本所需迭代次数较少</li>
+<li>单次迭代的成本较高 (需要模拟哈密顿动力学过程), 但是仍然显著地更有效</li>
+<li>大部分情况下会接受新状态</li>
+<li>当分布有分开的局部最小值时候无法进行全部抽样 (陷在一个局部最小值处), 可以考虑不同初始值.  </li>
+</ul>
+<h1 id="HMC实施软件"><a href="#HMC实施软件" class="headerlink" title="HMC实施软件"></a>HMC实施软件</h1><p>Stan:</p>
+<ul>
+<li>No U-Turn Sampler (NUTS2): Adaptive Hamiltonian Monte<br>Carlo</li>
+<li>Implemented in Stan (rstan: <a href="mc-stan.org">mc-stan.org</a>)</li>
+<li>Stan figures out gradient for you via autodiff</li>
+</ul>
+<p>R package hmclearn:</p>
+<ul>
+<li>takes user-defined log posterior and gradient functions as inputs</li>
+<li>includes parameters to enable parallel processing as well as<br>multiple chains</li>
+<li>a variety of Bayesian graphical functions are provided  </li>
+</ul>
+<h1 id="R语言中的HMC"><a href="#R语言中的HMC" class="headerlink" title="R语言中的HMC"></a>R语言中的HMC</h1><p>R语言中的<code>hmclearn</code>包，是学习HMC的的常用包，包含了用于数据分析的通用HMC函数</p>
+]]></content>
+      <categories>
+        <category>动力学研究</category>
+      </categories>
+      <tags>
+        <tag>哈密顿动力学</tag>
+        <tag>MC</tag>
+        <tag>动力学研究</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R高性能计算</title>
+    <url>//post/programming/R/R%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97.html</url>
+    <content><![CDATA[<span id="more"></span>]]></content>
+      <categories>
+        <category>R语言</category>
+      </categories>
+      <tags>
+        <tag>R语言</tag>
       </tags>
   </entry>
   <entry>

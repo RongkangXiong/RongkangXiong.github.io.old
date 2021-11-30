@@ -6,7 +6,7 @@
   <link href="https://rongkangxiong.top/atom.xml" rel="self"/>
   
   <link href="https://rongkangxiong.top/"/>
-  <updated>2021-11-23T05:08:43.425Z</updated>
+  <updated>2021-11-30T14:34:13.892Z</updated>
   <id>https://rongkangxiong.top/</id>
   
   <author>
@@ -15,6 +15,197 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Synology如何固定IP地址</title>
+    <link href="https://rongkangxiong.top/post/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80.html"/>
+    <id>https://rongkangxiong.top/post/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80.html</id>
+    <published>2021-11-30T11:05:14.000Z</published>
+    <updated>2021-11-30T14:34:13.892Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="固定Synergy的IP"><a href="#固定Synergy的IP" class="headerlink" title="固定Synergy的IP"></a>固定Synergy的IP</h1><p>打开控制面板</p><p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190558796.png" alt="image-20211130190558796"></p><p>点击网络</p><p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190636367.png" alt="image-20211130190636367"></p><p>在常规页面找到服务器名称，自己设置一个</p><p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190738478.png" alt="image-20211130190738478"></p><p>点击进入网络界面</p><p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190941760.png" alt="image-20211130190941760"></p><p><img src="../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130191020974.png" alt="image-20211130191020974"></p><p>设置固定的IP</p><h1 id="校内申请固定IP"><a href="#校内申请固定IP" class="headerlink" title="校内申请固定IP"></a>校内申请固定IP</h1><h2 id="固定IP后怎么启用防止别人用"><a href="#固定IP后怎么启用防止别人用" class="headerlink" title="固定IP后怎么启用防止别人用"></a>固定IP后怎么启用防止别人用</h2><h1 id="用电脑直接连Synology"><a href="#用电脑直接连Synology" class="headerlink" title="用电脑直接连Synology"></a>用电脑直接连Synology</h1><p><a href="http://find.synology.com/">http://find.synology.com/</a></p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;固定Synergy的IP&quot;&gt;&lt;a href=&quot;#固定Synergy的IP&quot; class=&quot;headerlink&quot; title=&quot;固定Synergy的IP&quot;&gt;&lt;/a&gt;固定Synergy的IP&lt;/h1&gt;&lt;p&gt;打开控制面板&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190558796.png&quot; alt=&quot;image-20211130190558796&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击网络&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190636367.png&quot; alt=&quot;image-20211130190636367&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在常规页面找到服务器名称，自己设置一个&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190738478.png&quot; alt=&quot;image-20211130190738478&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击进入网络界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130190941760.png&quot; alt=&quot;image-20211130190941760&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/blog/Synology%E5%A6%82%E4%BD%95%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/image-20211130191020974.png&quot; alt=&quot;image-20211130191020974&quot;&gt;&lt;/p&gt;
+&lt;p&gt;设置固定的IP&lt;/p&gt;
+&lt;h1 id=&quot;校内申请固定IP&quot;&gt;&lt;a href=&quot;#校内申请固定IP&quot; class=&quot;headerlink&quot; title=&quot;校内申请固定IP&quot;&gt;&lt;/a&gt;校内申请固定IP&lt;/h1&gt;&lt;h2 id=&quot;固定IP后怎么启用防止别人用&quot;&gt;&lt;a href=&quot;#固定IP后怎么启用防止别人用&quot; class=&quot;headerlink&quot; title=&quot;固定IP后怎么启用防止别人用&quot;&gt;&lt;/a&gt;固定IP后怎么启用防止别人用&lt;/h2&gt;&lt;h1 id=&quot;用电脑直接连Synology&quot;&gt;&lt;a href=&quot;#用电脑直接连Synology&quot; class=&quot;headerlink&quot; title=&quot;用电脑直接连Synology&quot;&gt;&lt;/a&gt;用电脑直接连Synology&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://find.synology.com/&quot;&gt;http://find.synology.com/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>gitee和github搭建博客的优劣</title>
+    <link href="https://rongkangxiong.top/post/buildblog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3.html"/>
+    <id>https://rongkangxiong.top/post/buildblog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3.html</id>
+    <published>2021-11-29T15:42:28.000Z</published>
+    <updated>2021-11-30T14:42:34.998Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>gitee是国内站点，网络稳定高速，github访问有时不稳定</li><li>站点项目更新部署到github/gitee后，github会自动重新部署更新，失败后还会给你发邮件，gitee则需要到respository里手动更新(除非你升级会员)</li><li>github上搭建的博客不挂梯子国内看不了</li></ul><p>思路：通过<code>github</code>搭建博客然后自动构建同步到<code>gitee</code></p><span id="more"></span><h1 id="博客仓库命名规则"><a href="#博客仓库命名规则" class="headerlink" title="博客仓库命名规则"></a>博客仓库命名规则</h1><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><ul><li><p>创建一个仓库，<strong>仓库设置为公开</strong>的才能免费使用<code>Github Pages</code>服务。</p></li><li><p>仓库名必须设置为：**&lt;用户名&gt;.github.io**</p></li><li><p>如下图：我的<code>Github</code>用户名为<code>RongkangXiong</code>，那么就需要创建一个名为<code>RongkangXiong.github.io</code>的公开仓库。</p></li><li><p>创建完成后，我们就可以通过<code>&lt;用户名&gt;.github.io</code>来访问我们的站点了。</p></li></ul><h2 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h2><ul><li><p>创建一个仓库，设置为公开或私有都可以。</p></li><li><p>仓库名如果设置成和个人空间地址一样，那么访问地址就是： <code>&lt;个人空间地址名&gt;.gitee.io</code></p></li><li><p>个人空间地址可在个人资料中查看。我的个人空间地址是<code>NeuronBear</code>，那么我的博客地址就是：<code>NeuronBear.gitee.io</code></p><p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/image-20211130000225927.png" alt="image-20211130000225927"></p></li><li><p>仓库名如果设置成别的，那么访问地址则是：<code>&lt;个人空间地址名&gt;.gitee.io/仓库名</code></p></li><li><p>例如我把仓库名设置为<code>myblog</code>，那么我的博客访问地址就是：<code>gavincrown.gitee.io/myblog</code></p></li><li><p>创建完成后，我们需要在该仓库页面中 点击“服务” &gt; <code>Gitee Pages</code> &gt; 勾选“强制使用<code>HTTPS</code>” &gt; 点击“启动”即可。</p></li></ul><h1 id="自动同步方法"><a href="#自动同步方法" class="headerlink" title="自动同步方法"></a>自动同步方法</h1><p>建议导入和自己gitee用户名同名的文件（不是github原名！）</p><h2 id="方法1：手动同步"><a href="#方法1：手动同步" class="headerlink" title="方法1：手动同步"></a>方法1：手动同步</h2><p>在 Gitee 仓库主页点击同步更新按钮即可！这里的同步功能默认是强制同步（新代码直接覆盖）</p><blockquote><p>定时同步目前官方不支持</p><p><a href="https://gitee.com/oschina/git-osc/issues/IKH12">https://gitee.com/oschina/git-osc/issues/IKH12</a></p></blockquote><p>每一次push代码都需要点一下同步，比较麻烦</p><h2 id="方法2：本地仓库同时推送github和gitee"><a href="#方法2：本地仓库同时推送github和gitee" class="headerlink" title="方法2：本地仓库同时推送github和gitee"></a>方法2：本地仓库同时推送github和gitee</h2><p>可以通过本地仓库的形式，同时推送到github和gitee，相当于执行两次commit的操作，push两次。但显然也不是我想要的</p><p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/8c67a672dac937a54888514dcfa5efd3.png" alt="image-20210402203842701"></p><p>1、首先通过 <code>git remote -v</code> 查看您要同步的仓库的远程库列表，如果在列表中没有您 Gitee 的远程库地址，您需要新增一个地址</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote add 远程库名 远程库地址eg: git remote add gitee git@github.com:xxx&#x2F;xxx.git</code></pre><p>如果在 add 的时候出现<code>error: Could not remove config section ‘remote.xxx’.</code>一类的错误，通过把仓库下<code>.git/config</code> 文件里面的<code>[remote “xxx”]</code>删掉或者是用别的远程库名即可。</p><p>2、从 GitHub 上拉取最新代码到本地</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git pull 远程库名 分支名eg：git pull origin master</code></pre><p>3、推送本地最新代码到 Gitee 上</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git push 远程库名 分支名eg：git push gitee master</code></pre><p>如果出现有差异的话需要自己手动解决差异</p><h2 id="方法3：GitHub-Action"><a href="#方法3：GitHub-Action" class="headerlink" title="方法3：GitHub Action"></a>方法3：GitHub Action</h2><p>官方的Action方法<a href="https://github.com/features/actions">Github Action</a></p><p>运用CI/CD的思想，从github中自动化的执行流程，完美符合我们的预期。</p><p>原理<br>Github Action提供了2种方式去实现Action：</p><ul><li><p>Docker container. 这种方式相当于在Github提供的计算资源起个container，在container里面把功能实现。具体的原理大致如下：</p><p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/aa54f4c5ec64b3574f114d1da5432978.png" alt="image-20210402205215202"></p></li><li><p>JavaScript. 这种方式相当于在Github提供的计算资源上，直接用JS脚本去实现功能。</p></li></ul><p>选择第一种类型，关于怎么构建一个Github的Action可以参考Github的官方文档<a href="https://docs.github.com/en/actions/creating-actions">Building actions</a>。官方文档真的写的非常详细了，并且也有hello-world级别的入门教程。</p><p>同步的核心代码实现，而最终的关键实现就是，我们需要定义这个容器运行的脚本，原理很简单：</p><p><img src="../../images/blog/gitee%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BC%98%E5%8A%A3/e6b037d4323b7fe8aad1073a29d96ad0.png" alt="image-20210402205304730"></p><p>大致就是以上4步：</p><ol><li>通过Github API读取Repo列表。</li><li>下载或者更新Github repo的代码</li><li>设置远端分支</li><li>将最新同步的commit、branch、tag推送到Gitee。</li></ol><p>关心细节的同学，具体可以参考代码：<a href="https://github.com/Yikun/gitee-mirror-action/blob/master/entrypoint.sh">https://github.com/Yikun/gitee-mirror-action/blob/master/entrypoint.sh</a></p><p>参考链接：</p><ul><li><a href="https://blog.csdn.net/outman_1921/article/details/115454572">CSDN：github博客自动同步到gitee（保姆级教程）</a></li><li><a href="https://zhuanlan.zhihu.com/p/157391730?ivk_sa=1024320u">知乎：Hexo博客部署到Github和Gitee</a></li><li></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;gitee是国内站点，网络稳定高速，github访问有时不稳定&lt;/li&gt;
+&lt;li&gt;站点项目更新部署到github/gitee后，github会自动重新部署更新，失败后还会给你发邮件，gitee则需要到respository里手动更新(除非你升级会员)&lt;/li&gt;
+&lt;li&gt;github上搭建的博客不挂梯子国内看不了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;思路：通过&lt;code&gt;github&lt;/code&gt;搭建博客然后自动构建同步到&lt;code&gt;gitee&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://rongkangxiong.top/tags/hexo/"/>
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="gitee" scheme="https://rongkangxiong.top/tags/gitee/"/>
+    
+    <category term="github" scheme="https://rongkangxiong.top/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过gitee和hexo搭建个人博客</title>
+    <link href="https://rongkangxiong.top/post/buildblog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://rongkangxiong.top/post/buildblog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</id>
+    <published>2021-11-29T13:56:49.000Z</published>
+    <updated>2021-11-29T15:38:37.420Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先准备软件：</p><ul><li>git (提供命令git) <a href="https://git-scm.com/">git官网</a></li><li>notepad++(方便编辑)<a href="https://notepad-plus-plus.org/">notepad++官网</a></li><li>nodejs(hexo依赖)<a href="https://nodejs.org/en/">nodejs官网</a></li><li>7z(压缩包)<a href="https://www.7-zip.org/">7z官网</a></li></ul><p>还有<a href="https://gitee.com/">码云主页</a></p><span id="more"></span><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>nodejs、git、notepad++和7z的安装过程省略。主要要说的是hexo的安装和配置。<br>再以上几个安装好后，注意测试是否可以再命令行可以使用：<code>git</code>,<code>npm</code><br>这里虽然使用的是Windows值作但是全部都是使用命令完成，与Linux的命令相同，所以可以Linux也是可以完成的。<br>Win+R-&gt; ‘cmd’ 打开命令行<br>首先需要配置npm的国内源</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org#配置国内的镜像源npm info hexo# 测试查看hexo的安装信息，是否是taobao.org的源</code></pre><p>然后再是安装hexo：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo # 通过npm安装hexo# -g 指定全局安装，可以使用hexo命令</code></pre><p>在需要保存自己博客’/Myblog/‘的路径下执行下面操作</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init test# 初始化创建，会创建test文件夹&#x2F;Myblog&#x2F;test&#x2F;cd test# 进入Myblog目录npm install# 进一步安装hexo所需文件</code></pre><p>新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public: 存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li><strong>_config.yml: 博客的配置文件</strong></li></ul><p>这样hexo就安装完成了，接下来就可以启动<code>hexo</code>了</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean# 清除所有记录hexo g# 生成静态网页hexo s# 启动服务</code></pre><p>然后使用浏览器访问<code>http://localhost:4000/</code></p><p><img src="../../images/blog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20211129224310796.png" alt="image-20211129224310796"></p><h1 id="创建Gitee的仓库"><a href="#创建Gitee的仓库" class="headerlink" title="创建Gitee的仓库"></a>创建Gitee的仓库</h1><p><a href="https://gitee.com/">gitee主页</a><br>再gitee创建自己的账户，然后再创建一个自己仓库</p><p><img src="../../images/blog/%E9%80%9A%E8%BF%87gitee%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20211129222455332.png" alt="image-20211129222455332"></p><p>在创建仓库完成后进入到仓库</p><p>然后在<code>Myblog</code>下打开<code>git bash</code>进行<code>clone</code></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git clone https:&#x2F;&#x2F;gitee.com&#x2F;NeuronBear&#x2F;RongkangXiongBlog.git</code></pre><p>然后将<code>/Myblog/test</code>刚刚的文件除了<code>.github</code>文件以外都复制到<code>/Myblog/你的克隆下来的仓库文件下</code>，之后你可以将<code>test</code>文件夹整个删除（后面没啥用了）</p><p>然后cd进入<code>/Myblog/test</code>目录下</p><p>你可以重新启动服务</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo s</code></pre><p>然后打开浏览器<code>http://localhost:4000/</code>查看生成的页面</p><h1 id="现在将更新的文件上传到gitee"><a href="#现在将更新的文件上传到gitee" class="headerlink" title="现在将更新的文件上传到gitee"></a>现在将更新的文件上传到<code>gitee</code></h1><p>之后的<code>/blog</code>指的是你的clone下来的文件夹的名称</p><p>复制URL，到hexo的网站配置文件<code>/blog/_config.yml</code>的最后</p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">……deploy:  - type: git    # type为git    repo: git@gitee.com:NeuronBear&#x2F;RongkangXiongBlog.git  # 仓库的URL    branch: master   #构建网页的分支……</code></pre><p>这里在<code>gitee</code>上再创建一个除了<code>master</code>外的分支<code>hexo</code>用来放源码</p><p>这里先安装一个hexo的插件</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install hexo-deployer-git --save# 安装git插件</code></pre><p>然后上传文件到仓库</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">git commit -m &quot;test push&quot;git remote add origin_gitee https:&#x2F;&#x2F;gitee.com&#x2F;NeuronBear&#x2F;RongkangXiongBlog.git #链接到gitee,默认是origin,但为了之后不冲突要和github区分git push -u origin master</code></pre><p>然后就可以看到push上去了</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">git config --global user.email *********@qq.com# 设置gitee邮箱（gitee的注册邮箱）git config --global user.name &#39;****&#39;# 设置用户名（git的注册昵称）hexo deploy# 上传到gitee# 在上传时，需要再次输入gitee的注册邮箱作为username，账户密码作为password</code></pre><p>上传完成之后，仓库就会多出以下文件</p><h1 id="配置Gitee-Pages"><a href="#配置Gitee-Pages" class="headerlink" title="配置Gitee Pages"></a>配置Gitee Pages</h1><p>点击<code>服务-Gitee Pages-实名认证</code></p><h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>如果不喜欢这个主题可以换一个<br>比如next主题，<a href="http://theme-next.iissnan.com/">next官网</a> <a href="https://github.com/iissnan/hexo-theme-next/">next的github网页</a>，去github下载压缩包然后放到test下的themes目录下。</p><p>然后配置<code>_config.yml</code></p><p>然后配置<code>_config.yml</code></p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">……theme: next# 这里需要注意:后面要有一个空格，名称要和theme下的主题目录名称相同。……</code></pre><p>hexo的其他配置参考<a href="https://hexo.io/zh-cn/docs/">hexo官方文档</a><br>next的配置参考<a href="http://theme-next.iissnan.com/getting-started.html">next官方文档</a></p><p>然后重启hexo服务</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean# 清除所有记录hexo generate# 生成静态网页hexo server -p 80# 启动服务</code></pre><p>然后重新访问网页，就会发生变化</p><h1 id="上传到gitee"><a href="#上传到gitee" class="headerlink" title="上传到gitee"></a>上传到gitee</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;首先准备软件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git (提供命令git) &lt;a href=&quot;https://git-scm.com/&quot;&gt;git官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;notepad++(方便编辑)&lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;notepad++官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;nodejs(hexo依赖)&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;nodejs官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;7z(压缩包)&lt;a href=&quot;https://www.7-zip.org/&quot;&gt;7z官网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有&lt;a href=&quot;https://gitee.com/&quot;&gt;码云主页&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>贝叶斯近似计算</title>
+    <link href="https://rongkangxiong.top/post/mynotes/math/%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.html"/>
+    <id>https://rongkangxiong.top/post/mynotes/math/%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.html</id>
+    <published>2021-11-28T02:56:38.000Z</published>
+    <updated>2021-11-30T05:06:05.486Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="贝叶斯大样本性质"><a href="#贝叶斯大样本性质" class="headerlink" title="贝叶斯大样本性质"></a>贝叶斯大样本性质</h1><h2 id="后验分布相合性-consistency"><a href="#后验分布相合性-consistency" class="headerlink" title="后验分布相合性(consistency)"></a>后验分布相合性(consistency)</h2><p>随着样本量的增加，$\theta$的后验信息应该越来越集中在$\theta_0$附近（越来越少地依赖于先验分布），这种性质即为后验分布在$\theta_0$处的相合性<br>$$<br>设 X_1,…,X_n为在第n阶段获得的全部样本，记为\mathbf{X_n},其密度为f(\mathbf{x_n}|\vec{\theta}) \</p><p>$$</p><h3 id="参数空间可数情形"><a href="#参数空间可数情形" class="headerlink" title="参数空间可数情形"></a>参数空间可数情形</h3><p>定理 1. 设 $X \mid \theta \sim f(\cdot \mid \theta)$, 其中 $\theta \in \Theta=\left{\theta_{1}, \theta_{2}, \ldots\right}$ 可数集, 假设 $\theta_{t} \in \Theta$ 为 $\theta$ 的真值。如果先验分布 $\pi(\theta)$ 满足 $\pi\left(\theta_{i}\right)&gt;0, i=1,2, \ldots$ 以及<br>$$<br>K L\left(f_{\theta_{t}} | f_{\theta_{i}}\right)=\int f\left(x \mid \theta_{t}\right) \log \frac{f\left(x \mid \theta_{t}\right)}{f\left(x \mid \theta_{i}\right)} d x&gt;0 \quad \forall i \neq t<br>$$<br>则对样本 $\mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)$ 有<br>$$<br>\lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{t} \mid \mathbf{x}\right)=1 \text { 以及 } \lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{i} \mid \mathbf{x}\right)=0 \quad \forall i \neq t<br>$$<br>注: 如果 $\theta_{t} \notin \Theta$, 则后验分布收敛到一个在 <code>Kullback-Leibler </code>距 离意义下距离真实模型最近的一个离散分布。</p><p>证明:<br>$$<br>\begin{aligned}<br>\pi\left(\theta_{i} \mid \mathbf{x}\right) &amp;=\frac{\pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right)}{\sum_{i} \pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right)} \<br>&amp;=\frac{\pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right) / f\left(\mathbf{x} \mid \theta_{t}\right)}{\sum_{i} \pi\left(\theta_{i}\right) f\left(\mathbf{x} \mid \theta_{i}\right) / f\left(\mathbf{x} \mid \theta_{t}\right)} \<br>&amp;=\frac{\exp \left(\log \pi\left(\theta_{i}\right)+S_{i}\right)}{\sum_{i} \exp \left(\log \pi\left(\theta_{i}\right)+S_{i}\right)} \quad \text { 其中 } S_{i}=\sum_{j=1}^{n} \log \frac{f\left(x_{j} \mid \theta_{i}\right)}{f\left(x_{j} \mid \theta_{t}\right)}<br>\end{aligned}<br>$$<br>给定 $\theta_{t}, S_{i}$ 为<code> i.i.d</code> 随机变量之和, 因此由 <code>LLN</code> 有<br>$$<br>\lim <em>{n \rightarrow \infty} \frac{1}{n} S</em>{i}=\int f\left(x \mid \theta_{t}\right) \log \frac{f\left(x \mid \theta_{i}\right)}{f\left(x \mid \theta_{t}\right)} d x<br>$$<br>由定理假设知此量当 $i \neq t$ 时为负, 当 $i=t$ 时为 0 . 因此当 $n \rightarrow \infty$ 时, $S_{t} \rightarrow 0,\pi(\theta_t|x)\rightarrow 1,i \neq t ,S_{i} \rightarrow-\infty,\pi(\theta_i|x)\rightarrow 0$ 。从而定理得证。</p><h3 id="参数空间连续情形"><a href="#参数空间连续情形" class="headerlink" title="参数空间连续情形"></a>参数空间连续情形</h3><p>上述定理可以推广到参数空间是连续的场合, 此时, $\theta$ 取任意值 的概率为 0 . 因此, 我们定义<br>$$<br>\theta_{t}=\arg \min H(\theta)=\int f_{t}(x) \log \frac{f_{t}(x)}{f(x \mid \theta)} d x<br>$$<br>定理 2. 设 $X \mid \theta \sim f(\cdot \mid \theta)$, 其中 $\theta \in \Theta$ 紧集, 假设 $\theta_{t} \in \Theta$ 为 $\theta$ 的真 值。 $A$ 为 $\theta_{t}$ 的先验概率非零的任意一个邻域 (例如以 $\theta_{t}$ 为中心的一 个开集), 则对样本 $\mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)$ 有<br>$$<br>\lim <em>{n \rightarrow \infty} \pi\left(\theta</em>{t} \in A \mid \mathbf{x}\right)=1, \quad n \rightarrow \infty<br>$$<br>定理的证明可以通过将参数空间离散化来证明。由于 $\Theta$ 为紧集, 故存在有限子覆盖，其中仅有 $A$ 包含 $\theta_{t}$. 于是由离散场合的结论可证。<br>此时, 称后验分布 $\pi(\theta \mid \mathbf{x})$ 在 $\theta_{t}$ 处相合。</p><h2 id="后验分布渐进正态性"><a href="#后验分布渐进正态性" class="headerlink" title="后验分布渐进正态性"></a>后验分布渐进正态性</h2><blockquote><p>Le Cam (1953) 首次证明了后验分布的渐近正态性。  </p></blockquote><p>记$x$为数据,使用后验分布对未知量$\theta$进行推断的时候<br>$$<br>\pi(\theta|x) = \frac{\pi(\theta,x)}{\pi(x)} = \frac{\pi(x|\theta)\pi(\theta)}{\int \pi(x|\theta)\pi(\theta)}<br>$$<br>绝大部分情况下，分布不能解析计算，需要逼近后验推断</p><ul><li>计算后验特征$E[g(\theta|x)]$</li></ul><p>$$<br>E[g(\theta|x)] \approx \int g(\theta)\phi(\theta;\hat{\theta},I(\hat{\theta})^{-1})<br>$$</p><p>找一个可以计算的分布$q^*(\theta)\approx \pi(\theta|x)$，使得<br>$$<br>E^{q^*(\theta)}[g(\theta)]\approx E^{\pi(\theta|x)}[g(\theta)]<br>$$</p><h1 id="Laplace逼近"><a href="#Laplace逼近" class="headerlink" title="Laplace逼近"></a>Laplace逼近</h1><p>考虑如下形式积分：<br>$$<br>I(N;h) = \int e^{-Nh(x)}dx<br>$$<br>统计问题中$N$为样本量，尝尝感兴趣$N$趋于无穷大时候上述积分值</p><p>假设$h(x)$单峰，且$h(x)$在其众数$\hat{x}$处有严格正的二阶导数</p><p><code>Taylor</code>展开到四阶：<br>$$<br>h(x) \approx h(\hat{x})+\frac{1}{2}h_2(\hat{x})(x-\hat{x})^2+\frac{1}{6}h_3(\hat{x})(x-\hat{x})^3+\frac{1}{24}h_3(\hat{x})(x-\hat{x})^4\<br>其中h_i(\hat{x})表示h(x)在\hat{x}处的i阶导数,\hat{x}满足h_1(\hat{x})=0<br>$$<br>带入积分可以得到：<br>$$<br>\begin{align}<br>I(N;h) &amp;= \int e^{-Nh(x)}dx \<br>&amp;\approx \int exp{-N[h(\hat{x})+\frac{1}{2}h_2(\hat{x})(x-\hat{x})^2\<br>&amp;+\frac{1}{6}h_3(\hat{x})(x-\hat{x})^3+\frac{1}{24}h_3(\hat{x})(x-\hat{x})^4] }dx,变量代换u=x-\hat{x} \<br>&amp; = e^{-Nh(\hat{x})} \int e^{-\frac{N}{2} \hat{h}_2 u^2}exp{ -\frac{N}{6}\hat{h}_3 u^3-\frac{N}{24}\hat{h}_4 u^4} du<br>\end{align}<br>$$<br>对指数项进一步做<code>Taylor</code>展开到二阶：<br>$$<br>\begin{align}<br>I(N;h) &amp;\approx e^{-Nh(\hat{x})} \int e^{-\frac{N}{2} \hat{h}_2 u^2} (1-\frac{N}{6}\hat{h}_3 u^3-\frac{N}{24}\hat{h}_4 u^4\<br>&amp;+\frac{1}{2}(\frac{N^2}{36}\hat{h}_3^2 u^6+\frac{2N^2}{144}\hat{h}_3\hat{h}_4 u^7+\frac{N^2}{576}\hat{h}_4^2 u^8)) du \<br>&amp; =  e^{-Nh(\hat{x})}\int e^{-\frac{N}{2} \hat{h}_2 u^2}(1-\frac{N}{24}\hat{h}_4 u^4+\frac{N^2}{72}\hat{h}_3^2 u^6+\frac{N^2}{1052}\hat{h}_4^2 u^8)du\<br>\end{align}<br>$$<br>利用奇函数阶积分为0，剩余积分可以用<code>gamma</code>积分：<br>$$<br>\int e^{-sx^2}x^{2m}dx=\frac{2m!}{m!2^{2m}}\pi^{1/2}s^{-(m+1)/2}<br>$$<br>得到：<br>$$<br>\begin{align}<br>I(N;h) &amp;\approx e^{-Nh(\hat{x})} \sqrt{2\pi}N^{-1/2}(1-\frac{\hat{h}_4\sigma^4}{8N}+\frac{5\hat{h}_4\sigma^6}{24N}) \<br>&amp; = e^{-Nh(\hat{x})}\sqrt{2\pi}N^{-1/2}(1+O(\frac{1}{N}))<br>\end{align}<br>$$<br>其中$\sigma^2=\frac{1}{\hat{h}_2}$</p><p>当$\hat{x}$无法分析得到的时候，一般用$\tilde{x}$，满足$\hat{x}-\tilde{x}=O(1/N)$</p><h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><h2 id="Laplace并计算后验特征"><a href="#Laplace并计算后验特征" class="headerlink" title="Laplace并计算后验特征"></a>Laplace并计算后验特征</h2><p>$$<br>E^{\pi(\theta|x)}[g(\theta)] = \frac{\int_{R^k}g(\theta)f(x|\theta)\pi(\theta)d\theta}{\int_{R^k}f(x|\theta)\pi(\theta)d\theta}<br>$$</p><p>其中$g,f,\pi$是$\theta$的光滑可微取正值的函数<br>$$<br>\begin{align}<br>h^*(\theta) &amp;= -\frac{1}{N}ln(g(\theta)f(x|\theta)\pi(\theta))\<br>&amp;= -\frac{1}{N}(ln(g(\theta))+ln(f(x|\theta))+ln(\pi(\theta))) \<br>\hat{\theta} = arg\ max_{\theta\in \Theta} h^*(\theta),&amp; \Sigma^* = \frac{\partial^2 h^*}{\partial \theta\partial\theta^{‘}} \<br>I(N;h^*) &amp;= \int_{R^k} g(\theta)f(x|\theta)\pi(\theta) d\theta = \int e^{-Nh^*(\theta)}d\theta\<br>&amp; = e^{-Nh^{<em>}(\hat{\theta})}(2\pi)^{k/2}\mid \Sigma^</em> \mid^{-1/2}N^{-k/2}(1+O(1/N))<br>\end{align}<br>$$<br>对分母令$h(\theta)=-\frac{1}{N}(ln(f(x|\theta))+ln(\pi(\theta))),\tilde{\theta} = arg\ max_{\theta\in\Theta} h(\theta),\Sigma= \frac{\partial^2 h}{\partial \theta\partial\theta^{‘}}$<br>$$<br>\begin{align}<br>I(N;h) &amp;= \int_{R^k}f(x|\theta)\pi(\theta) d\theta = \int e^{-Nh(\theta)}d\theta\<br>&amp; = e^{-Nh(\tilde{\theta})}(2\pi)^{k/2}\mid \Sigma \mid^{-1/2}N^{-k/2}(1+O(1/N))<br>\end{align}<br>$$<br>因此<br>$$<br>E(g(\theta)|x) \approx \frac{g(\hat{\theta})f(x|\hat{\theta})\pi(\hat{\theta})\mid \Sigma^* \mid^{-1/2}}{f(x|\tilde{\theta})\pi(\tilde{\theta})\mid \Sigma\mid^{-1/2}}<br>$$<br>不完全取正值的函数$g(\theta)$，再加上充分大的数后可以只取正值，上述方法仍然适用</p><h3 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h3><p>设$X_1,…,X_n \ i.i.d \sim B(1,\theta), \theta\sim Beta(\alpha,\beta)$，求后验均值的Laplace近似</p><p>解：</p><p>记 $X = \sum X_i,\theta|X \sim Beta(\alpha+x,\beta+n-x)$，不妨设$0&lt;\alpha,\beta\leq 1$，将后验密度写为<br>$$<br>\begin{align}<br>\pi(x_1,…,x_n|\theta) &amp; = \theta^{X}(1-\theta)^{n-X}  \<br>\pi(\theta) &amp; = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}, 0&lt;x&lt;1,\alpha&gt;0,\beta&gt;0 \<br>\pi(\theta|x_1,…,x_n) &amp;\propto \pi(x_1,…,x_n|\theta)\pi(\theta) \propto \theta^{\alpha+X-1}(1-\theta)^{\beta+n-X-1}\propto exp(-nh(\theta)) \<br>h(\theta) &amp; = -\frac{(\alpha+X-1)ln(\theta)+(\beta+n-X-1)ln(1-\theta)}{n}<br>\end{align}<br>$$</p><h3 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;贝叶斯大样本性质&quot;&gt;&lt;a href=&quot;#贝叶斯大样本性质&quot; class=&quot;headerlink&quot; title=&quot;贝叶斯大样本性质&quot;&gt;&lt;/a&gt;贝叶斯大样本性质&lt;/h1&gt;&lt;h2 id=&quot;后验分布相合性-consistency&quot;&gt;&lt;a href=&quot;#后验分布相合性-co</summary>
+      
+    
+    
+    
+    <category term="Math" scheme="https://rongkangxiong.top/categories/Math/"/>
+    
+    <category term="近似计算" scheme="https://rongkangxiong.top/categories/Math/%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="贝叶斯" scheme="https://rongkangxiong.top/categories/Math/%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97/%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
+    
+    
+    <category term="Math" scheme="https://rongkangxiong.top/tags/Math/"/>
+    
+    <category term="近似计算" scheme="https://rongkangxiong.top/tags/%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="贝叶斯" scheme="https://rongkangxiong.top/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图像中常见噪声及去除</title>
+    <link href="https://rongkangxiong.top/post/%E5%9B%BE%E5%83%8F%E4%B8%AD%E5%B8%B8%E8%A7%81%E5%99%AA%E5%A3%B0%E5%8F%8A%E5%8E%BB%E9%99%A4.html"/>
+    <id>https://rongkangxiong.top/post/%E5%9B%BE%E5%83%8F%E4%B8%AD%E5%B8%B8%E8%A7%81%E5%99%AA%E5%A3%B0%E5%8F%8A%E5%8E%BB%E9%99%A4.html</id>
+    <published>2021-11-26T02:11:03.000Z</published>
+    <updated>2021-11-26T02:20:40.084Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常见噪声分布"><a href="#常见噪声分布" class="headerlink" title="常见噪声分布"></a>常见噪声分布</h1><h2 id="高斯噪声"><a href="#高斯噪声" class="headerlink" title="高斯噪声"></a>高斯噪声</h2><h2 id="瑞丽噪声"><a href="#瑞丽噪声" class="headerlink" title="瑞丽噪声"></a>瑞丽噪声</h2><h2 id="伽马噪声（Erlang-噪声）"><a href="#伽马噪声（Erlang-噪声）" class="headerlink" title="伽马噪声（Erlang 噪声）"></a>伽马噪声（Erlang 噪声）</h2><h2 id="指数噪声"><a href="#指数噪声" class="headerlink" title="指数噪声"></a>指数噪声</h2><h2 id="均匀噪声"><a href="#均匀噪声" class="headerlink" title="均匀噪声"></a>均匀噪声</h2><h2 id="椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise"><a href="#椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise" class="headerlink" title="椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)"></a>椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)</h2><p>$$<br>p(z) =\left{ \begin{array}{rcl}<br>P_s &amp; \mbox{for} &amp; z=2^k-1 \<br>P_p &amp; \mbox{for} &amp; z=0 \<br>1-(P_s+P_p) &amp; \mbox{for} &amp; z=V<br>\end{array}\right.<br>$$</p><p>如果$Ps$或者 $P_p$任何一个为$0$，那么冲击噪声被称为<code>unipolar</code></p><p>如果两个都不等于$0$，那么被称为椒盐噪声</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;常见噪声分布&quot;&gt;&lt;a href=&quot;#常见噪声分布&quot; class=&quot;headerlink&quot; title=&quot;常见噪声分布&quot;&gt;&lt;/a&gt;常见噪声分布&lt;/h1&gt;&lt;h2 id=&quot;高斯噪声&quot;&gt;&lt;a href=&quot;#高斯噪声&quot; class=&quot;headerlink&quot; title=&quot;高斯噪声&quot;&gt;&lt;/a&gt;高斯噪声&lt;/h2&gt;&lt;h2 id=&quot;瑞丽噪声&quot;&gt;&lt;a href=&quot;#瑞丽噪声&quot; class=&quot;headerlink&quot; title=&quot;瑞丽噪声&quot;&gt;&lt;/a&gt;瑞丽噪声&lt;/h2&gt;&lt;h2 id=&quot;伽马噪声（Erlang-噪声）&quot;&gt;&lt;a href=&quot;#伽马噪声（Erlang-噪声）&quot; class=&quot;headerlink&quot; title=&quot;伽马噪声（Erlang 噪声）&quot;&gt;&lt;/a&gt;伽马噪声（Erlang 噪声）&lt;/h2&gt;&lt;h2 id=&quot;指数噪声&quot;&gt;&lt;a href=&quot;#指数噪声&quot; class=&quot;headerlink&quot; title=&quot;指数噪声&quot;&gt;&lt;/a&gt;指数噪声&lt;/h2&gt;&lt;h2 id=&quot;均匀噪声&quot;&gt;&lt;a href=&quot;#均匀噪声&quot; class=&quot;headerlink&quot; title=&quot;均匀噪声&quot;&gt;&lt;/a&gt;均匀噪声&lt;/h2&gt;&lt;h2 id=&quot;椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise&quot;&gt;&lt;a href=&quot;#椒盐噪声（Impulse-Noise-Salt-and-Pepper-Noise&quot; class=&quot;headerlink&quot; title=&quot;椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)&quot;&gt;&lt;/a&gt;椒盐噪声（Impulse Noise / Salt-and-Pepper Noise)&lt;/h2&gt;&lt;p&gt;$$&lt;br&gt;p(z) =\left{ \begin{array}{rcl}&lt;br&gt;P_s &amp;amp; \mbox{for} &amp;amp; z=2^k-1 \&lt;br&gt;P_p &amp;amp; \mbox{for} &amp;amp; z=0 \&lt;br&gt;1-(P_s+P_p) &amp;amp; \mbox{for} &amp;amp; z=V&lt;br&gt;\end{array}\right.&lt;br&gt;$$&lt;/p&gt;
+&lt;p&gt;如果$Ps$或者 $P_p$任何一个为$0$，那么冲击噪声被称为&lt;code&gt;unipolar&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果两个都不等于$0$，那么被称为椒盐噪声&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>哈密顿MC方法</title>
+    <link href="https://rongkangxiong.top/post/mynotes/%E5%93%88%E5%AF%86%E9%A1%BF%E8%92%99%E7%89%B9%E5%8D%A1%E7%BD%97/%E5%93%88%E5%AF%86%E9%A1%BFMC%E6%96%B9%E6%B3%95.html"/>
+    <id>https://rongkangxiong.top/post/mynotes/%E5%93%88%E5%AF%86%E9%A1%BF%E8%92%99%E7%89%B9%E5%8D%A1%E7%BD%97/%E5%93%88%E5%AF%86%E9%A1%BFMC%E6%96%B9%E6%B3%95.html</id>
+    <published>2021-11-25T11:04:47.000Z</published>
+    <updated>2021-11-28T03:38:31.584Z</updated>
+    
+    <content type="html"><![CDATA[<p>许多MCMC算法中的随机游走是使得马氏链收敛到平稳分布，但是非常慢。</p><p>哈密顿MC方法(HMC)是一种采用物理系统动力学而不是概率分布来产生马氏链的未来状态提议值，这使得马氏链可以更有效探索目标分布，从而加快收敛速度，特别是在更高维和更复杂的模型中。</p><p>该方法具有优秀的介绍和计算能力(<a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.882.666&rep=rep1&type=pdf">Neal et al. 2011</a>)</p><span id="more"></span><h1 id="背景简介"><a href="#背景简介" class="headerlink" title="背景简介"></a>背景简介</h1><p>​    哈密顿MC最开始是在20世纪80年代后期作为混合MC开发的，用于解决晶格量子色动力学<a href="https://sci-hub.se/https://www.sciencedirect.com/science/article/abs/pii/037026938791197X">(Duane et al.,1987)</a>，该领域专注了解构成原子核，原子以及最终构成我们世界的质子和中子的结构。几年内，<a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.446.9306&rep=rep1&type=pdf">(Radford Neal, 1995)</a>在应用贝叶斯神经网络的开创性工作中认识到了该方法在应用统计学问题中的潜力。接下来十年中，这种方法开始在教科书中出现，特别是<a href="https://www.inference.org.uk/itprnn/book.pdf">Mackay,2003</a>，他首先使用 <code>Hamiltonian Monte Carlo</code>一词而不是<code>hybrid Monte Carlo</code></p><p>，以及<a href="http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf">Bishop,2006</a>。随着Stan<a href="https://mc-stan.org/">(Stan 开发团队,2017)</a>等高性能软件实现的兴起，该方法已成为许多科学、医疗和工业应用中的普遍工具。</p><p>​    哈密顿MC特别适用于高维问题<a href="https://arxiv.org/pdf/1410.5110.pdf">(Betancourt et al., 2014)</a>，不幸的是，这种理论基础是根据微分几何来建立的，微分几何是高等数学领域的分支，很少包含在统计教学中。这种理论对大多人来说遥不可及。</p><p>​    高维概率分布的几何学如何阻碍统计计算的，然后从几何角度考虑MCMC，得到将此方法扩展到高维问题所需要的特征。</p><p>考虑目标分布$\pi(q)$，数据从$D$维空间$Q$中采样，$q\in Q$</p><p>函数$f(q)$的期望：<br>$$<br>E^{\pi}[f] = \int_{Q}f(q)\pi(q)dq<br>$$</p><h1 id="高维空间几何"><a href="#高维空间几何" class="headerlink" title="高维空间几何"></a>高维空间几何</h1><p>​    高维空间的特征之一是，任何给定领域的外部的体积都比其内部大得多。</p><p>​    例如，考虑将参数空间划分为以mode(众数)为中心的矩形盒子</p><h1 id="哈密顿系统"><a href="#哈密顿系统" class="headerlink" title="哈密顿系统"></a>哈密顿系统</h1><p>一个物体在时刻$t$处在位置$\vec{x}$，具有动量（或者速度，假设为单位质量）$\vec{v}$</p><p>系统的总能量为：<br>$$<br>H(\vec{x},\vec{v}) = U(\vec{x})+E_k(\vec{v}) \<br>其中U(\vec{x})是势能,E_k(\vec{v})是动能<br>$$<br>此类系统满足哈密顿方程组：<br>$$<br>\frac{d\vec{x}}{dt} = \frac{\partial H}{\partial v_i} = \frac{\partial K(\vec{v})}{\partial v_i} \<br>\frac{d v_i}{dt} = -\frac{\partial H}{\partial x_i} = -\frac{\partial U(\vec{x})}{\partial x_i}<br>$$<br>我们有了$\frac{\partial U(\vec{x})}{\partial x_i}$和$\frac{\partial K(\vec{v})}{\partial v_i}$的表达式，以及初始条件（比如在时刻$t_0$的位置$x_0$和初始动量$\vec{v}_0$，就有可能通过模拟系统在时长$T$的演变来预测物体在$t=t_0+T$时刻的位置和动量</p><h2 id="将目标分布与统计力学规范分布联系起来"><a href="#将目标分布与统计力学规范分布联系起来" class="headerlink" title="将目标分布与统计力学规范分布联系起来"></a>将目标分布与统计力学规范分布联系起来</h2><p>将$H(\vec{x},\vec{v})$与$p(\vec{x})$关联起来<br>$$<br>\begin{align}<br>p(\vec{x},\vec{v}) &amp;\propto e^{-H(\vec{x},\vec{v})} \<br>&amp; = e^{-U(\vec{x})}e^{-K(\vec{v})} \<br>&amp; = p(\vec{x})p(\vec{v})<br>\end{align}<br>$$<br>抽样后只需要$\vec{x}$而忽略掉$\vec{v}$（类似数据扩张中的辅助变量），由于$\vec{x},\vec{v}$相互独立，因此可以使用任何分布来抽样得到$\vec{v}$，常用正态分布<br>$$<br>p(\vec{v}) \propto e^{-\vec{v}^T\vec{v}/2}<br>$$<br>等价的取 $K(\vec{v}) =\vec{v}^T\vec{v}/2 $</p><p>给定目标分布$P(\vec{x})$，我们可以定义<br>$$<br>U(\vec{x}) = -ln(p(\vec{x}))\<br>\frac{\partial U(\vec{x})}{\partial x_i} = -\frac{1}{p(\vec{x})}\frac{\partial p(\vec{x})}{\partial x_i}<br>$$<br>计算接受概率<br>$$<br>\alpha = min{1,\frac{p(\vec{x}^*,\vec{v}^*)}{p(\vec{x}_0,\vec{v}_0)}} \<br>= min{1,exp(-U(\vec{x}^*)+U(\vec{x}_0)-K(\vec{v}^*)+K(\vec{v}_0))  }<br>$$</p><h2 id="Leap-Frog方法模拟哈密顿动力学"><a href="#Leap-Frog方法模拟哈密顿动力学" class="headerlink" title="Leap Frog方法模拟哈密顿动力学"></a>Leap Frog方法模拟哈密顿动力学</h2><p>哈密顿方程描述了物体随连续时间的运动. 为了在计算机上数值模拟哈密顿动力学, 必须通过离散化时间来近似哈密顿方程. 我们将 时长$T$分成一系列较小的长度为$\delta$的间隔. 离散化时间的方法有多种, 包括 <code>Euler</code> 方法和<code>Leap Frog</code>方法.  </p><ol><li><p>首先Taylor展开<br>$$<br>v_i(t+\delta/2)=v_i(t)-(\delta/2)\frac{\partial U(\vec{x})}{\partial x_i(t)}<br>$$</p></li><li><p>更新位置<br>$$<br>x_i(t+\delta) = x_i(t)+\delta \frac{\partial K(\vec{v})}{\partial v_i(t+\delta/2)}<br>$$</p></li><li><p>更新动量<br>$$<br>v_i(t+\delta) = v_i(t+\delta/2)-(\delta/2)\frac{\partial U(\vec{x})}{\partial x_i(t+\delta)}<br>$$</p></li></ol><h2 id="Euler方法模拟哈密顿动力学"><a href="#Euler方法模拟哈密顿动力学" class="headerlink" title="Euler方法模拟哈密顿动力学"></a>Euler方法模拟哈密顿动力学</h2><h1 id="HMC总结"><a href="#HMC总结" class="headerlink" title="HMC总结"></a>HMC总结</h1><h2 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h2><ol><li>令 t = 0, 产生初始位置 x(0) ∼ π(0)</li><li>重复 $t = 1, . . . , T$<ul><li>令 $t = t + 1$, 产生一个新的动量 $\vec{v}_0 \sim p(\vec{v})$</li><li>令$ \vec{x}_0 = \vec{x}^{(t-1)}$</li><li>使用 <code>Leap Frog</code> 算法, 从$ (\vec{x}_0, \vec{v}_0)$ 出发, 时长 $L$ 和步长 $\delta$,得到$ \vec{x}^∗, \vec{v}^∗$</li><li>计算<code> Metroplis</code> 接收概率<br>$α = min{1, exp(-U(\vec{x}^∗) + U(\vec{x}0) - K(\vec{v}^∗) + K(\vec{v}_0))}$</li><li>以概率$ \alpha $接受 $\vec{x}^{(t)} = \vec{x}^∗$, 否则$ \vec{x}^{(t)}= \vec{x}^{(t-1)}$</li></ul></li></ol><h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><ul><li>连续生成的两个状态之间的距离一般比较大, 因此抽取代表性样本所需迭代次数较少</li><li>单次迭代的成本较高 (需要模拟哈密顿动力学过程), 但是仍然显著地更有效</li><li>大部分情况下会接受新状态</li><li>当分布有分开的局部最小值时候无法进行全部抽样 (陷在一个局部最小值处), 可以考虑不同初始值.  </li></ul><h1 id="HMC实施软件"><a href="#HMC实施软件" class="headerlink" title="HMC实施软件"></a>HMC实施软件</h1><p>Stan:</p><ul><li>No U-Turn Sampler (NUTS2): Adaptive Hamiltonian Monte<br>Carlo</li><li>Implemented in Stan (rstan: <a href="mc-stan.org">mc-stan.org</a>)</li><li>Stan figures out gradient for you via autodiff</li></ul><p>R package hmclearn:</p><ul><li>takes user-defined log posterior and gradient functions as inputs</li><li>includes parameters to enable parallel processing as well as<br>multiple chains</li><li>a variety of Bayesian graphical functions are provided  </li></ul><h1 id="R语言中的HMC"><a href="#R语言中的HMC" class="headerlink" title="R语言中的HMC"></a>R语言中的HMC</h1><p>R语言中的<code>hmclearn</code>包，是学习HMC的的常用包，包含了用于数据分析的通用HMC函数</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;许多MCMC算法中的随机游走是使得马氏链收敛到平稳分布，但是非常慢。&lt;/p&gt;
+&lt;p&gt;哈密顿MC方法(HMC)是一种采用物理系统动力学而不是概率分布来产生马氏链的未来状态提议值，这使得马氏链可以更有效探索目标分布，从而加快收敛速度，特别是在更高维和更复杂的模型中。&lt;/p&gt;
+&lt;p&gt;该方法具有优秀的介绍和计算能力(&lt;a href=&quot;https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.882.666&amp;rep=rep1&amp;type=pdf&quot;&gt;Neal et al. 2011&lt;/a&gt;)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="动力学研究" scheme="https://rongkangxiong.top/categories/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+    
+    <category term="哈密顿动力学" scheme="https://rongkangxiong.top/tags/%E5%93%88%E5%AF%86%E9%A1%BF%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    
+    <category term="MC" scheme="https://rongkangxiong.top/tags/MC/"/>
+    
+    <category term="动力学研究" scheme="https://rongkangxiong.top/tags/%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>R高性能计算</title>
+    <link href="https://rongkangxiong.top/post/programming/R/R%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97.html"/>
+    <id>https://rongkangxiong.top/post/programming/R/R%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97.html</id>
+    <published>2021-11-25T02:50:20.000Z</published>
+    <updated>2021-11-25T02:51:38.219Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
+      
+    
+    
+    
+    <category term="R语言" scheme="https://rongkangxiong.top/categories/R%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="R语言" scheme="https://rongkangxiong.top/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>常见分布</title>
@@ -570,315 +761,6 @@ h6.md-focus:before &amp;#123;
     <category term="Math" scheme="https://rongkangxiong.top/tags/Math/"/>
     
     <category term="采样方法" scheme="https://rongkangxiong.top/tags/%E9%87%87%E6%A0%B7%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>国企改革究竟改的是什么？</title>
-    <link href="https://rongkangxiong.top/post/political/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9%E7%A9%B6%E7%AB%9F%E6%94%B9%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html"/>
-    <id>https://rongkangxiong.top/post/political/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9%E7%A9%B6%E7%AB%9F%E6%94%B9%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html</id>
-    <published>2021-11-14T12:46:41.000Z</published>
-    <updated>2021-11-18T03:13:40.056Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>转载自 佐伊23</p><p>链接：<a href="https://www.zhihu.com/question/30105824/answer/1484712593">https://www.zhihu.com/question/30105824/answer/1484712593</a></p><p>来源：知乎</p></blockquote><p>“国企工人不就是大锅饭吗，不就是磨洋工吗，这样不改还得了啊？”</p><p>“他们不就是喜欢从厂里面偷东西吗，这不就是产权不明确无人负责导致的吗？”</p><p>“居然还有人说当时的国企好，国企这么好，那为什么垮了？”</p><p>“那些下岗的自己不努力，怪谁！”</p><p>当过程被人有意无意忽略的时候，某些结果就显得不可理解。但是当我们把过程补齐的时候，一切看似矛盾的事物又都显得那么自洽。</p><p>改革开放前，我国国营企业有三大特点。</p><p>经济上。企业的利润扣除社会保障基金和扩大再生产的资金外，归根结底要通过各种福利制度返还职工。国企有自己的医院、学校和修房子的住建科，职工享受免费的医疗和教育，并且享受福利分房。也就是说，国企的钱不光要给职工发工资，还要给职工修房子、上学、看病。</p><p>管理上。企业在逐步实行“两参一改三结合”（有些实行得好点，有些差一点），即“干部参加劳动，工人参加管理；改革不合理的规章制度；工程技术人员、管理者和工人在生产实践和技术革新中相结合”。工人在劳动中不是被动的工具，不是被动的领受任务，而是主动的自觉的人，主动参与到企业计划的制定之中。</p><p>工人和企业的关系上。工人是企业的主人，而不是企业的雇员。企业管理人员（厂长、书记等等）没有权力开除工人。一般而言，只要工人不犯罪，厂里就没有开除工人的权力。</p><p>对国企而言，改革改的就是这三点。</p><span id="more"></span><h2 id="一、从放权让利到经济责任制"><a href="#一、从放权让利到经济责任制" class="headerlink" title="一、从放权让利到经济责任制"></a>一、从放权让利到经济责任制</h2><p>国企改革的第一阶段叫做放权让利。</p><p>1978年后我国确立了放权让利的基调，要求“扩大企业自主权，并且把企业经营好坏同职工的物质利益结合起来。”从1979年4月开始，中央在2100多个企业进行了试点。</p><p>我国历史上有两次大规模企业权力下放，一次是1958年，一次是1979年。但是，两者有本质不同。1958年在工业企业下放的同时，大力推行工人民主管理，而1979年的放权让利同时大力推行厂长经理负责制。这实际是用物质刺激（奖金）回收工人管理工厂的权力，从短期看工人收入增加，从长期看工人权力丧失，最终必然导致更大的经济利益的丧失。</p><p>放权扩大了厂长经理享有的特权，使企业经营管理人员的公权力私有化，破坏了工人阶级在企业中的领导权。也就是说，国家把权力下放给企业，企业却把权力集中到了厂长经理手里。这显然会损害工人阶级积极性，是不利于国营企业发展的。</p><p>在扩权的初期，企业表现出很高的增产增收的积极性，也多发了一些工资，工人的经济收入在不断提高，而且增长的速度较快。以北京某机械厂为例，1983年机械厂开始对直接生产工人实行超额计件工资制，即超额完成生产指标颁发超额奖，全厂职工的月平均工资从1978年的52元上升到1985年的119元，年均工资增长13％。在这一阶段上，工人逐渐放弃了管理权利，从以前的政治挂帅走向了关注物质利益。然而好景不长，国家提高工资是通过增发货币形成的，这导致经济混乱、财政赤字和通货膨胀。到1980年底，中央决定“进一步调整国民经济”，国有企业也由进行“扩权”改革转向强化完成国家计划的“责任制”，这宣告了放权让利的结束。但是，放权让利虽然结束了，工人被回收的管理权力，却是再也拿不回来了。</p><h2 id="二、利改税和拨改贷"><a href="#二、利改税和拨改贷" class="headerlink" title="二、利改税和拨改贷"></a>二、利改税和拨改贷</h2><p>1983年的利改税和1985年的拨改贷，是国企改制史上至关重要的两个环节。通过利改税和拨改贷两个制度设计，国企在极度不公平的环境下参与了市场竞争，为之后国企破产埋下伏笔。</p><p>我国企业以前所有利润统一上缴国家，如果需要扩建厂房或者购买设备，则由国家无偿拨款给企业。利改税就是用所得税替代利润上缴，用贷款替代无偿拨款。</p><p>企业利润全部上缴，国家就无偿拨款给企业搞建设；企业利润不上交了（只缴税而不交利润），国家就不拨款了，企业搞建设就去银行贷款。这听起来很公平，但事实上全然不是。</p><p>首先看利改税。我们以大企业为例，国家对有盈利的国营大中型企业，按55％的比例税率征收所得税，所得税后剩下的利润，一部分上缴国家，一部分按照国家核定的留利水平留给企业。整体而言，企业要将大约7-8成的利润通过利税方式上缴国家。</p><p>再看拨改贷。国家收走了企业8成的盈利，却不再给企业的建设拨款，而是要求企业向银行借贷。这使得国有企业面临异常困难的境地。当时国有企业已经开始和私企、外企竞争了，但是私企外企的综合税率只有17%-33%（本身税就低，还有各种减免），而国企的综合税率却在70%-80%。这是典型的不平等竞争。外企和私企赚钱了，大部分可以留下来扩大再生产或者购买更新的设备，国企赚钱了，大部分给了国家，国家却不再拨款给企业建设，而要求企业自己去贷款买新设备。这直接导致国企设备老旧，资金不足。</p><p>国企数十年来的利润都给了国家搞建设，而没有用来发展国企自身，本指望国家拨款更新设备，结果突然拨改贷，使得它要么不更新设备，要么背负巨额债务去发展生产。拨改贷实施后，原先的国营企业负债率从20%左右急速升至80%以上，个别企业全额负债，这严重影响了企业的积极性和发展后劲。</p><p>不仅如此，拨改贷项目仍然沿袭由国家定项目，企业和建设单位听命使用资金的做法。国家定项目就是领导人定项目，厂里面的领导人为了政绩胡乱贷款上项目。这导致上届领导借钱下届领导人还款，对借钱者没有有效的制约手段。在“拨改贷”实行后不久，一些厂长经理就悟出了“不贷白不贷”的道理，向国家争投资、争项目、争贷款，最终导致国企债务高企，并引发了80年代数次经济失衡。</p><h2 id="三、一长制和工人的积极性降低"><a href="#三、一长制和工人的积极性降低" class="headerlink" title="三、一长制和工人的积极性降低"></a>三、一长制和工人的积极性降低</h2><p>随着一长制的恢复，工人失去已有的民主权利，管理层逐渐失控。《工人日报》指出：“随着改革方向的明确，厂长、经理及其他经营管理人员的地位、作用已经得到了明确的界定，他们的权力得到了明确的保证。然而，无庸讳言，我们在正确地强调和注重了厂长、经理阶层的权力和职能时，却不恰当地疏忽了职工劳动者的应有权利。致使职工在分享改革成果的预期未得实现的同时，又未能分享参与协调的机会”。</p><p>1982年全国职工状况调查表明，一些领导干部通过不正当的手段为自己的子女安排较好的工种，在提干、晋级、住房分配等涉及群众利益方面，都给自己以及自己的子女和亲属以特殊的照顾。1984年，国家开始改革劳动用工制度，招收合同制工人，1986年废除子女顶替和内部招工办法。</p><p>1986年有调查表明，由于搞活企业的需要，企业管理者向经营者转化，被赋予了更大的企业权力。企业厂长由上级领导任命、委派，实行负责制，职工满意不满意都得接受，干好干坏群众既不能褒，也不能贬。他们说：“工人只尽主人翁义务，没有主人翁权利，主人担风险（企业办不好，领不到工资），公仆有保险（企业办垮了照样当官或调走了事）”。企业干群关系开始紧张，工人用消极怠工来对付干部，已经成为公开的秘密。</p><p>据中华全国总工会1988年对17个城市400多个企业的21万职工所作的劳动积极性调查显示，“国营企业劳动者的劳动热情不在峰值而在谷底。21万职工中认为自己的劳动积极性得到了充分发挥的只占12%。”因为此时工人队伍已经瓦解，所谓的劳动积极性就是关心私利的积极性，当工人的个人利益得不到满足时，劳动积极性自然就会消失。</p><h2 id="四、承包制和工人积极性的进一步降低"><a href="#四、承包制和工人积极性的进一步降低" class="headerlink" title="四、承包制和工人积极性的进一步降低"></a>四、承包制和工人积极性的进一步降低</h2><p>1987年5月，国务院在全国推广承包制。承包制就是把国营企业的各个车间部门承包给各种厂长、书记、主任等等，这些人按承诺缴纳一定的利润，剩下的钱可以自行分配。</p><p>承包制使得工人和干部的收入差距迅速扩大。按照国家的规定，应当采取公开招标办法，通过竞争确定承包经营者，但实际中很少有采用竞争办法的，基本上都是主管领导拍板。在政府和企业之间，企业的承包基数和分成比例等指标取决于政府发包部门和厂长的谈判，没有统一和科学的标准；在企业内部，根据游正林的调查，承包人和承包监督人一般为分厂厂长和书记，在承包指标上有讨价还价余地，承包指标也不会订的太高，正常情况下承包任务完成都不会很难，因此“完不成年度责任目标的，应扣减厂长的个人收入”也就成了空话。</p><p>承包奖包括风险抵押金和超额奖两部分，超额奖的分配由承包者自主决定，不再是公开的。这样，通过两权分离就创造出来“先富起来”的一批干部。现代化大生产彼此之间的联系密切，很难按照计件工资的方式来计算劳动成果，再加上辅助工人和非生产工人没有有形的劳动产品，因此工人的工资改革变成了普调。同时也开始发年度奖和红包，工人之间的年度奖基本都一样，工人与经营者奖金差距日益拉大。工人对工厂的变化看的非常清楚，工人中都流传着这样的话：“工人穷，厂长富，车间主任万元户，厂长挣钱没有数。”</p><h2 id="五、所谓的懒汉"><a href="#五、所谓的懒汉" class="headerlink" title="五、所谓的懒汉"></a>五、所谓的懒汉</h2><p>一长制使得厂长建立了工厂里面的独裁，承包制扩大了工人和干部的收入差距，这还没完。厂里面的领导为了赚更多的钱，开始在外面建小厂。钢铁厂的领导开个焦炭厂，高价把焦炭卖给自己单位；媒矿的领导在外面开个洗煤厂，私底下利益输送。</p><p>作为小说《抉择》原型的那家纺织厂每年的招待费就一千多万元。每个厂长经理退休，发给一百万元办三产，也就是个人小纺织厂。于是大纺织厂周围布满了小纺织厂，国家的资金、原料、市场都流到了小纺织厂。小厂红红火火，大厂一点一点被蚕食。大厂的工人失业，被小厂以低价招来，一天干十几个小时，随意压榨剥削。</p><p>这一切，都被工人看在眼里。就在这样的大背景下，工人和工厂的关系发生了根本性变化。曾经在毛时代积极奋战的工人，有一些人开始变得偷奸耍滑。</p><p>70年代的时候，某个钢铁厂的领导公车私用，被一群工人堵在厂门口，要求他下车来解释，这个车拿去干嘛了，为什么要占国家的便宜。80年代的时候，还是那个钢铁厂，还是那些工人，他们开始从厂里面偷钢偷铁，拿一块好点的钢回家去打把菜刀，或者投点特殊钢材拿去卖给私人老板。你问工人，“你为什么要这样干啊？”他说，“领导大偷，工人小偷，这有什么问题吗？国家的便宜，不占白不占。”</p><p>部分工人开始了磨洋工。当资本制度全面建立时，曾经的主人由抱怨而愤怒、由愤怒而反抗，最初这种反抗是消极的，是以怠工或磨洋工的形式体现出来的。这就是磨洋工的原因。</p><p>一种声音出现了，他们痛斥工人偷懒，他们大呼人性本恶，他们说国企效率就是低下，国企工人就是磨洋工，他们说这一切的原因就是国企没有清晰的产权制度，“全民所有就是全民所无”。他们献言献策，要建立一个由严格的规章制度和明晰的产权制度构成的现代化企业，去防范工人从厂里面拿钢拿铁。但是，他们却从来不说这一切都是什么造成的，他们也从不建立一个规章制度去限制资本占有工人的剩余价值。</p><p>【然而，即使在这样的条件下，很多国企工人照样还是勤勤恳恳的工作，我曾经问过很多老工人，他们怎么看待大锅饭养懒汉的说法。他们无一例外痛斥这种污蔑他们的说法，“我们是企业的主人，不是懒汉！”】</p><h2 id="六、1993年后的国企改革"><a href="#六、1993年后的国企改革" class="headerlink" title="六、1993年后的国企改革"></a>六、1993年后的国企改革</h2><p>1993年11月开始了新一轮国企改革，三个重点：一是抓大放小，二是建立公司法人治理结构，三是理顺企业产权关系。与此同时，全国人大颁布了《公司法》，这标志着按份占有资本并实行权力的产权制度在中国有了法律依据。结合1993年的增值税改革前后的五个文件，可以得出两个结论：</p><p>1、国家除了17%的增值税，还可以获得33%的所得税。表面上看税率较以前的55%有所降低，但由于增值税的税基较原来扩大了很多，因此，国家所得较以前有大幅增加（这从后来津津乐道的税收增长中可以看出来）。更为重要的是，在税负增加的同时，我国彻底抛弃了教育、医疗和住房的包袱，国民不再能通过财政收入享受国有资产的收益。工人曾经享有的医疗、教育和住房福利，基本被改革掉了（1998年后明确终止福利分房，最终完结了工人从经济上获取国企利润的途径）。</p><p>2、对于企业职工福利和奖金，由于原来的文件被废止，而新文件没有交代，于是，它的法律地位被弱化。因此，企业留存的利润，从理论上来讲，除了用于投资，便没有任何可以索取的途径。</p><p>从1993年起，国有资产分成了三大块：政府的税收，约占50%或更多；用于投资的利润，大致占50%弱；没有任何法律保障的职工福利，份额微不足道。</p><p>1994年通过并于1995年实施的《劳动法》，从法律层面上明确了劳动者仅仅是企业的雇员，而不是工厂的主人，也就是说，从法律意义而言，工厂有权力开除工人了。与此前后，国企开始全面推行合同制，国有单位的劳动合同制职工由1992年的2059万人猛增到1996年的5549万人。在签合同的过程中，一开始领导告诉工人这不过是“走过场”，签个字就行了；到了90年代末开始优化的时候，签了字的合同就开始起作用，领导们宣布“老人老办法，新人新办法”，合同制的职工这时就傻眼了。</p><p>1996年一季度，在长期不公平的竞争中（至少有两点：其一、税收不平等。其二、私企和外企只给职工发工资，而国企除了工资，还要给职工修房子、看病、上学），在国企乱象横生的背景下，国有工业企业首次出现全行业净亏损。国有及国有控股大中型亏损企业6599户，亏损面达39.1％。</p><p>而导致这一切的锅，自然又是由那些“磨洋工”的国企工人背了。</p><p>面对当时的局面，领导人提出要进一步深化改革，用各种方法让国企三年脱困。砸三铁、甩包袱，也就是在这个大背景下出台的。在此前后，国有企业甩卖了自己的医院、学校，分出了自己的住建科成立房地产公司，优化了大批老工人以减少成本。</p><p>被优化的工人生活境遇迅速下降，以三线职工为例，2005年三线被优化的职工月收入低于300元的有68％，收入的92％用于衣食和子女教育，88％的人无法养活自己而不得不依靠政府福利、亲友救济。被优化的那些人生活没有着落，出现了各种人间悲剧。有女工成为霓虹灯下的新哨兵，而她的男人每次都驮着她去上岗。有男工为了自己的小孩上学，吃了某种药制造一个大新闻，让社会捐助自己的遗孤。去问问那些经历过这个时期的人，哪一个不是对这些专家学者恨的咬牙切齿。一个老工人这样说，“我们不是懒汉，我们是社会主义的建设者！”还有很多不甘心的老工人开始了串联，上访，甚至实施了其他更激进的措施。《那儿》，《问苍茫》等等优秀的文学作品，就生动地描述了这段对中国有深刻影响的历史。</p><p>1997年刘欢的《从头再来》就是给这些被优化的人。“昨天所有的荣誉，已变成遥远的回忆，辛辛苦苦已度过半生，今夜重又走进风雨……心若在梦就在，天地之间还有真爱，看成败人生豪迈，只不过是从头再来。”工人听了当时就直骂娘，你为什么不走进风雨，凭什么叫我们从头再来！</p><p>而这一切也构成了黄宏那个小品的时代背景。刘欢的歌还比较隐晦，你骂他，他还能闪躲。黄宏的小品实在说不上高明，用这样直白的话，去刺痛工人的心，“工人要为国家想，我不下岗谁下岗”。人家一辈子都在为国家想，人家老了，希望安定一点，希望你也为他想想。结果你倒好，把人家当包袱一甩了之。这就难怪那么多为国家奉献一身的老工人，恨黄宏入骨。</p><p>2000年开始，国家对全国的国有企业改革实行分类指导，对陷入困境的老企业通过出售一块、盘活一块、加强一块等各种方式，进行国企“改革”。数千万工人被优化，众多国企被甩卖。通过甩包袱卖企业，2000年底，终于如期基本实现了国企改革与脱困的三年两大目标。</p><p>从实质而非形式的意义来讲，至此，国企改革已经完毕。后续的行动，无论怎么冠以改革的名义，其实质仅仅是垄断资本的重组而已。2003年组建国资委，对国有垄断资本进行打散重组，这之后的进程，多数人至少也有耳闻了。</p><p>21世纪初期，与资本对立的那些曾经的主人还在动。他们的切身利益受到前所未有的冲击，迫使他们开始关注自身的利益。到2005年，全国群体上访涉及约400万人，其中以他们为主体的有40％。各种消息在他们之间传播。一个城市的那些人，甚至形成了某种网络式的联系。一棉、二棉、三棉联系在一起，钢铁、五金、采矿、炼焦联系在一起，木材厂和肉联厂的也在沟通，这导致了巨大的不安定。这些不安定因素，用自己气吞山河的壮举，延缓了私有化的进程。</p><p>作为曾经的主人，在资本全面复兴的时代，他们唱出了极为悲壮的挽歌，也因此而奏响了新时代的号角。</p><p>-——————————————-</p><p>主要参考文献：</p><p>​    游正林.内部分化与流动——一家国有企业的二十年.北京：社会科学文献出版社，1998</p><p>​    刘卓红.现代化建设主体——当代工人阶级地位研究[M].广东人民出版社，2000</p><p>​    冯同庆，围绕工人阶级理论的争论与工人阶级状况</p><p>​    柳可白，王玫，阎春芝.当代工人阶级的地位和作用.中国工人出版社，2007</p><p>​    胡鞍钢.关于我国就业问题的若干看法</p><p>​    于建嵘.当代中国工人的以理维权</p><p>-————————————————</p>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;转载自 佐伊23&lt;/p&gt;
-&lt;p&gt;链接：&lt;a href=&quot;https://www.zhihu.com/question/30105824/answer/1484712593&quot;&gt;https://www.zhihu.com/question/30105824/answer/1484712593&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;来源：知乎&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;“国企工人不就是大锅饭吗，不就是磨洋工吗，这样不改还得了啊？”&lt;/p&gt;
-&lt;p&gt;“他们不就是喜欢从厂里面偷东西吗，这不就是产权不明确无人负责导致的吗？”&lt;/p&gt;
-&lt;p&gt;“居然还有人说当时的国企好，国企这么好，那为什么垮了？”&lt;/p&gt;
-&lt;p&gt;“那些下岗的自己不努力，怪谁！”&lt;/p&gt;
-&lt;p&gt;当过程被人有意无意忽略的时候，某些结果就显得不可理解。但是当我们把过程补齐的时候，一切看似矛盾的事物又都显得那么自洽。&lt;/p&gt;
-&lt;p&gt;改革开放前，我国国营企业有三大特点。&lt;/p&gt;
-&lt;p&gt;经济上。企业的利润扣除社会保障基金和扩大再生产的资金外，归根结底要通过各种福利制度返还职工。国企有自己的医院、学校和修房子的住建科，职工享受免费的医疗和教育，并且享受福利分房。也就是说，国企的钱不光要给职工发工资，还要给职工修房子、上学、看病。&lt;/p&gt;
-&lt;p&gt;管理上。企业在逐步实行“两参一改三结合”（有些实行得好点，有些差一点），即“干部参加劳动，工人参加管理；改革不合理的规章制度；工程技术人员、管理者和工人在生产实践和技术革新中相结合”。工人在劳动中不是被动的工具，不是被动的领受任务，而是主动的自觉的人，主动参与到企业计划的制定之中。&lt;/p&gt;
-&lt;p&gt;工人和企业的关系上。工人是企业的主人，而不是企业的雇员。企业管理人员（厂长、书记等等）没有权力开除工人。一般而言，只要工人不犯罪，厂里就没有开除工人的权力。&lt;/p&gt;
-&lt;p&gt;对国企而言，改革改的就是这三点。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="鉴证" scheme="https://rongkangxiong.top/categories/%E9%89%B4%E8%AF%81/"/>
-    
-    <category term="国企改革" scheme="https://rongkangxiong.top/categories/%E9%89%B4%E8%AF%81/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9/"/>
-    
-    
-    <category term="鉴证" scheme="https://rongkangxiong.top/tags/%E9%89%B4%E8%AF%81/"/>
-    
-    <category term="改革" scheme="https://rongkangxiong.top/tags/%E6%94%B9%E9%9D%A9/"/>
-    
-    <category term="国企改革" scheme="https://rongkangxiong.top/tags/%E5%9B%BD%E4%BC%81%E6%94%B9%E9%9D%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo + Next 主题博客提交百度谷歌收录</title>
-    <link href="https://rongkangxiong.top/post/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95.html"/>
-    <id>https://rongkangxiong.top/post/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95.html</id>
-    <published>2021-11-13T12:01:11.000Z</published>
-    <updated>2021-11-14T07:23:17.501Z</updated>
-    
-    <content type="html"><![CDATA[<p>SEO（Search Engine Optimization）：中文译为搜索引擎优化，即利用搜索引擎的规则提高网站搜索引擎内自然排名。主要通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化等方式实现。</p><p>主要是给各个搜索引擎提交你的 sitemap，让别人能搜到你博客的内容。<br>先确认博客是否被搜索引擎收录，在百度或者谷歌输入下面格式来判断，如果能搜索到就说明被收录，否则就没有。</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">site:写你要搜索的域名# site:xxx.github.io # site:rongkangxiong.top</code></pre><h1 id="开启-Next-主题的-SEO-优化项"><a href="#开启-Next-主题的-SEO-优化项" class="headerlink" title="开启 Next 主题的 SEO 优化项"></a>开启 Next 主题的 SEO 优化项</h1><p>Next 提供了 <code>seo</code> 优化选项，在主题配置文件<code>_config.yml</code>中有个选项是<code>seo</code>，设置成<code>true</code>即开启了<code>seo</code>优化。<br>百度无法搜索到博客信息，是因为 <code>Github Pages </code>屏蔽了百度爬虫</p><p>我们需要使用插件自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎。<br>先安装谷歌和百度的插件，如下：</p><pre class="line-numbers language-npm" data-language="npm"><code class="language-npm">npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-sitemap --save</code></pre><p>在博客根目录<code>_config.yml</code>中改<code>url</code>为你的站点地址：</p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam"># URL## Set your site url here. For example, if you use GitHub Page, set url as &#39;https:&#x2F;&#x2F;username.github.io&#x2F;project&#39;url: https:&#x2F;&#x2F;rongkangxiong.toppermalink: &#x2F;post&#x2F;:title.htmlpermalink_defaults:pretty_urls:  trailing_index: true # Set to false to remove trailing &#39;index.html&#39; from permalinks  trailing_html: true # Set to false to remove trailing &#39;.html&#39; from permalinks</code></pre><p>在博客根目录的<code>_config.yml</code>中添加如下代码：</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">baidusitemap:  path: baidusitemap.xmlsitemap:  path: sitemap.xml</code></pre><p>之后重新打包<code>hexo g -d</code>，若在你的博客根目录的<code>public</code>下面发现生成了<code>sitemap.xml</code>以及<code>baidusitemap.xml</code>就表示成功了</p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213456005.png" alt="image-20211113213456005"></p><p>其中<code>sitemap.xml</code>文件是搜索引擎通用的文件，<code>baidusitemap.xml</code>是百度专用的 `sitemap 文件。可以通过<a href="https://xxx.github.io/baidusitemap.xml">https://xxx.github.io/baidusitemap.xml</a>查看该文件。</p><h1 id="向百度提交链接"><a href="#向百度提交链接" class="headerlink" title="向百度提交链接"></a>向百度提交链接</h1><p>之后可以将生成的<code>sitemap</code>文件提交给百度，可以加快爬虫抓取速度</p><p>在<a href="https://ziyuan.baidu.com/">站长平台</a>，找到 <code>网站支持-数据引入-链接提交</code>，选择<code>自动提交</code></p><p>一般主动提交比手动提交效果好，这里介绍主动提交的三种方法。从效率上来说：<code>主动推送&gt;自动推送&gt;sitemap</code>。</p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213906951.png" alt="image-20211113213906951"></p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213920196.png" alt="image-20211113213920196"></p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113214756683.png" alt="image-20211113214756683"></p><p>在选择完网站的类型之后需要验证网站的所有权，有三种验证方式，文件验证、html 标签验证、<code>cname </code>解析验证。</p><p>使用HTML验证最简单</p><p>打开 Hexo 主题配置文件，按如下修改/添加：</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">google_site_verification: #索引擎提供给你的HTML标签的content后的内容baidu_site_verification: #索引擎提供给你的HTML标签content后的内容</code></pre><p>然后控制台输入<code>hexo g -d</code>，部署更新。</p><p>验证完之后点击<code>提交资源</code></p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113215816088.png" alt="image-20211113215816088"></p><p>点击普通收录</p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113220003266.png" alt="image-20211113220003266"></p><p>安装插件：</p><pre class="line-numbers language-npm" data-language="npm"><code class="language-npm">npm install hexo-baidu-url-submit --save</code></pre><p>根目录配置文件<code>_config.ym</code>新增字段：</p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">baidu_url_submit:  count: 100 # 提交最新的一个链接  host: xxx.github.io # 在百度站长平台中注册的域名  token: xxxxxx # 秘钥，百度站长平台 &gt; 推送接口 &gt; 接口调用地址中token字段  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里  xz_appid: xxxxxx # 你的熊掌号 appid</code></pre><p>其次，记得查看<code>_config.ym</code>文件中<code>url</code>， 必须是百度站长平台注册的域名（包含www）：</p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">url: https:&#x2F;&#x2F;rongkangxiong.toppermalink: &#x2F;post&#x2F;:title.htmlpermalink_defaults:pretty_urls:  trailing_index: true # Set to false to remove trailing &#39;index.html&#39; from permalinks  trailing_html: true # Set to false to remove trailing &#39;.html&#39; from permalinks</code></pre><p>最后，根目录配置文件新增 deploy：</p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam">deploy:  type: baidu_url_submitter</code></pre><p><strong>注意：参考 <a href="https://hexo.io/docs/deployment.html">hexo官网</a> 多个 deploy 时要这样写，前面加横杠：</strong></p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam"># You can use multiple deployers. Hexo will execute each deployer in order.deploy:- type: git  repo:- type: heroku  repo:</code></pre><p>这样以后每次执行<code>hexo deploy</code>，链接就会被推送给百度了。</p><h1 id="让Google收录网站"><a href="#让Google收录网站" class="headerlink" title="让Google收录网站"></a>让Google收录网站</h1><p>进入<code>Google Search Console</code>控制台 <a href="https://search.google.com/search-console/welcome">链接</a></p><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222436951.png" alt="image-20211113222436951"></p><h2 id="验证所有权，有几种验证方法："><a href="#验证所有权，有几种验证方法：" class="headerlink" title="验证所有权，有几种验证方法："></a>验证所有权，有几种验证方法：</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">Domain 网域验证URL prefix 网址前缀验证，包含以下验证方法：HTML file（文件验证）HTML taghtml（标签验证）Google AnalyticsGoogle Tag ManagerGoogle name provider</code></pre><p>URL prefix 验证下的，文件验证、标签验证和百度类似，我选的标签验证，在主题配置文件中修改：</p><pre class="line-numbers language-yam" data-language="yam"><code class="language-yam"># Google Webmaster tools verification setting# See: https:&#x2F;&#x2F;www.google.com&#x2F;webmasters&#x2F;google_site_verification: xxxxxxxxxxxxx # 此处改为google提供给你的HTML标签content后的内容</code></pre><p><img src="../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222848795.png" alt="image-20211113222848795"></p><h2 id="提交Sitemap"><a href="#提交Sitemap" class="headerlink" title="提交Sitemap"></a>提交Sitemap</h2><p>参考链接</p><p>​    <a href="https://www.luanzhuxian.com/post/82d92ad4.html">Hexo + Next 主题博客提交百度谷歌收录</a></p><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;SEO（Search Engine Optimization）：中文译为搜索引擎优化，即利用搜索引擎的规则提高网站搜索引擎内自然排名。主要通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化等方式实现。&lt;/p&gt;
-&lt;p&gt;主要是给各个搜索引擎提交你的 sitemap，让别人能搜到你博客的内容。&lt;br&gt;先确认博客是否被搜索引擎收录，在百度或者谷歌输入下面格式来判断，如果能搜索到就说明被收录，否则就没有。&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;site:写你要搜索的域名
-# site:xxx.github.io # site:rongkangxiong.top
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;开启-Next-主题的-SEO-优化项&quot;&gt;&lt;a href=&quot;#开启-Next-主题的-SEO-优化项&quot; class=&quot;headerlink&quot; title=&quot;开启 Next 主题的 SEO 优化项&quot;&gt;&lt;/a&gt;开启 Next 主题的 SEO 优化项&lt;/h1&gt;&lt;p&gt;Next 提供了 &lt;code&gt;seo&lt;/code&gt; 优化选项，在主题配置文件&lt;code&gt;_config.yml&lt;/code&gt;中有个选项是&lt;code&gt;seo&lt;/code&gt;，设置成&lt;code&gt;true&lt;/code&gt;即开启了&lt;code&gt;seo&lt;/code&gt;优化。&lt;br&gt;百度无法搜索到博客信息，是因为 &lt;code&gt;Github Pages &lt;/code&gt;屏蔽了百度爬虫&lt;/p&gt;
-&lt;p&gt;我们需要使用插件自动生成网站的 sitemap，然后将生成的 sitemap 提交到百度和其他搜索引擎。&lt;br&gt;先安装谷歌和百度的插件，如下：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-npm&quot; data-language=&quot;npm&quot;&gt;&lt;code class=&quot;language-npm&quot;&gt;npm install hexo-generator-sitemap --save
-npm install hexo-generator-baidu-sitemap --save&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在博客根目录&lt;code&gt;_config.yml&lt;/code&gt;中改&lt;code&gt;url&lt;/code&gt;为你的站点地址：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;# URL
-## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https:&amp;#x2F;&amp;#x2F;username.github.io&amp;#x2F;project&amp;#39;
-url: https:&amp;#x2F;&amp;#x2F;rongkangxiong.top
-permalink: &amp;#x2F;post&amp;#x2F;:title.html
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing &amp;#39;index.html&amp;#39; from permalinks
-  trailing_html: true # Set to false to remove trailing &amp;#39;.html&amp;#39; from permalinks&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在博客根目录的&lt;code&gt;_config.yml&lt;/code&gt;中添加如下代码：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yaml&quot; data-language=&quot;yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;baidusitemap:
-  path: baidusitemap.xml
-sitemap:
-  path: sitemap.xml&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;之后重新打包&lt;code&gt;hexo g -d&lt;/code&gt;，若在你的博客根目录的&lt;code&gt;public&lt;/code&gt;下面发现生成了&lt;code&gt;sitemap.xml&lt;/code&gt;以及&lt;code&gt;baidusitemap.xml&lt;/code&gt;就表示成功了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213456005.png&quot; alt=&quot;image-20211113213456005&quot;&gt;&lt;/p&gt;
-&lt;p&gt;其中&lt;code&gt;sitemap.xml&lt;/code&gt;文件是搜索引擎通用的文件，&lt;code&gt;baidusitemap.xml&lt;/code&gt;是百度专用的 `sitemap 文件。可以通过&lt;a href=&quot;https://xxx.github.io/baidusitemap.xml&quot;&gt;https://xxx.github.io/baidusitemap.xml&lt;/a&gt;查看该文件。&lt;/p&gt;
-&lt;h1 id=&quot;向百度提交链接&quot;&gt;&lt;a href=&quot;#向百度提交链接&quot; class=&quot;headerlink&quot; title=&quot;向百度提交链接&quot;&gt;&lt;/a&gt;向百度提交链接&lt;/h1&gt;&lt;p&gt;之后可以将生成的&lt;code&gt;sitemap&lt;/code&gt;文件提交给百度，可以加快爬虫抓取速度&lt;/p&gt;
-&lt;p&gt;在&lt;a href=&quot;https://ziyuan.baidu.com/&quot;&gt;站长平台&lt;/a&gt;，找到 &lt;code&gt;网站支持-数据引入-链接提交&lt;/code&gt;，选择&lt;code&gt;自动提交&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;一般主动提交比手动提交效果好，这里介绍主动提交的三种方法。从效率上来说：&lt;code&gt;主动推送&amp;gt;自动推送&amp;gt;sitemap&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213906951.png&quot; alt=&quot;image-20211113213906951&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113213920196.png&quot; alt=&quot;image-20211113213920196&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113214756683.png&quot; alt=&quot;image-20211113214756683&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在选择完网站的类型之后需要验证网站的所有权，有三种验证方式，文件验证、html 标签验证、&lt;code&gt;cname &lt;/code&gt;解析验证。&lt;/p&gt;
-&lt;p&gt;使用HTML验证最简单&lt;/p&gt;
-&lt;p&gt;打开 Hexo 主题配置文件，按如下修改/添加：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yaml&quot; data-language=&quot;yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;google_site_verification: #索引擎提供给你的HTML标签的content后的内容
-baidu_site_verification: #索引擎提供给你的HTML标签content后的内容&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后控制台输入&lt;code&gt;hexo g -d&lt;/code&gt;，部署更新。&lt;/p&gt;
-&lt;p&gt;验证完之后点击&lt;code&gt;提交资源&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113215816088.png&quot; alt=&quot;image-20211113215816088&quot;&gt;&lt;/p&gt;
-&lt;p&gt;点击普通收录&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113220003266.png&quot; alt=&quot;image-20211113220003266&quot;&gt;&lt;/p&gt;
-&lt;p&gt;安装插件：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-npm&quot; data-language=&quot;npm&quot;&gt;&lt;code class=&quot;language-npm&quot;&gt;npm install hexo-baidu-url-submit --save&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;根目录配置文件&lt;code&gt;_config.ym&lt;/code&gt;新增字段：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;baidu_url_submit:
-  count: 100 # 提交最新的一个链接
-  host: xxx.github.io # 在百度站长平台中注册的域名
-  token: xxxxxx # 秘钥，百度站长平台 &amp;gt; 推送接口 &amp;gt; 接口调用地址中token字段
-  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
-  xz_appid: xxxxxx # 你的熊掌号 appid&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;其次，记得查看&lt;code&gt;_config.ym&lt;/code&gt;文件中&lt;code&gt;url&lt;/code&gt;， 必须是百度站长平台注册的域名（包含www）：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;url: https:&amp;#x2F;&amp;#x2F;rongkangxiong.top
-permalink: &amp;#x2F;post&amp;#x2F;:title.html
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing &amp;#39;index.html&amp;#39; from permalinks
-  trailing_html: true # Set to false to remove trailing &amp;#39;.html&amp;#39; from permalinks&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最后，根目录配置文件新增 deploy：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;deploy:
-  type: baidu_url_submitter&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;注意：参考 &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot;&gt;hexo官网&lt;/a&gt; 多个 deploy 时要这样写，前面加横杠：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;# You can use multiple deployers. Hexo will execute each deployer in order.
-deploy:
-- type: git
-  repo:
-- type: heroku
-  repo:&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样以后每次执行&lt;code&gt;hexo deploy&lt;/code&gt;，链接就会被推送给百度了。&lt;/p&gt;
-&lt;h1 id=&quot;让Google收录网站&quot;&gt;&lt;a href=&quot;#让Google收录网站&quot; class=&quot;headerlink&quot; title=&quot;让Google收录网站&quot;&gt;&lt;/a&gt;让Google收录网站&lt;/h1&gt;&lt;p&gt;进入&lt;code&gt;Google Search Console&lt;/code&gt;控制台 &lt;a href=&quot;https://search.google.com/search-console/welcome&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222436951.png&quot; alt=&quot;image-20211113222436951&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;验证所有权，有几种验证方法：&quot;&gt;&lt;a href=&quot;#验证所有权，有几种验证方法：&quot; class=&quot;headerlink&quot; title=&quot;验证所有权，有几种验证方法：&quot;&gt;&lt;/a&gt;验证所有权，有几种验证方法：&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-yaml&quot; data-language=&quot;yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;Domain 网域验证
-URL prefix 网址前缀验证，包含以下验证方法：
-	HTML file（文件验证）
-	HTML taghtml（标签验证）
-	Google Analytics
-	Google Tag Manager
-	Google name provider&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;URL prefix 验证下的，文件验证、标签验证和百度类似，我选的标签验证，在主题配置文件中修改：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-yam&quot; data-language=&quot;yam&quot;&gt;&lt;code class=&quot;language-yam&quot;&gt;# Google Webmaster tools verification setting
-# See: https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;webmasters&amp;#x2F;
-google_site_verification: xxxxxxxxxxxxx # 此处改为google提供给你的HTML标签content后的内容&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/blog/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/image-20211113222848795.png&quot; alt=&quot;image-20211113222848795&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;提交Sitemap&quot;&gt;&lt;a href=&quot;#提交Sitemap&quot; class=&quot;headerlink&quot; title=&quot;提交Sitemap&quot;&gt;&lt;/a&gt;提交Sitemap&lt;/h2&gt;&lt;p&gt;参考链接&lt;/p&gt;
-&lt;p&gt;​    &lt;a href=&quot;https://www.luanzhuxian.com/post/82d92ad4.html&quot;&gt;Hexo + Next 主题博客提交百度谷歌收录&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人博客" scheme="https://rongkangxiong.top/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用DropIt整理数据文件</title>
-    <link href="https://rongkangxiong.top/post/SoftwareUsage/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE.html"/>
-    <id>https://rongkangxiong.top/post/SoftwareUsage/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE.html</id>
-    <published>2021-11-13T11:50:30.000Z</published>
-    <updated>2021-11-21T11:03:29.609Z</updated>
-    
-    <content type="html"><![CDATA[<p>写在前面：</p><p>文件管理里有许多琐碎的事要做，比如：<br>    - 文件自动分组；<br>    - 批量打包；<br>    - 批量改格式；<br>    - 管理安全性高的文件；<br>    …</p><p>如果有一个全自动的文件管理工具，它能够帮你把所有的文件分门别类地放好、给重要的文件加密、还能给文件转格式，会不会迫不及待地想尝试一下？</p><span id="more"></span><p><a href="http://www.dropitproject.com/">DropIt官网</a></p><p>外观可以自由定制</p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113170509209.png" alt="image-20211113170509209"></p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113170612394.png" alt="image-20211113170612394"></p><p>配置规则：选择协议</p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113170740709.png" alt="image-20211113170740709"></p><p>添加协议</p><ul><li>处理文件的协议规则</li></ul><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113194104521.png" alt="image-20211113194104521"></p><ul><li>处理文件夹的协议规则</li></ul><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113194209673.png" alt="image-20211113194209673"></p><ul><li>设定规则优先级</li></ul><p>在一个配置文件中可以设定多条协议来筛选文件，但 <strong>多条协议之间可能会产生冲突</strong>，比如设置 <code>*.jpg</code> 文件移动到子文件夹，又设置 <code>*.jpg</code> 文件放进压缩包。如果运行这个配置文件，它会在扫描文件阶段出现一个提示项，真正执行前让你再做一次选择。简而言之，DropIt 采用的是「一个文件一次应用一条协议」。</p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113194335205.png" alt="image-20211113194335205"></p><p>可以在配置文件中提高某条协议的优先级（右上角的星号），或是在规则一栏添加 <code>#</code> 和 <code>##</code> 来区分文件和文件夹，变相提高了协议的优先级</p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113195140422.png" alt="image-20211113195140422"></p><p>最后配置文件如上，，几十个文件几秒钟就搞定了，效果如下</p><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211113195210299.png" alt="image-20211113195210299"></p><h1 id="DropIt常用规则"><a href="#DropIt常用规则" class="headerlink" title="DropIt常用规则"></a>DropIt常用规则</h1><h2 id="重命名文件为序号"><a href="#重命名文件为序号" class="headerlink" title="重命名文件为序号"></a>重命名文件为序号</h2><p><img src="../../images/blog/%E4%BD%BF%E7%94%A8DropIt%E6%95%B4%E7%90%86%E6%95%B0%E6%8D%AE/image-20211121190304673.png" alt="image-20211121190304673"></p><h2 id="将文件中的关键字替换"><a href="#将文件中的关键字替换" class="headerlink" title="将文件中的关键字替换"></a>将文件中的关键字替换</h2><p>参考资料：</p><p> <a href="https://sspai.com/post/45532">https://sspai.com/post/45532</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;写在前面：&lt;/p&gt;
-&lt;p&gt;文件管理里有许多琐碎的事要做，比如：&lt;br&gt;    - 文件自动分组；&lt;br&gt;    - 批量打包；&lt;br&gt;    - 批量改格式；&lt;br&gt;    - 管理安全性高的文件；&lt;br&gt;    …&lt;/p&gt;
-&lt;p&gt;如果有一个全自动的文件管理工具，它能够帮你把所有的文件分门别类地放好、给重要的文件加密、还能给文件转格式，会不会迫不及待地想尝试一下？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="DropIt" scheme="https://rongkangxiong.top/categories/DropIt/"/>
-    
-    <category term="文件操作" scheme="https://rongkangxiong.top/categories/DropIt/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="文件操作" scheme="https://rongkangxiong.top/tags/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="DropIt" scheme="https://rongkangxiong.top/tags/DropIt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB文件和文件夹操作</title>
-    <link href="https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MATLAB%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6.html"/>
-    <id>https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MATLAB%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6.html</id>
-    <published>2021-11-13T08:54:30.000Z</published>
-    <updated>2021-11-22T12:52:34.318Z</updated>
-    
-    <content type="html"><![CDATA[<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">A &#x3D; exist(path,&#39;dir&#39;);   %name为对应的路径 ,dir为指定值,照写if A&#x3D;&#x3D;0          %所在的路径不存在时，A的值为0     error(&#39;路径：%s 不存在！&#39;,path); %路径不存在就返回报错en</code></pre><p>这样错误输入路径就会报错</p><p><img src="../../../images/blog/MATLAB%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/image-20211113165232703.png" alt="image-20211113165232703"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;pre class=&quot;line-numbers language-matlab&quot; data-language=&quot;matlab&quot;&gt;&lt;code class=&quot;language-matlab&quot;&gt;
-A &amp;#x3D; exist(path,&amp;#39;dir&amp;#39;);   %name为</summary>
-      
-    
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/categories/MATLAB/"/>
-    
-    <category term="错误处理机制" scheme="https://rongkangxiong.top/categories/MATLAB/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/tags/MATLAB/"/>
-    
-    <category term="错误处理机制" scheme="https://rongkangxiong.top/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB文件和文件夹操作</title>
-    <link href="https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MATLAB%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C.html"/>
-    <id>https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MATLAB%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C.html</id>
-    <published>2021-11-13T08:30:30.000Z</published>
-    <updated>2021-11-22T12:52:52.305Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="弹出一个模态对话框，选择一个文件夹作为工作目录"><a href="#弹出一个模态对话框，选择一个文件夹作为工作目录" class="headerlink" title="弹出一个模态对话框，选择一个文件夹作为工作目录"></a>弹出一个模态对话框，选择一个文件夹作为工作目录</h2><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">selpath &#x3D; uigetdir(&#39;path_to_your_folder&#39;)</code></pre><p><img src="../../../images/blog/MATLAB%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C/image-20211113163624565.png" alt="image-20211113163624565"></p><h2 id="选择要处理的文件"><a href="#选择要处理的文件" class="headerlink" title="选择要处理的文件"></a>选择要处理的文件</h2><p>选择刚刚选择的工作目录下的文件</p><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">[choosefiles,value] &#x3D; fileChoose(selpath,&#39;*.文件后缀&#39;);</code></pre><p><img src="../../../images/blog/MATLAB%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C/image-20211113163830189.png" alt="image-20211113163830189"></p><p>出来这样的效果，你可以单选，也可以多选，也可以全选</p><p>其中返回的<code>value =1</code>表示选择了文件，<code>choosefiles</code>信息如下：</p><p><img src="../../../images/blog/MATLAB%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C/image-20211113164004182.png" alt="image-20211113164004182"></p><p>是一个struct结构，使用</p><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">choosefiles(i).folderchoosefiles(i).name</code></pre><p>获取元素值</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;弹出一个模态对话框，选择一个文件夹作为工作目录&quot;&gt;&lt;a href=&quot;#弹出一个模态对话框，选择一个文件夹作为工作目录&quot; class=&quot;headerlink&quot; title=&quot;弹出一个模态对话框，选择一个文件夹作为工作目录&quot;&gt;&lt;/a&gt;弹出一个模态对话框，选择一个文件夹</summary>
-      
-    
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/categories/MATLAB/"/>
-    
-    <category term="文件操作" scheme="https://rongkangxiong.top/categories/MATLAB/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/tags/MATLAB/"/>
-    
-    <category term="文件操作" scheme="https://rongkangxiong.top/tags/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何分析线虫数据</title>
-    <link href="https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/xlsx%E8%A1%A8%E6%A0%BC%E5%AD%98%E5%82%A8%E6%A0%87%E8%AE%B0%E6%95%B0%E6%8D%AE.html"/>
-    <id>https://rongkangxiong.top/post/mynotes/%E5%AE%9E%E9%AA%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/xlsx%E8%A1%A8%E6%A0%BC%E5%AD%98%E5%82%A8%E6%A0%87%E8%AE%B0%E6%95%B0%E6%8D%AE.html</id>
-    <published>2021-11-13T07:49:30.000Z</published>
-    <updated>2021-11-22T12:53:16.091Z</updated>
-    
-    <content type="html"><![CDATA[<p>数据标签：</p><pre class="line-numbers language-md" data-language="md"><code class="language-md">motion_mode: 1 #前进motion_mode: -1 #后退motion_mode: 0 #不动motion_mode: 2 #转弯turn状态</code></pre><h1 id="写入数据"><a href="#写入数据" class="headerlink" title="写入数据"></a>写入数据</h1><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">Age &#x3D; [38;43;38;40;49];Height &#x3D; [71;69;64;67;64];Weight &#x3D; [176;163;131;133;119];BloodPressure &#x3D; [124 93; 109 77; 125 83; 117 75; 122 80];T &#x3D; table(Age,Height,Weight,BloodPressure);writetable(T,&#39;H:\WenLabData\wormdata\N2_Crawl_202105\Labels\ceshi2.xlsx&#39;)</code></pre><p>Table的形式是这样</p><p><img src="../../../images/blog/CSV%E5%AD%98%E5%82%A8%E6%A0%87%E8%AE%B0%E6%95%B0%E6%8D%AE/image-20211113161130571.png" alt="image-20211113161130571"></p><p>写进文件后是这样</p><p><img src="../../../images/blog/CSV%E5%AD%98%E5%82%A8%E6%A0%87%E8%AE%B0%E6%95%B0%E6%8D%AE/image-20211113161155174.png" alt="image-20211113161155174"></p><p>如果左边还要加一列的话可以写为:</p><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">Name &#x3D; &#123;&#39;Smith&#39;;&#39;Johnson&#39;;&#39;Williams&#39;;&#39;Jones&#39;;&#39;Brown&#39;&#125;;Age &#x3D; [38;43;38;40;49];Height &#x3D; [71;69;64;67;64];Weight &#x3D; [176;163;131;133;119];BloodPressure &#x3D; [124 93; 109 77; 125 83; 117 75; 122 80];T &#x3D; table(Name,Age,Height,Weight,BloodPressure);writetable(T,&#39;H:\WenLabData\wormdata\N2_Crawl_202105\Labels\ceshi4.xlsx&#39;)</code></pre><p>得到写入的’xlsx’文件的效果为</p><p><img src="../../../images/blog/xlsx%E8%A1%A8%E6%A0%BC%E5%AD%98%E5%82%A8%E6%A0%87%E8%AE%B0%E6%95%B0%E6%8D%AE/image-20211113161649625.png" alt="image-20211113161649625"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;数据标签：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-md&quot; data-language=&quot;md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;motion_mode: 1 #前进
-motion_mode: -1 #后退
-motio</summary>
-      
-    
-    
-    
-    <category term="实验分析" scheme="https://rongkangxiong.top/categories/%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/"/>
-    
-    <category term="线虫" scheme="https://rongkangxiong.top/categories/%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E7%BA%BF%E8%99%AB/"/>
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/tags/MATLAB/"/>
-    
-    <category term="Python" scheme="https://rongkangxiong.top/tags/Python/"/>
-    
-    <category term="实验分析" scheme="https://rongkangxiong.top/tags/%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/"/>
-    
-    <category term="线虫" scheme="https://rongkangxiong.top/tags/%E7%BA%BF%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB中使用CSV文件</title>
-    <link href="https://rongkangxiong.top/post/MATLAB%E4%B8%AD%E4%BD%BF%E7%94%A8CSV%E6%96%87%E4%BB%B6.html"/>
-    <id>https://rongkangxiong.top/post/MATLAB%E4%B8%AD%E4%BD%BF%E7%94%A8CSV%E6%96%87%E4%BB%B6.html</id>
-    <published>2021-11-13T07:36:38.000Z</published>
-    <updated>2021-11-13T07:51:25.433Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="读取CSV文件"><a href="#读取CSV文件" class="headerlink" title="读取CSV文件"></a>读取CSV文件</h1><h2 id="csvread只能读取纯数值的CSV文件"><a href="#csvread只能读取纯数值的CSV文件" class="headerlink" title="csvread只能读取纯数值的CSV文件"></a><code>csvread</code>只能读取纯数值的<code>CSV</code>文件</h2><p>查看帮助</p><pre class="line-numbers language-matla" data-language="matla"><code class="language-matla">help csvread</code></pre><p>读取文件格式:</p><pre class="line-numbers language-matl" data-language="matl"><code class="language-matl">a &#x3D; csvread(&#39;1.csv&#39;)disp(a)</code></pre><h1 id="创建CSV文件"><a href="#创建CSV文件" class="headerlink" title="创建CSV文件"></a>创建CSV文件</h1><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;读取CSV文件&quot;&gt;&lt;a href=&quot;#读取CSV文件&quot; class=&quot;headerlink&quot; title=&quot;读取CSV文件&quot;&gt;&lt;/a&gt;读取CSV文件&lt;/h1&gt;&lt;h2 id=&quot;csvread只能读取纯数值的CSV文件&quot;&gt;&lt;a href=&quot;#csvread只能读取纯数值的CSV文件&quot; class=&quot;headerlink&quot; title=&quot;csvread只能读取纯数值的CSV文件&quot;&gt;&lt;/a&gt;&lt;code&gt;csvread&lt;/code&gt;只能读取纯数值的&lt;code&gt;CSV&lt;/code&gt;文件&lt;/h2&gt;&lt;p&gt;查看帮助&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-matla&quot; data-language=&quot;matla&quot;&gt;&lt;code class=&quot;language-matla&quot;&gt;help csvread&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;读取文件格式:&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-matl&quot; data-language=&quot;matl&quot;&gt;&lt;code class=&quot;language-matl&quot;&gt;a &amp;#x3D; csvread(&amp;#39;1.csv&amp;#39;)
-disp(a)&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;创建CSV文件&quot;&gt;&lt;a href=&quot;#创建CSV文件&quot; class=&quot;headerlink&quot; title=&quot;创建CSV文件&quot;&gt;&lt;/a&gt;创建CSV文件&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/categories/MATLAB/"/>
-    
-    <category term="CSV" scheme="https://rongkangxiong.top/categories/MATLAB/CSV/"/>
-    
-    
-    <category term="MATLAB" scheme="https://rongkangxiong.top/tags/MATLAB/"/>
-    
-    <category term="CSV" scheme="https://rongkangxiong.top/tags/CSV/"/>
-    
-    <category term="文件操作" scheme="https://rongkangxiong.top/tags/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
